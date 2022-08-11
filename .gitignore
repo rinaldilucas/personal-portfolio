@@ -1,0 +1,6 @@
+.DS_Store
+/delivery
+/develop
+/node_modules
+/.temp
+.env

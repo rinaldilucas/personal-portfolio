@@ -1,0 +1,113 @@
+.portfolio {
+    &__wrapper {
+        max-width: vw(340);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include media(">desktop") {
+            max-width: vw(1180);
+        }
+    }
+
+    &__title {
+        @extend .title;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        @include media(">desktop") {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        cursor: pointer !important;
+        width: vw(75);
+        height: vw(75);
+        margin: 0 vw(13) vw(13) 0;
+
+        @include media("<desktop") {
+            &:nth-child(4n + 4) {
+                margin-right: 0;
+            }
+        }
+
+        @include media(">desktop") {
+            width: vw(165);
+            height: vw(165);
+            margin: 0 vw(30) vw(30) 0;
+
+            &:nth-child(6n + 6) {
+                margin-right: 0;
+            }
+        }
+
+        &:hover {
+            .portfolio__item-mask,
+            .portfolio__item-title {
+                opacity: 0.95 !important;
+                transform: translateY(0);
+            }
+        }
+
+        &-image {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            border-radius: vw(20);
+            @extend .drop-shadow;
+        }
+
+        &-details {
+            color: #fff;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &-title {
+            color: #fff;
+            font-size: vw(18);
+            margin: 0;
+            opacity: 0;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            word-break: break-word;
+            padding: vw(10);
+            text-align: left;
+            font-weight: 600;
+
+            @include media(">desktop") {
+                padding: vw(20);
+            }
+        }
+
+        &-thumb {
+            overflow: hidden;
+            display: flex;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        &-mask {
+            background: $blue;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: $transition-time;
+        }
+    }
+}

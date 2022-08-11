@@ -1,0 +1,21 @@
+<section id="repositorios" data-anchor-scroll="repositorios" class="repositories">
+    <div class="repositories__wrapper">
+        <h2 class="repositories__title wow animated fadeIn" data-wow-delay="0.1s">Repositorios</h2>
+        <div class="spacer" data-height="60"></div>
+        <div class="repositories__content">
+            {{#each repositories}}
+                <div class="repositories__item wow animated fadeIn" data-wow-delay="0.1s">
+                    <a class="repositories__item-image" title="{{nameEsEs}}" href="{{link}}" target="_blank" data-image="{{id}}">
+                        <div class="repositories__item-details">
+                            <h4 class="repositories__item-title">{{nameEsEs}}</h4>
+                        </div>
+                        <div class="repositories__item-thumb">
+                            <img loading="lazy" src="{{logoPath}}" alt="{{nameEsEs}}" title="{{nameEsEs}}" />
+                            <div class="repositories__item-mask"></div>
+                        </div>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

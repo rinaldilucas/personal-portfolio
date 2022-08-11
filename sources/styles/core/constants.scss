@@ -1,0 +1,67 @@
+/* ============================================== */
+/* =================== colors =================== */
+/* ============================================== */
+
+$black: #000;
+$black-light: #0a0a0a;
+$black-transparent: #0000000a;
+
+$white: #fff;
+$white-strong: #d9d9d9;
+
+$ice: #f6f6f6;
+$ice-light: #eee;
+$ice-strong: #aaa;
+
+$gray: #4e4e4e;
+$gray-light: #999;
+$gray-strong: #666;
+
+$onix: #333;
+$onix-light: #555;
+$onix-strong: #212121;
+
+$blue: #407bff;
+$blue-light: #636f7d;
+$blue-strong: #1b3350;
+
+$red: #f9263f;
+$red-light: #fdbbc3;
+$red-strong: #6a030f;
+
+$green: #25d366;
+$green-light: #ccf0e2;
+$green-strong: #21b056;
+
+$orange: #ffac3c;
+$orange-light: #ffe2bb;
+$orange-strong: #a25d00;
+
+$yellow: #ffeb3c;
+$yellow-light: #fff8bb;
+$yellow-strong: #ffc107;
+
+/* ============================================== */
+/* ================ dimensions  ================= */
+/* ============================================== */
+
+$size-mobile: 320px;
+$size-tablet: 768px;
+$size-desktop: 1024px;
+$size-medium-desktop: 1280px;
+$size-common-desktop: 1366px;
+$size-fullhd-desktop: 1920px;
+$size-ultrahd-desktop: 3840px;
+
+$breakpoints: (
+    mobile: $size-mobile,
+    tablet: $size-tablet,
+    desktop: $size-desktop,
+    medium-desktop: $size-medium-desktop,
+    common-desktop: $size-common-desktop,
+    fullhd-desktop: $size-fullhd-desktop,
+    ultrahd-desktop: $size-ultrahd-desktop,
+);
+
+$convert-base: 1000;
+$pixel-base: 10;

@@ -1,0 +1,68 @@
+.parallax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    .layer {
+        position: absolute !important;
+    }
+
+    .p1 {
+        left: 10% !important;
+        top: 10% !important;
+    }
+
+    .p2 {
+        left: 25% !important;
+        top: 30% !important;
+    }
+
+    .p3 {
+        left: 15% !important;
+        top: 80% !important;
+    }
+
+    .p4 {
+        left: 10% !important;
+        top: 90% !important;
+    }
+
+    .p5 {
+        left: 45% !important;
+        top: 10% !important;
+    }
+
+    .p6 {
+        left: 40% !important;
+        top: 90% !important;
+    }
+
+    .p7 {
+        left: 80% !important;
+        top: 20% !important;
+    }
+
+    .p8 {
+        left: 80% !important;
+        top: 80% !important;
+    }
+
+    .p9 {
+        left: 90% !important;
+        top: 10% !important;
+    }
+
+    .p10 {
+        left: 80% !important;
+        top: 45% !important;
+    }
+
+    .p11 {
+        left: 90% !important;
+        bottom: 10% !important;
+    }
+}

@@ -1,0 +1,204 @@
+.header {
+    @extend .drop-shadow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: $white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: vw(85);
+
+    @include media(">desktop") {
+        width: vw(290);
+        height: 100vh;
+    }
+
+    &__wrapper {
+        padding: vw(10) vw(25);
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+
+        @include media(">desktop") {
+            padding: vw(50) vw(40);
+            max-width: vw(1000);
+            max-width: vw(360);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__code {
+        background-color: $onix;
+        color: $white;
+        font-size: vw(12);
+        border-radius: vw(50);
+        top: vw(5);
+        left: vw(5);
+        position: absolute;
+        padding: vw(4) vw(8);
+
+        i {
+            margin-right: vw(8);
+        }
+    }
+
+    &__logo {
+        width: vw(60);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        @include media(">desktop") {
+            width: vw(80);
+            top: vw(28);
+            left: vw(10);
+        }
+    }
+
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin: vw(80) vw(20) 0 0;
+
+        @include media(">desktop") {
+            margin: 0;
+        }
+    }
+
+    &__nav {
+        height: 100%;
+        width: vw(300);
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -90%;
+        transition: left 0.3s ease-out;
+        @extend .drop-shadow;
+        background: $white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        @include media(">desktop") {
+            position: static;
+            box-shadow: none;
+            width: auto;
+            height: auto;
+        }
+
+        .active-menu & {
+            left: 0;
+        }
+    }
+
+    &__link {
+        color: $font-color;
+        font-weight: 600;
+        margin: vw(8);
+        font-size: vw(20);
+        display: block;
+
+        @include media(">desktop") {
+            color: $font-color;
+            font-weight: 600;
+            font-size: vw(18);
+        }
+
+        &:hover {
+            color: $accent;
+        }
+
+        &.active {
+            color: $blue;
+        }
+
+        i {
+            margin-right: vw(16);
+        }
+    }
+
+    &__footer {
+        @include media("<desktop") {
+            display: none;
+        }
+    }
+
+    &__websites {
+        color: $font-color-alt;
+        font-weight: 400;
+        margin: vw(8);
+        font-size: vw(18);
+        line-height: vw(28);
+    }
+
+    &__text {
+        color: $font-color;
+        font-weight: 400;
+        margin: vw(8);
+        font-size: vw(16);
+        line-height: vw(28);
+    }
+
+    &__button {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: vw(70);
+        transform: scale(0.4) rotate(180deg);
+        position: relative;
+        left: vw(15);
+
+        @include media(">desktop") {
+            display: none;
+        }
+
+        span {
+            background: $blue;
+            border-radius: vw(10);
+            height: vw(7);
+            margin: vw(7) 0;
+            transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+            &:nth-of-type(1) {
+                width: 50%;
+            }
+
+            &:nth-of-type(2) {
+                width: 100%;
+            }
+
+            &:nth-of-type(3) {
+                width: 75%;
+            }
+        }
+
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked ~ span:nth-of-type(1) {
+                transform-origin: bottom;
+                transform: rotatez(45deg) translate(vw(8), vw(0));
+            }
+
+            &:checked ~ span:nth-of-type(2) {
+                transform-origin: top;
+                transform: rotatez(-45deg);
+            }
+
+            &:checked ~ span:nth-of-type(3) {
+                transform-origin: bottom;
+                width: 50%;
+                transform: translate(vw(30), vw(-11)) rotatez(45deg);
+            }
+        }
+    }
+}

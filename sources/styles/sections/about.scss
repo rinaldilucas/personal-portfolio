@@ -1,0 +1,131 @@
+.about {
+    padding-top: vw(110);
+
+    &__wrapper {
+        max-width: vw(340);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include media(">desktop") {
+            max-width: vw(1180);
+        }
+    }
+
+    &__title {
+        @extend .title;
+    }
+
+    &__image {
+        width: vw(200);
+        height: vw(200);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include media(">desktop") {
+            flex-direction: row;
+        }
+    }
+
+    &__baloon {
+        background-color: $white;
+        padding: vw(25) vw(30);
+        border-radius: vw(20);
+        @extend .drop-shadow;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin: vw(35) 0 0;
+        flex-direction: column;
+
+        @include media(">desktop") {
+            flex-direction: row;
+            margin: 0 0 0 vw(35);
+        }
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: vw(10) solid transparent;
+            border-right: vw(10) solid transparent;
+            border-bottom: vw(10) solid $white;
+            position: absolute;
+            left: 50%;
+            top: vw(-10);
+            transform: translateX(-50%);
+
+            @include media(">desktop") {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: vw(10) solid transparent;
+                border-bottom: vw(10) solid transparent;
+                border-right: vw(15) solid $white;
+                position: absolute;
+                left: vw(-12);
+                top: 20%;
+            }
+        }
+
+        &-text {
+            display: flex;
+            align-items: center;
+
+            @include media(">desktop") {
+                width: 49%;
+            }
+
+            p {
+                font-size: vw(18);
+                line-height: vw(28);
+            }
+        }
+    }
+
+    &__progress {
+        margin: vw(20) 0 0 0;
+
+        @include media(">desktop") {
+            width: 46%;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            h4 {
+                margin: 0 0 vw(10) 0;
+            }
+        }
+
+        &-background {
+            background-color: $ice;
+            border-radius: vw(15);
+        }
+
+        &-bar {
+            width: 100%;
+            height: vw(8);
+            transition: width 0.6s ease;
+            border-radius: vw(15);
+        }
+    }
+}

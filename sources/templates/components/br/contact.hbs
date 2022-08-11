@@ -1,0 +1,42 @@
+<section id="contato" class="contact" data-anchor-scroll="contato">
+    <div class="spacer" data-height="30"></div>
+    <div class="contact__wrapper">
+        <h2 class="contact__title wow animated fadeIn" data-wow-delay="0.1s">Entre em Contato</h2>
+        <div class="spacer" data-height="60"></div>
+        <div class="contact__content">
+            <div class="contact__text wow animated fadeIn" data-wow-delay="0.3s">
+                <h1>Gostaria de tirar <br>alguma dúvida?</h1>
+                <p class="wow fadeInUp">Me envie um<a data-metrics="redirect" title="Enviar e-mail" href="mailto:lucasreinaldi@gmail.com"> e-mail por aqui </a>👋<br>ou me envie uma mensagem<br>pelo formulário.</p>
+            </div>
+            <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form action="https://getform.io/f/e9f7a598-71f2-4330-a6a1-318d4ee72591" method="POST">
+                <div class="messages"></div>
+                <div class="contact__form-row">
+                    <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
+                        <input type="text" name="nome" placeholder="*Seu nome" data-rule-required data-rule-fullname />
+                    </div>
+                    <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
+                        <input type="email" name="email" placeholder="*E-mail" data-rule-required data-rule-minlength="3" />
+                    </div>
+                </div>
+                <div class="contact__form-row">
+                    <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.2s">
+                        <input type="text" name="whatsapp" placeholder="Assunto" data-rule-required />
+                    </div>
+                </div>
+                <div class="contact__form-row contact__form-row--no-margin">
+                    <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.3s">
+                        <textarea name="extras" rows="4" placeholder="*Mensagem" data-rule-minlength="3"></textarea>
+                    </div>
+                </div>
+                <small class="contact__disclaimer wow animated fadeIn" data-wow-delay="0.3s">* campos obrigatórios</small>
+                <button title="Enviar Mensagem" type="submit" class="contact__button wow animated fadeIn" data-wow-delay="0.4s" data-prevent-double-click><i class="icon icon--smaller icon--spinner icon--hide"></i>Enviar Mensagem</button>
+            </form>
+        </div>
+        <div class="contact__tags">
+            {{#each tags}}
+                <span class="wow animated fadeIn" data-wow-delay="0.2s">{{name}}</span>
+            {{/each}}
+        </div>
+        <div class="spacer" data-height="90"></div>
+    </div>
+</section>

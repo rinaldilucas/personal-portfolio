@@ -1,0 +1,207 @@
+.contact {
+    &__wrapper {
+        max-width: vw(340);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        @include media(">desktop") {
+            max-width: vw(1180);
+        }
+    }
+
+    &__title {
+        @extend .title;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include media(">desktop") {
+            flex-direction: row;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            @include media(">desktop") {
+                width: vw(550);
+            }
+        }
+    }
+
+    &__text {
+        position: relative;
+
+        @include media(">desktop") {
+            width: vw(380);
+        }
+
+        h1 {
+            font-size: vw(28);
+            margin: 0 0 vw(12);
+        }
+
+        p {
+            position: relative;
+            z-index: 5;
+        }
+
+        &:after {
+            content: "";
+            background-image: url(../images/general/map.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-height: vw(300);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            display: block;
+        }
+    }
+
+    &__form {
+        margin-top: vw(40);
+
+        @include media(">desktop") {
+            margin-left: vw(60);
+        }
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-direction: column;
+
+            @include media(">desktop") {
+                flex-direction: row;
+                margin: 0 0 vw(25);
+            }
+
+            &--no-margin {
+                margin: 0;
+            }
+        }
+    }
+
+    &__input-group {
+        width: 100%;
+        margin: vw(7) 0;
+
+        @include media(">desktop") {
+            margin: 0;
+        }
+
+        &--half {
+            width: 100%;
+
+            @include media(">desktop") {
+                width: 48%;
+            }
+        }
+
+        input:not([type="checkbox"]),
+        textarea,
+        .file-uploader {
+            box-sizing: border-box;
+            display: block;
+            border-radius: vw(60);
+            width: 100%;
+            height: vw(55);
+            padding: vw(10) vw(30);
+            font-weight: 400;
+            color: $font-color;
+            background-image: none;
+            border: 0;
+            @extend .drop-shadow;
+
+            &:focus {
+                @extend .drop-shadow;
+                outline: 0;
+            }
+
+            &::placeholder {
+                font-family: $font-main;
+                color: $font-color;
+            }
+        }
+
+        input[type="file"] {
+            padding: 0;
+            position: absolute;
+            margin-top: vw(-55);
+            width: vw(260);
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .file-uploader {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: vw(170);
+            }
+        }
+
+        textarea {
+            height: auto;
+            border-radius: vw(30);
+            padding: vw(20) vw(30) vw(10);
+        }
+
+        small {
+            margin-top: vw(15);
+            display: block;
+        }
+    }
+
+    &__disclaimer {
+        width: 100%;
+        margin: vw(5) 0 0 vw(40);
+
+        @include media(">desktop") {
+            margin: vw(12) 0 0 vw(55);
+        }
+    }
+
+    &__tags {
+        width: 100%;
+        margin-top: vw(55);
+
+        @include media(">desktop") {
+            margin-top: vw(40);
+            width: vw(300);
+            position: absolute;
+            top: vw(250);
+        }
+
+        span {
+            border-radius: vw(3);
+            background-color: $white;
+            border: 1px solid $blue;
+            font-size: vw(11);
+            line-height: vw(32);
+            padding: vw(4);
+        }
+    }
+
+    &__button {
+        margin-top: vw(20);
+        margin-right: auto;
+        @extend .button;
+    }
+}

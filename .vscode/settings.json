@@ -1,0 +1,6 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{language}}" itemscope="" itemtype="https://schema.org/WebPage">
+
+    <head>
+        {{!-- GENERAL PROPS --}}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="content-Security-Policy" content="upgrade-insecure-requests">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=no, shrink-to-fit=no">
+
+        <base href="{{base}}" id="base-id">
+        <link rel="canonical" href="{{full}}{{path}}">
+
+        <title>{{title}}</title>
+        <meta name="title" content="{{title}}">
+        <meta name="description" content="{{description}}">
+        <meta name="keywords" content="{{keywords}}">
+        <meta name="date" content="{{date}}">
+        <meta name="sitecode" content="{{country}}">
+        <meta name="version" content="{{version}}">
+        <meta name="google-site-verification" content="">
+        {{!-- /GENERAL PROPS --}}
+
+        {{!-- SHARE PROPS --}}
+        <meta property="og:url" content="{{full}}{{path}}">
+        <meta property="og:image:url" content="{{full}}/thumb.jpg" />
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="{{title}}">
+        <meta property="og:locale" content="{{language}}">
+        <meta property="og:title" content="{{title}}">
+        <meta property="og:description" content="{{description}}">
+        <meta property="og:country-name" content="{{country}}" />
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:site" content="">
+        <meta property="twitter:creator" content="Lucas Rinaldi">
+        <meta property="twitter:url" content="{{full}}{{path}}">
+        <meta property="twitter:title" content="{{title}}">
+        <meta property="twitter:description" content="{{description}}">
+        <meta property="twitter:image" content="{{full}}/thumb.jpg">
+
+        <meta itemprop="name" content="{{title}}">
+        <meta itemprop="image" content="">
+        <meta itemprop="url" content="{{full}}">
+        <meta itemprop="description" content="{{description}}">
+        <meta itemprop="keywords" content="{{keywords}}">
+        {{!-- /SHARE PROPS --}}
+
+        {{!-- STYLES --}}
+        <!-- build:css assets/styles/fonts.css -->
+        <link rel="stylesheet" href="./assets/styles/fonts.css" />
+        <!-- endbuild -->
+        <!-- build:css assets/styles/main.css -->
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <!-- endbuild -->
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        {{!-- /STYLES --}}
+
+        {{!-- SCRIPTS --}}
+        <!-- build:js assets/scripts/main.js -->
+        <script type="text/javascript" defer src="./assets/scripts/main.js"></script>
+        <!-- endbuild -->
+        {{!-- /SCRIPTS --}}
+
+        {{!-- METRICS --}}
+        {{>layouts/metrics}}
+        {{!-- /METRICS --}}
+    </head>
+
+    <body id="main" class="{{page}}">
+        {{> layouts/metrics-fallback }}
+        {{> components/loading }}
+
+        {{#block "content"}}
+        {{/block}}
+    </body>
+</html>
