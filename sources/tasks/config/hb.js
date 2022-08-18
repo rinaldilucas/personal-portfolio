@@ -4,6 +4,7 @@ module.exports = (grunt) => {
     const path = require('path');
     const rename = require('gulp-rename');
     const vinylFs = require('vinyl-fs');
+    const defaults = require('../../scripts/data/default.json');
 
     const compileHandlebarsLayout = () => {
         grunt.registerMultiTask('hb', 'Renders Handlebars templates to static HTML.', function () {
@@ -31,7 +32,8 @@ module.exports = (grunt) => {
                     .pipe(
                         hb(options)
                             .helpers(require('handlebars-layouts'))
-                            .data(options.more || {}),
+                            .data(options.more || {})
+                            .data(defaults),
                     )
                     .pipe(rename(basename))
                     .pipe(vinylFs.dest(dirname))
@@ -79,7 +81,9 @@ module.exports = (grunt) => {
                     layout: 'layouts/skel',
                     version: '1.0.0',
                     cdn_url: './',
-                    date: ((date) => [date.getFullYear(), (date.getMonth() + 1 + '').padStart(2, '0'), date.getDate()].join('-'))(new Date()),
+                    date: ((date) => {
+                        return [date.getFullYear(), (date.getMonth() + 1 + '').padStart(2, '0'), date.getDate()].join('-');
+                    })(new Date()),
                 },
             },
             files: [
