@@ -8,7 +8,7 @@
                 <h1>¿Le gustaría responder alguna pregunta?</h1>
                 <p class="wow fadeInUp">Envíame un<a title="Correo electrónico" href="mailto:lucasreinaldi@gmail.com"> correo electrónico aquí </a>👋<br>o envíame un mensaje<br>por la forma.</p>
             </div>
-            <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form action="https://getform.io/f/e9f7a598-71f2-4330-a6a1-318d4ee72591" method="POST">
+            <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form action="https://getform.io/f/{{getformApiKey}}" method="POST">
                 <div class="messages"></div>
                 <div class="contact__form-row">
                     <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
@@ -25,12 +25,13 @@
                 </div>
                 <div class="contact__form-row contact__form-row--no-margin">
                     <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.3s">
-                        <textarea name="extras" rows="4" placeholder="*Mensaje" data-rule-minlength="3"></textarea>
+                        <textarea name="message" rows="4" placeholder="*Mensaje" data-rule-minlength="3"></textarea>
                     </div>
                 </div>
                 <small class="contact__disclaimer wow animated fadeIn" data-wow-delay="0.3s">* campos obligatorios</small>
                 <button title="Enviar Mensaje" type="submit" class="contact__button wow animated fadeIn" data-wow-delay="0.4s" data-prevent-double-click><i class="icon icon--smaller icon--spinner icon--hide"></i>Enviar Mensaje</button>
-                <div class="g-recaptcha contact__recaptcha" data-sitekey="{{captchaSecret}}"></div>
+                <div class="contact__recaptcha g-recaptcha" data-sitekey="{{captchaSecret}}" data-callback="recaptchaCallback"></div>
+                <input type="hidden" data-recaptcha data-rule-required name="hiddenRecaptcha">
             </form>
         </div>
         <div class="contact__tags">

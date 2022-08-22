@@ -21,7 +21,8 @@ scope.views.Home = Base.extend({
         testimonials: data.testimonials,
         repositories: data.repositories,
         tags: data.tags,
-        captchaSecret: process.env.CAPTCHA_SECRET
+        captchaSecret: process.env.CAPTCHA_SECRET,
+        getformApiKey: process.env.GETFORM_API_KEY
     },
     name: 'home',
     behaviors: {

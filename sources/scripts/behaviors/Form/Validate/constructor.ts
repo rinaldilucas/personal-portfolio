@@ -55,8 +55,15 @@ export default Marionette.Behavior.extend({
         const self = this;
 
         form.validate({
-            ignore: '.ignore,:hidden,[readonly]',
+            ignore: '.ignore,[readonly]',
             errorElement: 'p',
+            rules: {
+                hiddenRecaptcha: {
+                    required: () => {
+                        if ((window as any).grecaptcha.getResponse() === '') { return true; } else { return false; }
+                    }
+                }
+            },
             errorPlacement: (error, element) => error.insertAfter(element),
             highlight: (element, errorClass, validClass) => {
                 if (element && $(element)[0].hasAttribute('data-file-upload-button')) {
@@ -78,7 +85,10 @@ export default Marionette.Behavior.extend({
                     $('[type=submit], [data-prevent-double-click]').prop('disabled', true);
                     $('[data-prevent-double-click] i').removeClass('icon--hide');
 
+                    $('#g-recaptcha-response').prop('disabled', true);
+                    form.find('input:hidden').prop('disabled', true);
                     const serializedFormData = new FormData(form[0]);
+
                     const action = form.attr('action');
                     const method = form.attr('method');
 
