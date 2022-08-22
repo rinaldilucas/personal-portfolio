@@ -1,6 +1,5 @@
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
-import $ from 'jquery';
-import 'jquery-validation';
+import 'jquery-validation/dist/jquery.validate.min';
 import Toastify from 'toastify-js';
 
 let language = 'enUs';

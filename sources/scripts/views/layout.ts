@@ -1,5 +1,5 @@
-import scope from '../scope';
-import Base from './baseView';
+import scope from '@scripts/scope';
+import Base from '@scripts/views/baseView';
 import Backbone from 'backbone';
 
 let firstLoop = true;

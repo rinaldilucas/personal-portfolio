@@ -1,20 +1,20 @@
-import data from '../data/default.json';
-import scope from '../scope';
-import Base from './baseView';
+import data from '@scripts/data/default.json';
+import scope from '@scripts/scope';
+import Base from '@scripts/views/baseView';
 
-import BackgroundColor from '../behaviors/backgroundColor';
-import Carousel from '../behaviors/carousel';
-import CopyToClipboard from '../behaviors/copyToClipboard';
-import Form from '../behaviors/Form';
-import Header from '../behaviors/header';
-import Morphext from '../behaviors/morphext';
-import Parallax from '../behaviors/parallax';
-import PortfolioViewer from '../behaviors/portfolioViewer';
-import Spacer from '../behaviors/spacer';
-import Waypoint from '../behaviors/waypoint';
+import BackgroundColor from '@scripts/behaviors/backgroundColor';
+import Carousel from '@scripts/behaviors/carousel';
+import CopyToClipboard from '@scripts/behaviors/copyToClipboard';
+import Form from '@scripts/behaviors/Form';
+import Header from '@scripts/behaviors/header';
+import Morphext from '@scripts/behaviors/morphext';
+import Parallax from '@scripts/behaviors/parallax';
+import PortfolioViewer from '@scripts/behaviors/portfolioViewer';
+import Spacer from '@scripts/behaviors/spacer';
+import Waypoint from '@scripts/behaviors/waypoint';
 
 scope.views.Home = Base.extend({
-    template: require('templates/pages/br/home.hbs'),
+    template: require('@templates/pages/br/home.hbs'),
     templateContext: {
         portfolio: data.portfolio,
         testimonials: data.testimonials,
@@ -33,7 +33,7 @@ scope.views.Home = Base.extend({
         Waypoint,
         PortfolioViewer,
         ...Form({
-            rules: [require('../behaviors/Form/Commons')]
+            rules: [require('@scripts/behaviors/Form/Commons')]
         })
     }
 });

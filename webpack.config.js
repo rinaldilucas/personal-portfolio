@@ -9,12 +9,10 @@ const buildWebpackConfig = () => {
     const resolve = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
-            data: path.resolve(__dirname, './sources/scripts/data'),
-            main: path.resolve(__dirname, './sources/scripts/main'),
-            views: path.resolve(__dirname, './sources/scripts/views'),
-            app: path.resolve(__dirname, './sources/scripts/app'),
-            scope: path.resolve(__dirname, './sources/scripts/scope'),
-            templates: path.resolve(__dirname, './sources/templates'),
+            '@templates': path.resolve(__dirname, './sources/templates'),
+            '@app': path.resolve(__dirname, './sources'),
+            '@styles': path.resolve(__dirname, './sources/styles'),
+            '@scripts': path.resolve(__dirname, './sources/scripts'),
         },
     };
 

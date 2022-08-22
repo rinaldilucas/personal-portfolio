@@ -1,5 +1,4 @@
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
-import $ from 'jquery';
 
 ($.fn as any).maskClear = function () {
     const fn = $(this).data('maskClearFn');

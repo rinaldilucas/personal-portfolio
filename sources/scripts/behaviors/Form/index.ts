@@ -1,5 +1,5 @@
-import Form from './Validate/constructor';
-import FormMasks from './Masks/constructor';
+import FormMasks from '@scripts/behaviors/form/masks/constructor';
+import Form from '@scripts/behaviors/form/validate/constructor';
 
 export default (options) => ({
     Form: {

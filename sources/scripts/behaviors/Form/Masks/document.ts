@@ -1,5 +1,4 @@
-import $ from 'jquery';
-import 'jquery-mask-plugin';
+import 'jquery-mask-plugin/dist/jquery.mask.min';
 
 const masks = {
     cpf: '000.000.000-00',

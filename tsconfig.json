@@ -1,5 +1,20 @@
 {
     "compilerOptions": {
+        "paths": {
+            "@app/*": [
+                "./sources/*"
+            ],
+            "@styles/*": [
+                "./sources/styles/*"
+            ],
+            "@scripts/*": [
+                "./sources/scripts/*"
+            ],
+            "@templates/*": [
+                "./sources/templates/*"
+            ]
+        },
+        "baseUrl": ".",
         "outDir": "./docs/assets/scripts",
         "module": "es6",
         "target": "es5",
@@ -8,11 +23,16 @@
         "removeComments": true,
         "strictNullChecks": true,
         "experimentalDecorators": true,
-        "typeRoots": ["./node_modules/@types"],
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
         "sourceMap": true,
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true
     },
-    "include": ["sources/scripts/main.ts"]
+    "include": [
+        "./sources",
+        "./sources/scripts"
+    ]
 }

@@ -1,6 +1,6 @@
-import helper from './libraries/helpers';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 import WOW from 'wow.js/dist/wow.min';
+import helper from './libraries/helpers';
 
 const Application = Marionette.Application.extend({
     el: function () {

@@ -1,6 +1,6 @@
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
-import when from 'when/dist/browser/when.min';
 import 'jquery.scrollto/jquery.scrollTo.min';
+import when from 'when/dist/browser/when.min';
 
 const Helper = Marionette.Object.extend({
     anchor: function (where) {

@@ -1,3 +1,1 @@
-export default function (array) {
-    return array.length + 1;
-}
+export default (array) => array.length + 1;

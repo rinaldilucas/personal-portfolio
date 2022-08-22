@@ -1,9 +1,9 @@
-import scope from '../scope';
+import scope from '@scripts/scope';
 import AppRouter from 'marionette.approuter/lib/marionette.approuter.min';
 
-import HomeEn from '../views/homeEn';
-import HomeBr from '../views/homeBr';
-import HomeEs from '../views/homeEs';
+import HomeBr from '@scripts/views/homeBr';
+import HomeEn from '@scripts/views/homeEn';
+import HomeEs from '@scripts/views/homeEs';
 
 const AppController = {
     index: () => scope.app.go(new HomeEn()),

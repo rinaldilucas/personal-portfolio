@@ -1,7 +1,7 @@
-import scope from './scope';
-import App from './app';
-import Main from './views/init';
-import Init from './routes/init';
+import Init from '@app/scripts/routes/init';
+import App from '@scripts/app';
+import scope from '@scripts/scope';
+import Main from '@scripts/views/init';
 
 ((scope) => {
     ('use strict');

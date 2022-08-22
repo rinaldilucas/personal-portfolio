@@ -1,4 +1,4 @@
-import scope from '../scope';
+import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 import ClipboardJS from 'clipboard/dist/clipboard.min';
 import Toastify from 'toastify-js';

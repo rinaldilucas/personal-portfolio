@@ -1,3 +1,1 @@
-export default function (string) {
-    return string.replace(/-/gim, '/');
-}
+export default (string) => string.replace(/-/gim, '/');

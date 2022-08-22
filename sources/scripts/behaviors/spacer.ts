@@ -1,6 +1,5 @@
-import scope from '../scope';
+import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
-import $ from 'jquery/dist/jquery.min';
 
 scope.behaviors.Spacer = Marionette.Behavior.extend({
     ui: {

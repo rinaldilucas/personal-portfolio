@@ -1,5 +1,5 @@
-import $ from 'jquery';
-import 'jquery-mask-plugin';
+import 'jquery-mask-plugin/dist/jquery.mask.min';
+import $ from 'jquery/dist/jquery';
 
 const masks = {
     cep: '00000-000',

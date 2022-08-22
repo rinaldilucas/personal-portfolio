@@ -1,7 +1,7 @@
+import defaultJson from '@scripts/data/default.json';
+import helper from '@scripts/libraries/helpers';
+import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
-import defaultJson from '../data/default.json';
-import helper from '../libraries/helpers';
-import scope from '../scope';
 
 scope.views.BaseView = Marionette.View.extend({
     name: 'base-view',
