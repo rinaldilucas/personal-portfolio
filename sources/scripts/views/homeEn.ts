@@ -3,6 +3,7 @@ import scope from '@scripts/scope';
 import Base from '@scripts/views/baseView';
 
 import BackgroundColor from '@scripts/behaviors/backgroundColor';
+import Captcha from '@scripts/behaviors/captcha';
 import Carousel from '@scripts/behaviors/carousel';
 import CopyToClipboard from '@scripts/behaviors/copyToClipboard';
 import Form from '@scripts/behaviors/Form';
@@ -19,7 +20,8 @@ scope.views.Home = Base.extend({
         portfolio: data.portfolio,
         testimonials: data.testimonials,
         repositories: data.repositories,
-        tags: data.tags
+        tags: data.tags,
+        captchaSecret: process.env.CAPTCHA_SECRET
     },
     name: 'home',
     behaviors: {
@@ -32,6 +34,7 @@ scope.views.Home = Base.extend({
         Background: BackgroundColor,
         Waypoint,
         PortfolioViewer,
+        Captcha,
         ...Form({
             rules: [require('@scripts/behaviors/Form/Commons')]
         })

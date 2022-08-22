@@ -1,6 +1,8 @@
+const dotenv = require('dotenv');
 const mode = process.env.NODE_ENV || 'development';
 
 ('use scrict');
+dotenv.config();
 
 const buildWebpackConfig = () => {
     const path = require('path');
@@ -20,6 +22,9 @@ const buildWebpackConfig = () => {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
+        }),
+        new webpack.DefinePlugin({
+            'process.env.CAPTCHA_SECRET': JSON.stringify(process.env.CAPTCHA_SECRET),
         }),
     ];
 
