@@ -16,7 +16,7 @@ export default Marionette.Behavior.extend({
     onAttach: function () {
         const self = this;
 
-        this.ui.FormMasksForm.each(() => self.formListener($(this)));
+        this.ui.FormMasksForm.each((index, element) => self.formListener(element));
     },
     formListener: function (form) {
         const rules = this.getOption('rules');

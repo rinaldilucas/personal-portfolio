@@ -194,7 +194,7 @@ export default Marionette.Behavior.extend({
                 cnpj: 'Proporcione un CNPJ válido.',
                 cpf: 'Proporcione un CPF válido.',
                 cep: 'Por favor ingrese un código postal válido.',
-                phone: 'Por favor ingrese un número valido.',
+                phone: 'Por favor ingrese un número válido.',
                 lettersonly: 'El campo debe contener solo letras y espacios.',
                 filesize: 'El archivo debe tener menos de {0} MB.',
                 extension: 'El archivo debe tener la extensión {0}.',

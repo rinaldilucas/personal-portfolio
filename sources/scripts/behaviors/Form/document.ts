@@ -1,5 +1,5 @@
-import mask from '@scripts/behaviors/form/masks/commons';
-import validate from '@scripts/behaviors/form/validate/commons';
+import mask from '@scripts/behaviors/form/masks/document';
+import validate from '@scripts/behaviors/form/validate/document';
 
 export default {
     mask: mask.mask,
