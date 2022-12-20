@@ -10,6 +10,7 @@
 
         @include media(">desktop") {
             max-width: vw(1180);
+            padding: 0 vw(25);
         }
     }
 
@@ -97,7 +98,8 @@
         margin: vw(20) 0 0 0;
 
         @include media(">desktop") {
-            width: 46%;
+            max-width: 46%;
+            width: 100%;
         }
 
         &-item {

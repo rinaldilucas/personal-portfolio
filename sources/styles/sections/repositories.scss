@@ -8,6 +8,7 @@
 
         @include media(">desktop") {
             max-width: vw(1180);
+            padding: 0 vw(25);
         }
     }
 
@@ -44,15 +45,7 @@
             width: vw(165);
             height: vw(165);
             margin-right: vw(30);
-
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5),
-            &:nth-child(6) {
-                margin-top: 0;
-            }
+            margin-bottom: vw(30);
         }
 
         &:hover {

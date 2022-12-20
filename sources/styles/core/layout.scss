@@ -9,7 +9,7 @@ html {
     background-color: $ice;
 
     @include media(">=desktop") {
-        font-size: desktop-vw($pixel-base, true);
+        font-size: fixed-vw($pixel-base);
     }
 }
 

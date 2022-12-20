@@ -8,6 +8,7 @@
 
         @include media(">desktop") {
             max-width: vw(1180);
+            padding: 0 vw(25);
         }
     }
 

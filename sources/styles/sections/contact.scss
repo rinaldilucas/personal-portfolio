@@ -9,6 +9,7 @@
 
         @include media(">desktop") {
             max-width: vw(1180);
+            padding: 0 vw(25);
         }
     }
 
@@ -30,7 +31,8 @@
         position: relative;
 
         @include media(">desktop") {
-            width: vw(380);
+            max-width: vw(380);
+            width: 100%;
         }
 
         h1 {
@@ -68,7 +70,8 @@
 
         @include media(">desktop") {
             margin-left: vw(60);
-            width: vw(550);
+            max-width: vw(550);
+            width: 100%;
         }
 
         &-row {

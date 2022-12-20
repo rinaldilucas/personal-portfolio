@@ -8,6 +8,7 @@
 
         @include media(">desktop") {
             max-width: vw(1180);
+            padding: 0 vw(25);
         }
     }
 
@@ -35,7 +36,9 @@
         @extend .drop-shadow;
 
         @include media(">desktop") {
-            width: vw(570);
+            max-width: vw(570);
+            width: 100%;
+            margin: 0 vw(20);
         }
 
         &--education {

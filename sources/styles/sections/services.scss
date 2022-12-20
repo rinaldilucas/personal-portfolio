@@ -28,13 +28,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: vw(300);
+        min-height: vw(300);
         padding: vw(10);
         margin: 0 0 vw(20) 0;
 
         @include media(">desktop") {
             flex-direction: row;
-            width: vw(380);
+            max-width: vw(380);
             margin: 0;
         }
 
