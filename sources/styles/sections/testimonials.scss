@@ -33,7 +33,8 @@
         padding: 0 0 vw(20);
 
         @include media(">desktop") {
-            width: vw(650) !important;
+            max-width: vw(550) !important;
+            width: 100% !important;
             padding: vw(20);
         }
 
