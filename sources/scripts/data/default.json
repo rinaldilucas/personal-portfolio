@@ -1,6 +1,34 @@
 {
     "portfolio": [
         {
+            "id": "reggi",
+            "namePtBr": "Pec Comercial & Reggi",
+            "nameEnUs": "Pec Comercial & Reggi",
+            "nameEsEs": "Pec Comercial & Reggi",
+            "logoPath": "./assets/images/portfolio/thumb/pec.jpg"
+        },
+        {
+            "id": "dbug2",
+            "namePtBr": "d-bug clothings",
+            "nameEnUs": "d-bug clothings",
+            "nameEsEs": "d-bug clothings",
+            "logoPath": "./assets/images/portfolio/thumb/dbug.jpg"
+        },
+        {
+            "id": "decrypto",
+            "namePtBr": "Decrypto",
+            "nameEnUs": "Decrypto",
+            "nameEsEs": "Decrypto",
+            "logoPath": "./assets/images/portfolio/thumb/decrypto.jpg"
+        },
+        {
+            "id": "yumusick",
+            "namePtBr": "Yumusick",
+            "nameEnUs": "Yumusick",
+            "nameEsEs": "Yumusick",
+            "logoPath": "./assets/images/portfolio/thumb/yumusick.jpg"
+        },
+        {
             "id": "hubcomercial",
             "namePtBr": "Hub Comercial",
             "nameEnUs": "Hub Comercial",
