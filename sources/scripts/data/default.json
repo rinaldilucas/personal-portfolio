@@ -493,7 +493,13 @@
     ],
     "repositories": [
         {
-            "id": "angularjs",
+            "namePtBr": "Exemplo de CRUD utilizando MEAN Stack",
+            "nameEnUs": "CRUD Example using MEAN Stack",
+            "nameEsEs": "Ejemplo CRUD usando MEAN Stack",
+            "logoPath": "./assets/images/repositories/meanstack.jpg",
+            "link": "https://github.com/rinaldilucas/mean-stack-template"
+        },
+        {
             "namePtBr": "Código fonte deste website",
             "nameEnUs": "This website source code",
             "nameEsEs": "Código fuente de este sitio web",
@@ -501,7 +507,6 @@
             "link": "https://github.com/rinaldilucas/personal-portfolio"
         },
         {
-            "id": "angularjs",
             "namePtBr": "Exemplo em AngularJS",
             "nameEnUs": "AngularJS Example",
             "nameEsEs": "Ejemplo de AngularJS",
@@ -509,7 +514,6 @@
             "link": "https://github.com/rinaldilucas/angularjs-example"
         },
         {
-            "id": "compass",
             "namePtBr": "Exemplo em Compass",
             "nameEnUs": "Compass Example",
             "nameEsEs": "Ejemplo de Compass",
@@ -517,7 +521,6 @@
             "link": "https://github.com/rinaldilucas/compass-example"
         },
         {
-            "id": "less",
             "namePtBr": "Exemplo em Less",
             "nameEnUs": "Less Example",
             "nameEsEs": "Ejemplo de Less",
@@ -525,7 +528,6 @@
             "link": "https://github.com/rinaldilucas/less-example"
         },
         {
-            "id": "flexbox-grid",
             "namePtBr": "Modelo de Flexbox Grid",
             "nameEnUs": "Flexbox and Grid Example",
             "nameEsEs": "Ejemplo de Flexbox y Grid",
@@ -533,7 +535,6 @@
             "link": "https://github.com/rinaldilucas/flexbox-grid-example"
         },
         {
-            "id": "improved-linktree",
             "namePtBr": "Modelo de Linktree Melhorado",
             "nameEnUs": "Improved Linktree Template",
             "nameEsEs": "Modelo de Linktree Mejorado",
@@ -541,7 +542,6 @@
             "link": "https://github.com/rinaldilucas/improved-linktree-template"
         },
         {
-            "id": "node-api",
             "namePtBr": "Exemplo de Node Api",
             "nameEnUs": "Node Api Example",
             "nameEsEs": "Ejemplo de Node Api",
@@ -549,7 +549,6 @@
             "link": "https://github.com/rinaldilucas/node-api-example"
         },
         {
-            "id": "graduation-material",
             "namePtBr": "Material de Graduação",
             "nameEnUs": "Graduation Material",
             "nameEsEs": "Material de Draduación",
@@ -580,9 +579,9 @@
         },
         {
             "name": "Jean Gonçalves",
-            "jobEnUs": "Fullstack Developer",
-            "jobPtBr": "Desenvolvedor Fullstack",
-            "jobEsEs": "Desarrollador Fullstack",
+            "jobEnUs": "Full stack Developer",
+            "jobPtBr": "Desenvolvedor full stack",
+            "jobEsEs": "Desarrollador full stack",
             "textEnUs": "An exceptional professional, who always aims to fulfill his goals in the best possible way. It is very satisfying to solve problems with those who have never lost the will to teach and help. 👌",
             "textPtBr": "Un profesional excepcional, que siempre apunta a cumplir sus objetivos de la mejor manera posible. Es muy satisfactorio resolver problemas con alguien que nunca ha perdido las ganas de enseñar y ayudar. 👌",
             "textEsEs": "Un profesional excepcional, que siempre apunta a cumplir sus objetivos de la mejor manera posible. Es muy satisfactorio ver cómo ha evolucionado técnicamente y nunca ha perdido el deseo de enseñar y ayudar. 👌",
