@@ -2,7 +2,7 @@ import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
+export default scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
   ui: {
     closeButton: '[data-close]',
     backButton: '[data-back]',
@@ -19,7 +19,7 @@ scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
     'click @ui.closeButton': 'closePicker',
     'click @ui.backButton': 'backViewer',
     'click @ui.portfolioPicker': 'openVersionPicker',
-    'click @ui.portfolioAnchor': 'openviewerOverlay',
+    'click @ui.portfolioAnchor': 'openViewerOverlay',
   },
   onAttach: function (view) {
     this.build(view.$el);
@@ -29,24 +29,24 @@ scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
 
     $(document).on('keypress', e => {
       if (e.key === 'Escape') {
-        if (self.ui.viewerOverlay.hasClass('overlay--openned')) {
-          self.ui.viewerOverlay.removeClass('overlay--openned');
+        if (self.ui.viewerOverlay.hasClass('overlay--opened')) {
+          self.ui.viewerOverlay.removeClass('overlay--opened');
         } else {
-          self.ui.pickerOverlay.removeClass('overlay--openned');
+          self.ui.pickerOverlay.removeClass('overlay--opened');
         }
       }
     });
   },
-  openviewerOverlay: function (e: Event) {
+  openViewerOverlay: function (e: Event) {
     const disclaimer = $(e.currentTarget as HTMLAnchorElement).data('disclaimer') ?? $(e.currentTarget as HTMLAnchorElement).data('disclaimer');
     const imagePath = $(e.currentTarget as HTMLAnchorElement).data('image');
 
     this.ui.disclaimerText.html(disclaimer);
     this.ui.disclaimerText.data('imagePath', imagePath);
-    this.ui.pickerOverlay.addClass('overlay--openned');
+    this.ui.pickerOverlay.addClass('overlay--opened');
   },
   closePicker: function () {
-    this.ui.pickerOverlay.removeClass('overlay--openned');
+    this.ui.pickerOverlay.removeClass('overlay--opened');
   },
   openVersionPicker: function (e: Event) {
     const version = $(e.currentTarget as HTMLAnchorElement).data('portfolioPicker');
@@ -63,23 +63,21 @@ scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
       this.ui.overlayFrame.addClass('overlay__frame--mobile');
     }
 
-    this.ui.viewerOverlay.addClass('overlay--openned');
+    this.ui.viewerOverlay.addClass('overlay--opened');
     this.ui.overlayImage.attr('src', fullPath);
 
     setTimeout(() => {
-      this.ui.overlayImage.addClass('overlay--openned');
+      this.ui.overlayImage.addClass('overlay--opened');
       this.ui.overlayImage.show();
       this.ui.overlayImage.focus();
     }, 350);
   },
   backViewer: function () {
-    this.ui.pickerOverlay.removeClass('overlay--openned').addClass('overlay--openned');
-    this.ui.viewerOverlay.removeClass('overlay--openned');
+    this.ui.pickerOverlay.removeClass('overlay--opened').addClass('overlay--opened');
+    this.ui.viewerOverlay.removeClass('overlay--opened');
     setTimeout(() => {
-      this.ui.overlayImage.attr('src', '').removeClass('overlay--openned').hide();
+      this.ui.overlayImage.attr('src', '').removeClass('overlay--opened').hide();
       this.ui.overlayFrame.removeClass('overlay__frame--desktop').removeClass('overlay__frame--mobile');
     }, 300);
   },
 });
-
-export default scope.behaviors.PortfolioViewer;

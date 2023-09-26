@@ -2,7 +2,7 @@ import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Spacer = Marionette.Behavior.extend({
+export default scope.behaviors.Spacer = Marionette.Behavior.extend({
   ui: {
     spacers: '[data-height]',
   },
@@ -17,5 +17,3 @@ scope.behaviors.Spacer = Marionette.Behavior.extend({
     });
   },
 });
-
-export default scope.behaviors.Spacer;

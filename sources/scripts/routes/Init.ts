@@ -1,11 +1,11 @@
+import Backbone from 'backbone';
 import Uri from 'urijs';
 
 import helpers from '@scripts/libraries/helpers';
 import Route from '@scripts/routes/main';
 import scope from '@scripts/scope';
-import Backbone from 'backbone';
 
-scope.routes.init = function () {
+export default scope.routes.Init = function () {
   const root: any = (this.root = new Uri(($('#base-id').get(0) as HTMLBaseElement).href));
 
   new Route();
@@ -22,7 +22,7 @@ scope.routes.init = function () {
     const full = root as string;
     const fragment = url + '/' === full ? '' : url.replace(full, '');
     const parts = fragment.split('#');
-    const matchs = Backbone.history.navigate(parts[0], {
+    const matches = Backbone.history.navigate(parts[0], {
       trigger: true,
       replace,
     });
@@ -35,7 +35,7 @@ scope.routes.init = function () {
 
       window.history.replaceState({}, document.title, uri);
       !noAnchor && helpers.anchor(0);
-    } else if (typeof matchs === 'undefined') {
+    } else if (typeof matches === 'undefined') {
       !noAnchor && helpers.anchor(0);
     } else {
       !noAnchor && helpers.anchor(0);
@@ -58,5 +58,3 @@ scope.routes.init = function () {
     setTimeout(() => navigate(link.href), 1);
   });
 };
-
-export default scope.routes.init;

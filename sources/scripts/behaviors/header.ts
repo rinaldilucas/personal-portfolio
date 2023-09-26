@@ -2,7 +2,7 @@ import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Header = Marionette.Behavior.extend({
+export default scope.behaviors.Header = Marionette.Behavior.extend({
   ui: {
     menuButton: '[data-header-toggle]',
     menuNav: '[data-header-nav]',
@@ -40,5 +40,3 @@ scope.behaviors.Header = Marionette.Behavior.extend({
     $('.header__button input').prop('checked', false);
   },
 });
-
-export default scope.behaviors.Header;

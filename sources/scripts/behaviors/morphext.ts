@@ -3,7 +3,7 @@ import 'morphext/dist/morphext.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Morphext = Marionette.Behavior.extend({
+export default scope.behaviors.Morphext = Marionette.Behavior.extend({
   ui: {
     morphext: '[data-morphext]',
   },
@@ -18,5 +18,3 @@ scope.behaviors.Morphext = Marionette.Behavior.extend({
     });
   },
 });
-
-export default scope.behaviors.Morphext;

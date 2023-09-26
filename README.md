@@ -61,7 +61,7 @@
 </div>
 
 Much of what you do today is the result of knowledge spread across the internet, and that's why I decided to publish my repository to help you as it helped me when I was building it.<br>
-Here are some of the features: single page application behavior using only Marionette.js and handlebars.js, typescript support, input and mask reactive validations, file upload integration, overwrite of native html tags like input file types and scroll, aspect ratio SCSS logic which almost mitigates the needs of media queries, SCSS written using BEM methodology, grunt and webpack5 bundling, npm tasks to watch/deploy/test, eslint and prettier with custom rules, favicon cli generator, generation and replacement of webp images through client-side, tinyPNG api conversion via cli, ie 11 support, lazy loading, multilingual setup and more.
+Here are some of the features: single page application behavior using only Marionette.js and handlebars.js, typescript support, input and mask reactive validations, file upload integration, overwrite of native html tags like input file types and scroll, aspect ratio SCSS logic which almost mitigates the needs of media queries, SCSS written using BEM methodology, captcha integration, grunt and webpack5 bundling, npm tasks to watch/deploy/test, eslint and prettier with custom rules, favicon cli generator, generation and replacement of webp images through client-side, tinyPNG api conversion via cli, ie 11 support, lazy loading, multilingual setup and more.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

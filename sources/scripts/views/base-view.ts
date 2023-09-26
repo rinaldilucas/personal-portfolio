@@ -1,9 +1,10 @@
+import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
+
 import defaultJson from '@scripts/data/default.json';
 import helper from '@scripts/libraries/helpers';
 import scope from '@scripts/scope';
-import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
-scope.views.BaseView = Marionette.View.extend({
+export default scope.views.BaseView = Marionette.View.extend({
   name: 'base-view',
   constructor: function () {
     this.serviceData = {};
@@ -105,5 +106,3 @@ scope.views.BaseView = Marionette.View.extend({
     return result;
   },
 });
-
-export default scope.views.BaseView;

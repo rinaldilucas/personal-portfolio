@@ -4,13 +4,31 @@ import Toastify from 'toastify-js';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
+export default scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
   onAttach: function (view) {
     this.build(view.$el);
   },
   build: function (element) {
     if (element.data('clipboard')) {
       return;
+    }
+
+    let language = 'enUs';
+    if (window.location.pathname.indexOf('/') > -1) { language = 'enEs'; }
+    if (window.location.pathname.indexOf('/br') > -1) { language = 'ptBr'; }
+    if (window.location.pathname.indexOf('/es') > -1) { language = 'esEs'; }
+
+    let successMessage;
+    let errorMessage;
+    if (language === 'ptBr') {
+      successMessage = 'Valor copiado';
+      errorMessage = 'Erro ao copiar';
+    } else if (language === 'esEs') {
+      successMessage = 'Valor copiado';
+      errorMessage = 'Error al copiar';
+    } else {
+      successMessage = 'Copied value';
+      errorMessage = 'Error copying';
     }
 
     element.data(
@@ -23,8 +41,8 @@ scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
 
     element.data('clipboard').on('success', () => {
       Toastify({
-        text: 'Pix copiado!',
-        duration: 5000,
+        text: successMessage,
+        duration: 3000,
         gravity: 'bottom',
         position: 'center',
         stopOnFocus: true,
@@ -34,8 +52,8 @@ scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
 
     element.data('clipboard').on('error', () => {
       Toastify({
-        text: 'Erro ao copiar',
-        duration: 5000,
+        text: errorMessage,
+        duration: 8000,
         gravity: 'bottom',
         position: 'center',
         stopOnFocus: true,
@@ -44,5 +62,3 @@ scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
     });
   },
 });
-
-export default scope.behaviors.CopyToClipboard;

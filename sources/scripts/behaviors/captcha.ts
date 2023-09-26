@@ -2,7 +2,7 @@ import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Captcha = Marionette.Behavior.extend({
+export default scope.behaviors.Captcha = Marionette.Behavior.extend({
   ui: {
     recaptcha: '[data-recaptcha]',
   },
@@ -16,5 +16,3 @@ scope.behaviors.Captcha = Marionette.Behavior.extend({
     (window as any).recaptchaCallback = () => self.ui.recaptcha.valid();
   },
 });
-
-export default scope.behaviors.Captcha;

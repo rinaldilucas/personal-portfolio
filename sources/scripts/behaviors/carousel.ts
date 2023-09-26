@@ -3,14 +3,14 @@ import 'slick-carousel';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Carousel = Marionette.Behavior.extend({
+export default scope.behaviors.Carousel = Marionette.Behavior.extend({
   ui: {
     carousel: '[data-carousel]',
   },
   onAttach: function () {
     this.build(this.$el);
   },
-  onChildviewAttach: function (view) {
+  onChildViewAttach: function (view) {
     const content = view.$el;
 
     if (content.find('[data-carousel]').length) {
@@ -33,5 +33,3 @@ scope.behaviors.Carousel = Marionette.Behavior.extend({
     });
   },
 });
-
-export default scope.behaviors.Carousel;

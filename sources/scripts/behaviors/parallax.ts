@@ -4,7 +4,7 @@ import Parallax from 'parallax-js/dist/parallax.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Parallax = Marionette.Behavior.extend({
+export default scope.behaviors.Parallax = Marionette.Behavior.extend({
   ui: {
     parallaxes: '[data-parallax]',
   },
@@ -19,5 +19,3 @@ scope.behaviors.Parallax = Marionette.Behavior.extend({
     }
   },
 });
-
-export default scope.behaviors.Parallax;

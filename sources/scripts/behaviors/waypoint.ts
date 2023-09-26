@@ -3,7 +3,7 @@ import 'waypoints/lib/jquery.waypoints';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.Waypoint = Marionette.Behavior.extend({
+export default scope.behaviors.Waypoint = Marionette.Behavior.extend({
   ui: {
     progressItem: '.about__progress-item',
     progressBar: '.about__progress-bar',
@@ -28,5 +28,3 @@ scope.behaviors.Waypoint = Marionette.Behavior.extend({
     });
   },
 });
-
-export default scope.behaviors.Waypoint;

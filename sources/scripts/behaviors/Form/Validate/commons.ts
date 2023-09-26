@@ -2,7 +2,7 @@ export default {
   validate: {
     methods: (validator) => {
       validator.addMethod(
-        'completename',
+        'complete-name',
         function (value, element) {
           return this.optional(element) || /^.+\s.+$/i.test(value);
         },
@@ -23,109 +23,67 @@ export default {
       validator.addMethod(
         'cnpj',
         (value) => {
-          let numeros;
-          let soma;
-          let i;
-          let resultado;
-          let pos;
-          let tamanho;
-          let digitosIguais;
+          value = value.replace(/\D/g, '');
 
-          if (value.length === 0) {
-            return true;
-          }
-
-          value = value.replace(/\D+/g, '');
-          digitosIguais = 1;
-
-          for (i = 0; i < value.length - 1; i++) {
-            if (value.charAt(i) !== value.charAt(i + 1)) {
-              digitosIguais = 0;
-              break;
-            }
-          }
-
-          if (digitosIguais) {
+          if (value.length !== 14) {
             return false;
           }
 
-          tamanho = value.length - 2;
-          numeros = value.substring(0, tamanho);
-          const digitos = value.substring(tamanho);
-
-          soma = 0;
-          pos = tamanho - 7;
-          for (i = tamanho; i >= 1; i--) {
-            soma += numeros.charAt(tamanho - i) * pos--;
-            if (pos < 2) {
-              pos = 9;
-            }
+          let sum = 0;
+          let weight = 5;
+          for (let i = 0; i < 12; i++) {
+            sum += parseInt(value.charAt(i)) * weight;
+            weight = weight === 2 ? 9 : weight - 1;
           }
-          resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
-          if (resultado !== digitos.charAt(0)) {
-            return false;
-          }
-          tamanho = tamanho + 1;
-          numeros = value.substring(0, tamanho);
-          soma = 0;
-          pos = tamanho - 7;
-          for (i = tamanho; i >= 1; i--) {
-            soma += numeros.charAt(tamanho - i) * pos--;
-            if (pos < 2) {
-              pos = 9;
-            }
-          }
+          let remainder = sum % 11;
+          const firstVerificationDigit = remainder < 2 ? 0 : 11 - remainder;
 
-          resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
+          sum = 0;
+          weight = 6;
+          for (let i = 0; i < 13; i++) {
+            sum += parseInt(value.charAt(i)) * weight;
+            weight = weight === 2 ? 9 : weight - 1;
+          }
+          remainder = sum % 11;
+          const secondVerificationDigit = remainder < 2 ? 0 : 11 - remainder;
 
-          return resultado === digitos.charAt(1);
-        },
-      );
+          return (
+            parseInt(value.charAt(12)) === firstVerificationDigit &&
+            parseInt(value.charAt(13)) === secondVerificationDigit
+          );
+        });
 
       validator.addMethod(
         'cpf',
         (value) => {
-          let cpf, b, c, i, x, y;
+          value = value.replace(/\D/g, '');
 
-          value = $.trim(value);
-
-          value = value.replace('.', '');
-          value = value.replace('.', '');
-          cpf = value.replace('-', '');
-          while (cpf.length < 11) {
-            cpf = '0' + cpf;
-          }
-          const expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
-          const a: any = [];
-
-          b = 0;
-          c = 11;
-          for (i = 0; i < 11; i++) {
-            a[i] = cpf.charAt(i);
-            if (i < 9) {
-              b += a[i] * --c;
-            }
-          }
-          if ((x = b % 11) < 2) {
-            a[9] = 0;
-          } else {
-            a[9] = 11 - x;
-          }
-          b = 0;
-          c = 11;
-          for (y = 0; y < 10; y++) {
-            b += a[y] * c--;
-          }
-          if ((x = b % 11) < 2) {
-            a[10] = 0;
-          } else {
-            a[10] = 11 - x;
-          }
-          if (cpf.charAt(9) !== a[9] || cpf.charAt(10) !== a[10] || cpf.match(expReg)) {
+          if (value.length !== 14) {
             return false;
           }
 
-          return true;
+          let sum = 0;
+          let weight = 5;
+          for (let i = 0; i < 12; i++) {
+            sum += parseInt(value.charAt(i)) * weight;
+            weight = weight === 2 ? 9 : weight - 1;
+          }
+          let remainder = sum % 11;
+          const firstVerificationDigit = remainder < 2 ? 0 : 11 - remainder;
+
+          sum = 0;
+          weight = 6;
+          for (let i = 0; i < 13; i++) {
+            sum += parseInt(value.charAt(i)) * weight;
+            weight = weight === 2 ? 9 : weight - 1;
+          }
+          remainder = sum % 11;
+          const secondVerificationDigit = remainder < 2 ? 0 : 11 - remainder;
+
+          return (
+            parseInt(value.charAt(12)) === firstVerificationDigit &&
+            parseInt(value.charAt(13)) === secondVerificationDigit
+          );
         },
       );
 
@@ -144,14 +102,14 @@ export default {
       );
 
       validator.addMethod(
-        'lettersonly',
+        'letter-sonly',
         function (value, element) {
           return this.optional(element) || /^[a-z áãâäàéêëèíîïìóõôöòúûüùçñ]+$/i.test(value);
         },
       );
 
       validator.addMethod(
-        'filesize',
+        'file-size',
         function (value, element, param) {
           return this.optional(element) || element.files[0].size <= param * 1000000;
         },
@@ -166,15 +124,14 @@ export default {
         },
       );
 
-      // todo
       validator.addMethod(
-        'zerocurrency',
+        'zero-currency',
         function (value, element) {
           return this.optional(element) || value !== '0,00';
         },
       );
 
-      validator.methodGroup('fullname', [{ rule: 'lettersonly' }, { rule: 'completename' }, { rule: 'rangelength', param: [5, 75] }]);
+      validator.methodGroup('full-name', [{ rule: 'letter-sonly' }, { rule: 'complete-name' }, { rule: 'range-length', param: [5, 75] }]);
     },
   },
 };

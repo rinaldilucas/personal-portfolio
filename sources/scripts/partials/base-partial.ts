@@ -3,7 +3,7 @@ import $ from 'jquery/dist/jquery.min';
 
 import scope from '@scripts/scope';
 
-scope.partials.BasePartial = Marionette.View.extend({
+export default scope.partials.BasePartial = Marionette.View.extend({
   name: 'base-partial',
   constructor: function () {
     this.serviceData = {};
@@ -129,5 +129,3 @@ scope.partials.BasePartial = Marionette.View.extend({
     return result;
   },
 });
-
-export default scope.partials.BasePartial;

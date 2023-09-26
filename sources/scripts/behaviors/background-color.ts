@@ -2,7 +2,7 @@ import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
 import scope from '@scripts/scope';
 
-scope.behaviors.BackgroundColor = Marionette.Behavior.extend({
+export default scope.behaviors.BackgroundColor = Marionette.Behavior.extend({
   ui: {
     backgrounds: '[data-color]',
   },
@@ -16,5 +16,3 @@ scope.behaviors.BackgroundColor = Marionette.Behavior.extend({
     });
   },
 });
-
-export default scope.behaviors.BackgroundColor;

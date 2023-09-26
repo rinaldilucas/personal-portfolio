@@ -1,20 +1,20 @@
 import data from '@scripts/data/default.json';
 import scope from '@scripts/scope';
-import Base from '@scripts/views/baseView';
+import Base from '@scripts/views/base-view';
 
-import BackgroundColor from '@scripts/behaviors/backgroundColor';
+import BackgroundColor from '@scripts/behaviors/background-color';
 import Captcha from '@scripts/behaviors/captcha';
 import Carousel from '@scripts/behaviors/carousel';
-import CopyToClipboard from '@scripts/behaviors/copyToClipboard';
+import CopyToClipboard from '@scripts/behaviors/copy-to-clipboard';
 import Form from '@scripts/behaviors/form';
 import Header from '@scripts/behaviors/header';
 import Morphext from '@scripts/behaviors/morphext';
 import Parallax from '@scripts/behaviors/parallax';
-import PortfolioViewer from '@scripts/behaviors/portfolioViewer';
+import PortfolioViewer from '@scripts/behaviors/portfolio-viewer';
 import Spacer from '@scripts/behaviors/spacer';
 import Waypoint from '@scripts/behaviors/waypoint';
 
-scope.views.Home = Base.extend({
+export default scope.views.Home = Base.extend({
   template: require('@templates/pages/es/home.hbs'),
   templateContext: {
     portfolio: data.portfolio,
@@ -41,5 +41,3 @@ scope.views.Home = Base.extend({
     }),
   },
 });
-
-export default scope.views.Home;

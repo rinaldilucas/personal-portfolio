@@ -1,11 +1,11 @@
 import Backbone from 'backbone';
 
 import scope from '@scripts/scope';
-import Base from '@scripts/views/baseView';
+import Base from '@scripts/views/base-view';
 
 let firstLoop = true;
 
-scope.views.Layout = Base.extend({
+export default scope.views.Layout = Base.extend({
   name: 'layout',
   el: '#main',
   partials: {
@@ -44,17 +44,13 @@ scope.views.Layout = Base.extend({
     self.partials.content.instance = view;
     $('body').addClass('on-loading');
 
-    self.load()
-      .done((response) => {
-        if (response.error) return Backbone.history.navigate('error', { trigger: true });
+    self.load().done((response) => {
+      if (response.error) return Backbone.history.navigate('error', { trigger: true });
 
-        self.populate();
-        scope.app.started = true;
+      self.populate();
+      scope.app.started = true;
 
-        callback && callback();
-      })
-      .catch(() => callback && callback());
+      callback && callback();
+    }).catch(() => callback && callback());
   },
 });
-
-export default scope.views.Layout;

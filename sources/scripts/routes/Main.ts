@@ -1,9 +1,9 @@
 import AppRouter from 'marionette.approuter/lib/marionette.approuter.min';
 
 import scope from '@scripts/scope';
-import HomeBr from '@scripts/views/homeBr';
-import HomeEn from '@scripts/views/homeEn';
-import HomeEs from '@scripts/views/homeEs';
+import HomeBr from '@scripts/views/home-br';
+import HomeEn from '@scripts/views/home-en';
+import HomeEs from '@scripts/views/home-es';
 
 const AppController = {
   index: () => scope.app.go(new HomeEn()),
@@ -11,7 +11,7 @@ const AppController = {
   es: () => scope.app.go(new HomeEs()),
 };
 
-scope.routes.Main = AppRouter.extend({
+export default scope.routes.Main = AppRouter.extend({
   controller: AppController,
   appRoutes: {
     '(/)(index.html)': 'index',
@@ -19,5 +19,3 @@ scope.routes.Main = AppRouter.extend({
     '(/)es(/)(index.html)': 'es',
   },
 });
-
-export default scope.routes.Main;

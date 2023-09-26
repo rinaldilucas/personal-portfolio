@@ -54,13 +54,21 @@ export default Marionette.Behavior.extend({
   rebuild: function (form) {
     const self = this;
 
+    if (window.location.pathname.indexOf('/') > -1) { language = 'enEs'; }
+    if (window.location.pathname.indexOf('/br') > -1) { language = 'ptBr'; }
+    if (window.location.pathname.indexOf('/es') > -1) { language = 'esEs'; }
+
     form.validate({
       ignore: '.ignore,[readonly]',
       errorElement: 'p',
       rules: {
         hiddenRecaptcha: {
           required: () => {
-            if ((window as any).grecaptcha.getResponse() === '') { return true; } else { return false; }
+            if ((window as any).grecaptcha.getResponse() === '') {
+              return true;
+            } else {
+              return false;
+            }
           },
         },
       },
@@ -92,10 +100,23 @@ export default Marionette.Behavior.extend({
           const action = form.attr('action');
           const method = form.attr('method');
 
-          const successProccess = () => {
+          let successMessage;
+          let errorMessage;
+          if (language === 'ptBr') {
+            successMessage = 'Formulário enviado com sucesso. Caso necessário, entraremos em contato.';
+            errorMessage = 'Erro ao enviar mensagem. Se o erro persistir, entre em contato conosco através dos contatos do website.';
+          } else if (language === 'esEs') {
+            successMessage = 'Formulario enviado con éxito. Si es necesario, nos pondremos en contacto.';
+            errorMessage = 'Error al enviar mensaje. Si el error persiste, póngase en contacto con nosotros a través de los contactos del sitio web.';
+          } else {
+            successMessage = 'Form sent successfully. If necessary, we will contact you.';
+            errorMessage = 'Error sending message. If the error persists, contact us through the contacts on the website.';
+          }
+
+          const successProcess = () => {
             Toastify({
-              text: 'Formulário enviado com sucesso. Caso necessário, entraremos em contato.',
-              duration: 9000,
+              text: successMessage,
+              duration: 3000,
               gravity: 'bottom',
               position: 'center',
               stopOnFocus: true,
@@ -108,10 +129,10 @@ export default Marionette.Behavior.extend({
             form.data('prevent-submit', false);
           };
 
-          const errorProccess = () => {
+          const errorProcess = () => {
             Toastify({
-              text: 'Erro ao enviar mensagem. Se o erro persistir, entre em contato conosco através dos contatos do website.',
-              duration: 9000,
+              text: errorMessage,
+              duration: 8000,
               gravity: 'bottom',
               position: 'center',
               stopOnFocus: true,
@@ -130,8 +151,8 @@ export default Marionette.Behavior.extend({
             method: form.attr('method'),
             mimeType: form.attr('mimeType'),
             data: serializedFormData,
-            success: () => successProccess(),
-            error: () => errorProccess(),
+            success: () => successProcess(),
+            error: () => errorProcess(),
           } as any;
 
           form.trigger('beforeProcessRequest', [options]);
@@ -139,7 +160,7 @@ export default Marionette.Behavior.extend({
           if (action) {
             $.ajax(options);
           } else {
-            form.trigger('processRequest', [serializedFormData, successProccess, errorProccess]);
+            form.trigger('processRequest', [serializedFormData, successProcess, errorProcess]);
           }
         };
 
@@ -149,34 +170,30 @@ export default Marionette.Behavior.extend({
       },
     });
 
-    if (window.location.pathname.indexOf('/') > -1) { language = 'enEs'; }
-    if (window.location.pathname.indexOf('/br') > -1) { language = 'ptBr'; }
-    if (window.location.pathname.indexOf('/es') > -1) { language = 'esEs'; }
-
     if (language === 'ptBr') {
       $.extend($.validator.messages, {
         date: 'Digite uma data válida.',
         digits: 'Este campo só aceita dígitos.',
         email: 'Informe um email válido.',
-        equalTo: 'Os valores precisam ser iguais.',
+        'equal-to': 'Os valores precisam ser iguais.',
         number: 'Este campo só aceita números.',
         remote: 'O campo é inválido.',
         required: 'O campo é obrigatório.',
         url: 'O endereço do site deve iniciar com http:// ou https://.',
-        completename: 'O campo deve conter nome e sobrenome.',
+        'complete-name': 'O campo deve conter nome e sobrenome.',
         cnpj: 'Informe um CNPJ válido.',
         cpf: 'Informe um CPF válido.',
         cep: 'Informe um CEP válido.',
         phone: 'Informe um numero válido.',
-        lettersonly: 'O campo deve conter apenas letras e espaços.',
-        filesize: 'O arquivo deve ter menos de {0} MB.',
+        'letters-only': 'O campo deve conter apenas letras e espaços.',
+        'file-size': 'O arquivo deve ter menos de {0} MB.',
         extension: 'O arquivo deve possuir a extensão {0}.',
-        zerocurrency: 'Valores precisam ser maiores que zero.',
+        'zero-currency': 'Valores precisam ser maiores que zero.',
         document: 'Informe um CPF ou CNPJ válido.',
-        maxlength: $.validator.format('O campo deve conter no máximo {0} caracteres.'),
-        minlength: $.validator.format('O campo deve conter no mínimo {0} caracteres.'),
-        rangelength: $.validator.format('O campo deve conter de {0} até {1} caracteres.'),
-        range: $.validator.format('Apenas numeros de {0} até {1}.'),
+        'max-length': $.validator.format('O campo deve conter no máximo {0} caracteres.'),
+        'min-length': $.validator.format('O campo deve conter no mínimo {0} caracteres.'),
+        'range-length': $.validator.format('O campo deve conter de {0} até {1} caracteres.'),
+        range: $.validator.format('Apenas números de {0} até {1}.'),
         max: $.validator.format('Apenas números até {0}.'),
         min: $.validator.format('Apenas números a partir de {0}.'),
       });
@@ -185,24 +202,24 @@ export default Marionette.Behavior.extend({
         date: 'Por favor introduzca una fecha valida.',
         digits: 'Este campo solo acepta dígitos.',
         email: 'Proporcione un correo electrónico válido.',
-        equalTo: 'Los valores deben ser los mismos.',
+        'equal-to': 'Los valores deben ser los mismos.',
         number: 'Este campo solo acepta números.',
         remote: 'Campo es inválido.',
         required: 'El campo es obligatorio.',
         url: 'La dirección del sitio web debe comenzar con http:// o https://.',
-        completename: 'El campo debe contener nombre y apellido.',
+        'complete-name': 'El campo debe contener nombre y apellido.',
         cnpj: 'Proporcione un CNPJ válido.',
         cpf: 'Proporcione un CPF válido.',
         cep: 'Por favor ingrese un código postal válido.',
         phone: 'Por favor ingrese un número válido.',
-        lettersonly: 'El campo debe contener solo letras y espacios.',
-        filesize: 'El archivo debe tener menos de {0} MB.',
+        'letters-only': 'El campo debe contener solo letras y espacios.',
+        'file-size': 'El archivo debe tener menos de {0} MB.',
         extension: 'El archivo debe tener la extensión {0}.',
-        zerocurrency: 'Los valores deben ser mayores que cero.',
+        'zero-currency': 'Los valores deben ser mayores que cero.',
         document: 'Introduzca un CPF o CNPJ válido.',
-        maxlength: $.validator.format('El campo debe contener un máximo de {0} caracteres.'),
-        minlength: $.validator.format('El campo debe contener al menos {0} caracteres.'),
-        rangelength: $.validator.format('El campo debe contener de {0} a {1} caracteres.'),
+        'max-length': $.validator.format('El campo debe contener un máximo de {0} caracteres.'),
+        'min-length': $.validator.format('El campo debe contener al menos {0} caracteres.'),
+        'range-length': $.validator.format('El campo debe contener de {0} a {1} caracteres.'),
         range: $.validator.format('Solo números del {0} al {1}.'),
         max: $.validator.format('Solo números hasta {0}.'),
         min: $.validator.format('Solo números a partir de {0}.'),
@@ -212,24 +229,24 @@ export default Marionette.Behavior.extend({
         date: 'Please enter a valid date.',
         digits: 'This field only accepts digits.',
         email: 'Please provide a valid email.',
-        equalTo: 'The values must be the same.',
+        'equal-to': 'The values must be the same.',
         number: 'Este campo só aceita números.',
         remote: 'This field only accepts numbers.',
         required: 'This field is mandatory.',
         url: 'This field only accepts numbers.',
-        completename: 'The field must contain first and last name.',
+        'complete-name': 'The field must contain first and last name.',
         cnpj: 'Please provide a valid CNPJ.',
         cpf: 'Please provide a valid CPF.',
         cep: 'Please provide a valid postal code.',
         phone: 'Please enter a valid number.',
-        lettersonly: 'The field must contain only letters and spaces.',
-        filesize: 'The file must be less than {0} MB.',
+        'letters-only': 'The field must contain only letters and spaces.',
+        'file-size': 'The file must be less than {0} MB.',
         extension: 'The file must have the extension {0}.',
-        zerocurrency: 'Values must be greater than zero.',
+        'zero-currency': 'Values must be greater than zero.',
         document: 'Enter a valid CPF or CNPJ.',
-        maxlength: $.validator.format('The field must contain a maximum of {0} characters.'),
-        minlength: $.validator.format('The field must contain at least {0} characters.'),
-        rangelength: $.validator.format('The field must contain from {0} to {1} characters.'),
+        'max-length': $.validator.format('The field must contain a maximum of {0} characters.'),
+        'min-length': $.validator.format('The field must contain at least {0} characters.'),
+        'range-length': $.validator.format('The field must contain from {0} to {1} characters.'),
         range: $.validator.format('The field must contain from {0} to {1} characters.'),
         max: $.validator.format('Only numbers from {0} to {1}.'),
         min: $.validator.format('Only numbers starting from {0}.'),
