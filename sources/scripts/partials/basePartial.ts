@@ -1,6 +1,7 @@
-import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 import $ from 'jquery/dist/jquery.min';
+
+import scope from '@scripts/scope';
 
 scope.partials.BasePartial = Marionette.View.extend({
   name: 'base-partial',
@@ -34,11 +35,11 @@ scope.partials.BasePartial = Marionette.View.extend({
         _regions: scope.regions,
         _name: self.name,
         _layout: self.getLayout().serializeData(),
-        _parent: self._parent.serializeData()
+        _parent: self._parent.serializeData(),
       },
       Marionette.View.prototype.serializeData.call(self),
       self.options ? self.options.data : {},
-      self.serviceData
+      self.serviceData,
     );
 
     return result;
@@ -126,7 +127,7 @@ scope.partials.BasePartial = Marionette.View.extend({
     });
 
     return result;
-  }
+  },
 });
 
 export default scope.partials.BasePartial;

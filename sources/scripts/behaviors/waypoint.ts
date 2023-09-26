@@ -1,11 +1,12 @@
-import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 import 'waypoints/lib/jquery.waypoints';
+
+import scope from '@scripts/scope';
 
 scope.behaviors.Waypoint = Marionette.Behavior.extend({
   ui: {
     progressItem: '.about__progress-item',
-    progressBar: '.about__progress-bar'
+    progressBar: '.about__progress-bar',
   },
   onAttach: function (view) {
     this.build(view.$el);
@@ -23,9 +24,9 @@ scope.behaviors.Waypoint = Marionette.Behavior.extend({
         }
       },
       context: '.about__progress-item',
-      offset: '50%'
+      offset: '50%',
     });
-  }
+  },
 });
 
 export default scope.behaviors.Waypoint;

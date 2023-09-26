@@ -1,5 +1,6 @@
-import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
+
+import scope from '@scripts/scope';
 
 scope.behaviors.Header = Marionette.Behavior.extend({
   ui: {
@@ -7,11 +8,11 @@ scope.behaviors.Header = Marionette.Behavior.extend({
     menuNav: '[data-header-nav]',
     menuLink: '[data-header-link]',
     menuLabel: '[data-header-label]',
-    menuCopyright: '[data-header-copyright]'
+    menuCopyright: '[data-header-copyright]',
   },
   events: {
     'click @ui.menuButton': 'toggleMenu',
-    'click @ui.menuLink': 'closeMenu'
+    'click @ui.menuLink': 'closeMenu',
   },
   onAttach: function (view) {
     this.build(view.$el);
@@ -37,7 +38,7 @@ scope.behaviors.Header = Marionette.Behavior.extend({
   closeMenu: () => {
     $('html').removeClass('active-menu');
     $('.header__button input').prop('checked', false);
-  }
+  },
 });
 
 export default scope.behaviors.Header;

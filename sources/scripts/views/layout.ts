@@ -1,6 +1,7 @@
+import Backbone from 'backbone';
+
 import scope from '@scripts/scope';
 import Base from '@scripts/views/baseView';
-import Backbone from 'backbone';
 
 let firstLoop = true;
 
@@ -9,8 +10,8 @@ scope.views.Layout = Base.extend({
   el: '#main',
   partials: {
     content: {
-      region: '#site-content'
-    }
+      region: '#site-content',
+    },
   },
   initialize: function () {
     const self = this;
@@ -53,7 +54,7 @@ scope.views.Layout = Base.extend({
         callback && callback();
       })
       .catch(() => callback && callback());
-  }
+  },
 });
 
 export default scope.views.Layout;

@@ -1,7 +1,8 @@
-import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 import ClipboardJS from 'clipboard/dist/clipboard.min';
 import Toastify from 'toastify-js';
+
+import scope from '@scripts/scope';
 
 scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
   onAttach: function (view) {
@@ -16,8 +17,8 @@ scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
       'clipboard',
       new ClipboardJS('[data-copy]', {
         container: element[0],
-        text: (trigger) => trigger.getAttribute('data-copy') as string
-      })
+        text: (trigger) => trigger.getAttribute('data-copy') as string,
+      }),
     );
 
     element.data('clipboard').on('success', () => {
@@ -27,7 +28,7 @@ scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
         gravity: 'bottom',
         position: 'center',
         stopOnFocus: true,
-        className: 'toast'
+        className: 'toast',
       }).showToast();
     });
 
@@ -38,10 +39,10 @@ scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
         gravity: 'bottom',
         position: 'center',
         stopOnFocus: true,
-        className: 'toast'
+        className: 'toast',
       }).showToast();
     });
-  }
+  },
 });
 
 export default scope.behaviors.CopyToClipboard;

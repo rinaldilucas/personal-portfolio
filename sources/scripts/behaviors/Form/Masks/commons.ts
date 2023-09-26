@@ -6,14 +6,14 @@ const masks = {
   date: '00/00/0000',
   cpf: '000.000.000-00',
   cnpj: '00.000.000/0000-00',
-  phone: '(00) 90000-0000'
+  phone: '(00) 90000-0000',
 };
 
 const SPMaskBehavior = (val) => (val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009');
 const spOptions = {
   onKeyPress: function (value, element, field, options) {
     field.mask(SPMaskBehavior.apply({}, arguments), options);
-  }
+  },
 };
 
 export default {
@@ -23,7 +23,7 @@ export default {
       cpf: '.mask_cpf, [data-rule-cpf]',
       cnpj: '.mask_cnpj, [data-rule-cnpj]',
       cep: '.mask_cep, [data-rule-cep]',
-      phone: '.mask_phone, [data-rule-phone]'
+      phone: '.mask_phone, [data-rule-phone]',
     },
     listener: function (form) {
       ($(this.ui.date, form) as any).mask(masks.date);
@@ -31,6 +31,6 @@ export default {
       ($(this.ui.cnpj, form) as any).mask(masks.cnpj);
       ($(this.ui.cep, form) as any).mask(masks.cep);
       ($(this.ui.phone, form) as any).mask(SPMaskBehavior, spOptions);
-    }
-  }
+    },
+  },
 };

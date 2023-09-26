@@ -1,7 +1,7 @@
-import Init from '@app/scripts/routes/init';
-import Main from '@app/scripts/views/init';
 import App from '@scripts/app';
+import Init from '@scripts/routes/init';
 import scope from '@scripts/scope';
+import Main from '@scripts/views/init';
 
 ((scope) => {
   ('use strict');
@@ -13,9 +13,9 @@ import scope from '@scripts/scope';
     urls: {
       base,
       origin: location.protocol + '//' + location.hostname,
-      site: location.href.replace('index.html', '')
+      site: location.href.replace('index.html', ''),
     },
-    localhost: window.location.host.indexOf('localhost') > -1
+    localhost: window.location.host.indexOf('localhost') > -1,
   };
   scope.app.on('start', Main);
   scope.app.on('start', Init);

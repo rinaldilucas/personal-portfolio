@@ -5,7 +5,7 @@ export default {
         'completename',
         function (value, element) {
           return this.optional(element) || /^.+\s.+$/i.test(value);
-        }
+        },
       );
 
       validator.addMethod(
@@ -14,10 +14,10 @@ export default {
           return (
             this.optional(element) ||
             /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/.test(
-              value
+              value,
             )
           );
-        }
+        },
       );
 
       validator.addMethod(
@@ -79,7 +79,7 @@ export default {
           resultado = soma % 11 < 2 ? 0 : 11 - (soma % 11);
 
           return resultado === digitos.charAt(1);
-        }
+        },
       );
 
       validator.addMethod(
@@ -126,35 +126,35 @@ export default {
           }
 
           return true;
-        }
+        },
       );
 
       validator.addMethod(
         'cep',
         function (value, element) {
           return this.optional(element) || /^[0-9]{5}-[0-9]{3}$/.test(value);
-        }
+        },
       );
 
       validator.addMethod(
         'phone',
         function (value, element) {
           return this.optional(element) || /^\([0-9]{2}\)\s[0-9]{4,5}-[0-9]{4}$/.test(value);
-        }
+        },
       );
 
       validator.addMethod(
         'lettersonly',
         function (value, element) {
           return this.optional(element) || /^[a-z áãâäàéêëèíîïìóõôöòúûüùçñ]+$/i.test(value);
-        }
+        },
       );
 
       validator.addMethod(
         'filesize',
         function (value, element, param) {
           return this.optional(element) || element.files[0].size <= param * 1000000;
-        }
+        },
       );
 
       validator.addMethod(
@@ -163,17 +163,18 @@ export default {
           const extensions = param.replace(' ', '').split(',');
           const fileExtension = value.split('.').pop();
           return this.optional(element) || extensions.includes(fileExtension);
-        }
+        },
       );
 
+      // todo
       validator.addMethod(
         'zerocurrency',
         function (value, element) {
           return this.optional(element) || value !== '0,00';
-        }
+        },
       );
 
       validator.methodGroup('fullname', [{ rule: 'lettersonly' }, { rule: 'completename' }, { rule: 'rangelength', param: [5, 75] }]);
-    }
-  }
+    },
+  },
 };

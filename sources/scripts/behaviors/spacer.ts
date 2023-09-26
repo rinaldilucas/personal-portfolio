@@ -1,9 +1,10 @@
-import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
+
+import scope from '@scripts/scope';
 
 scope.behaviors.Spacer = Marionette.Behavior.extend({
   ui: {
-    spacers: '[data-height]'
+    spacers: '[data-height]',
   },
   onAttach: function (view) {
     this.build(view.$el);
@@ -14,7 +15,7 @@ scope.behaviors.Spacer = Marionette.Behavior.extend({
 
       $(object).css('height', size * 0.01 + 'rem');
     });
-  }
+  },
 });
 
 export default scope.behaviors.Spacer;

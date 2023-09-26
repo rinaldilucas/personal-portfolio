@@ -6,7 +6,7 @@ let language = 'enUs';
 
 export default Marionette.Behavior.extend({
   ui: {
-    form: 'form:not([data-form-bypass])'
+    form: 'form:not([data-form-bypass])',
   },
   onAttach: function () {
     this.onRender.apply(this);
@@ -61,8 +61,8 @@ export default Marionette.Behavior.extend({
         hiddenRecaptcha: {
           required: () => {
             if ((window as any).grecaptcha.getResponse() === '') { return true; } else { return false; }
-          }
-        }
+          },
+        },
       },
       errorPlacement: (error, element) => error.insertAfter(element),
       highlight: (element, errorClass, validClass) => {
@@ -99,7 +99,7 @@ export default Marionette.Behavior.extend({
               gravity: 'bottom',
               position: 'center',
               stopOnFocus: true,
-              className: 'toast toast--success'
+              className: 'toast toast--success',
             }).showToast();
 
             self.clearInputs(form);
@@ -115,7 +115,7 @@ export default Marionette.Behavior.extend({
               gravity: 'bottom',
               position: 'center',
               stopOnFocus: true,
-              className: 'toast toast--error'
+              className: 'toast toast--error',
             }).showToast();
 
             $('[type=submit], [data-prevent-double-click]').prop('disabled', false);
@@ -131,7 +131,7 @@ export default Marionette.Behavior.extend({
             mimeType: form.attr('mimeType'),
             data: serializedFormData,
             success: () => successProccess(),
-            error: () => errorProccess()
+            error: () => errorProccess(),
           } as any;
 
           form.trigger('beforeProcessRequest', [options]);
@@ -146,7 +146,7 @@ export default Marionette.Behavior.extend({
         executeOnSubmitHandler();
 
         return false;
-      }
+      },
     });
 
     if (window.location.pathname.indexOf('/') > -1) { language = 'enEs'; }
@@ -178,7 +178,7 @@ export default Marionette.Behavior.extend({
         rangelength: $.validator.format('O campo deve conter de {0} até {1} caracteres.'),
         range: $.validator.format('Apenas numeros de {0} até {1}.'),
         max: $.validator.format('Apenas números até {0}.'),
-        min: $.validator.format('Apenas números a partir de {0}.')
+        min: $.validator.format('Apenas números a partir de {0}.'),
       });
     } else if (language === 'esEs') {
       $.extend($.validator.messages, {
@@ -205,7 +205,7 @@ export default Marionette.Behavior.extend({
         rangelength: $.validator.format('El campo debe contener de {0} a {1} caracteres.'),
         range: $.validator.format('Solo números del {0} al {1}.'),
         max: $.validator.format('Solo números hasta {0}.'),
-        min: $.validator.format('Solo números a partir de {0}.')
+        min: $.validator.format('Solo números a partir de {0}.'),
       });
     } else {
       $.extend($.validator.messages, {
@@ -232,7 +232,7 @@ export default Marionette.Behavior.extend({
         rangelength: $.validator.format('The field must contain from {0} to {1} characters.'),
         range: $.validator.format('The field must contain from {0} to {1} characters.'),
         max: $.validator.format('Only numbers from {0} to {1}.'),
-        min: $.validator.format('Only numbers starting from {0}.')
+        min: $.validator.format('Only numbers starting from {0}.'),
       });
     }
   },
@@ -244,7 +244,7 @@ export default Marionette.Behavior.extend({
 
       input.val('');
     });
-  }
+  },
 });
 
 (jQuery.validator as any).methodGroup = (name, rules, message) => {
@@ -271,6 +271,6 @@ export default Marionette.Behavior.extend({
 
       return true;
     },
-    getMessage
+    getMessage,
   );
 };

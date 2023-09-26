@@ -1,5 +1,6 @@
-import scope from '@scripts/scope';
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
+
+import scope from '@scripts/scope';
 
 scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
   ui: {
@@ -12,13 +13,13 @@ scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
     viewerOverlay: '[data-viewer-overlay]',
     viewerWrapper: '[data-viewer-wrapper]',
     overlayImage: '[data-overlay-image]',
-    overlayFrame: '[data-overlay-frame]'
+    overlayFrame: '[data-overlay-frame]',
   },
   events: {
     'click @ui.closeButton': 'closePicker',
     'click @ui.backButton': 'backViewer',
     'click @ui.portfolioPicker': 'openVersionPicker',
-    'click @ui.portfolioAnchor': 'openviewerOverlay'
+    'click @ui.portfolioAnchor': 'openviewerOverlay',
   },
   onAttach: function (view) {
     this.build(view.$el);
@@ -78,7 +79,7 @@ scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
       this.ui.overlayImage.attr('src', '').removeClass('overlay--openned').hide();
       this.ui.overlayFrame.removeClass('overlay__frame--desktop').removeClass('overlay__frame--mobile');
     }, 300);
-  }
+  },
 });
 
 export default scope.behaviors.PortfolioViewer;

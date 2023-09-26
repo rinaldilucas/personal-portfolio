@@ -20,7 +20,7 @@ const Helper = Marionette.Object.extend({
         if (where === '#home' || where === '#highlight') {
           ($(window) as any).scrollTo(1, 750, {
             interrupt: self.isDesktop,
-            axis: 'y'
+            axis: 'y',
           });
 
           return;
@@ -34,7 +34,7 @@ const Helper = Marionette.Object.extend({
 
       ($(window) as any).scrollTo(offtop - (discount as number), 750, {
         interrupt: self.isDesktop,
-        axis: 'y'
+        axis: 'y',
       });
     }, 200);
   },
@@ -76,7 +76,7 @@ const Helper = Marionette.Object.extend({
         }
       });
     }
-  }
+  },
 });
 
 export default new Helper();

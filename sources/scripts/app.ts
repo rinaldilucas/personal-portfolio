@@ -1,6 +1,7 @@
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 import WOW from 'wow.js/dist/wow.min';
-import helper from './libraries/helpers';
+
+import helper from '@scripts/libraries/helpers';
 
 const Application = Marionette.Application.extend({
   el: function () {
@@ -28,7 +29,7 @@ const Application = Marionette.Application.extend({
           console.log(error);
           $('body').removeClass('on-loading').addClass('on-loaded');
           $('.loading').addClass('loaded');
-        }
+        },
       )
       .then(() => {
         $('body').removeClass('on-loading').addClass('on-loaded');
@@ -59,9 +60,9 @@ const Application = Marionette.Application.extend({
       .mousemove((e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
       .keydown((e) => {
         switch (e.key) {
-          case 'Escape':
-            self.trigger('esc');
-            break;
+        case 'Escape':
+          self.trigger('esc');
+          break;
         }
       });
     $(document)
@@ -138,7 +139,7 @@ const Application = Marionette.Application.extend({
 
         self.trigger('resize', { top, width: $(window).width(), height: $(window).height() });
       });
-  }
+  },
 });
 
 export default new Application();

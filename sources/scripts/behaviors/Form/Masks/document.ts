@@ -2,13 +2,13 @@ import 'jquery-mask-plugin/dist/jquery.mask.min';
 
 const masks = {
   cpf: '000.000.000-00',
-  cnpj: '00.000.000/0000-00'
+  cnpj: '00.000.000/0000-00',
 };
 
 export default {
   mask: {
     ui: {
-      document: '[data-rule-document]'
+      document: '[data-rule-document]',
     },
     listener: function (form) {
       ($(this.ui.document, form) as any)
@@ -34,6 +34,6 @@ export default {
           }
         })
         .trigger('keydown');
-    }
-  }
+    },
+  },
 };

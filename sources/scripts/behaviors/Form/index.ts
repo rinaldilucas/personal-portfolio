@@ -4,10 +4,10 @@ import Form from '@scripts/behaviors/form/validate/constructor';
 export default (options) => ({
   Form: {
     behaviorClass: Form,
-    rules: options.rules
+    rules: options.rules,
   },
   FormMasks: {
     behaviorClass: FormMasks,
-    rules: options.rules
-  }
+    rules: options.rules,
+  },
 });

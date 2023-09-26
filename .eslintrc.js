@@ -39,6 +39,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': WARN,
         'new-cap': OFF,
         'no-debugger': WARN,
+        "comma-dangle": ["error", "always-multiline"],
       },
     },
   ],

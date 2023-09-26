@@ -8,7 +8,7 @@ import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
 export default Marionette.Behavior.extend({
   ui: {
-    FormMasksForm: 'form:not([data-form-bypass])'
+    FormMasksForm: 'form:not([data-form-bypass])',
   },
   onRender: function () {
     this.onAttach();
@@ -30,5 +30,5 @@ export default Marionette.Behavior.extend({
         }
       }
     }
-  }
+  },
 });

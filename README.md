@@ -60,7 +60,8 @@
 
 </div>
 
-After mature my pure SPA stack, I decided to cristalyze my knowledge in this project. There is some really cool features on this, like: typescript coding, a really usefull sass logic to maintain website aspect ratio (almost mitigating the need of media queries), webpack5 bundling and deploy optimizations, eslinting, favicon cli generator, generation and replacing of webp images (without any server), tinypng api convertion via cli, ie 11 support, lazy loading, multilingual tweaks among other stuff.
+Much of what you do today is the result of knowledge spread across the internet, and that's why I decided to publish my repository to help you as it helped me when I was building it.<br>
+Here are some of the features: single page application behavior using only Marionette.js and handlebars.js, typescript support, input and mask reactive validations, file upload integration, overwrite of native html tags like input file types and scroll, aspect ratio SCSS logic which almost mitigates the needs of media queries, grunt and webpack5 bundling, npm tasks to watch/deploy/test, eslint and prettier with custom rules, favicon cli generator, generation and replacement of webp images through client-side, tinyPNG api conversion via cli, ie 11 support, lazy loading, multilingual setup and more.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -68,21 +69,21 @@ After mature my pure SPA stack, I decided to cristalyze my knowledge in this pro
 
 This section shows what technologies are used in this particular project.
 
--   [NodeJS](https://nodejs.org/en)
--   [Yarn](https://yarnpkg.com)
--   [Marionette.js](https://marionettejs.com)
--   [Handlebars.js](https://handlebarsjs.com)
--   [Typescript](https://www.typescriptlang.org)
--   [ESlint](https://eslint.org)
--   [Sass](https://sass-lang.com)
--   [Webpack 5](https://webpack.js.org)
--   [Grunt](https://gruntjs.com)
--   [Autoprefixer](https://github.com/postcss/autoprefixer)
--   [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
--   [Htmlmin](https://www.npmjs.com/package/grunt-contrib-htmlmin)
--   [Uglify](https://www.npmjs.com/package/uglify-js)
--   [Usemin](https://www.npmjs.com/package/usemin)
--   [Favicon Generator](https://realfavicongenerator.net/favicon/grunt#.YuvqGTTMJhE)
+- [NodeJS](https://nodejs.org/en)
+- [Yarn](https://yarnpkg.com)
+- [Marionette.js](https://marionettejs.com)
+- [Handlebars.js](https://handlebarsjs.com)
+- [Typescript](https://www.typescriptlang.org)
+- [ESlint](https://eslint.org)
+- [Sass](https://sass-lang.com)
+- [Webpack 5](https://webpack.js.org)
+- [Grunt](https://gruntjs.com)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+- [Cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
+- [Htmlmin](https://www.npmjs.com/package/grunt-contrib-htmlmin)
+- [Uglify](https://www.npmjs.com/package/uglify-js)
+- [Usemin](https://www.npmjs.com/package/usemin)
+- [Favicon Generator](https://realfavicongenerator.net/favicon/grunt#.YuvqGTTMJhE)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -96,41 +97,41 @@ After cloning the project, you need to do a few things to be able to run it.
 
 You need to have the following requirements:
 
--   node 16 <a target="_blank" href="https://nodejs.org/en/download/">(download here)</a>
+- node 16 <a target="_blank" href="https://nodejs.org/en/download/">(download here)</a>
 
--   npm
-    ```sh
-      npm install -g npm
-    ```
--   yarn
-    ```sh
-      npm install -g yarn
-    ```
--   grunt cli
-    ```sh
-      npm install -g grunt-cli
-    ```
+- npm
+  ```sh
+    npm install -g npm
+  ```
+- yarn
+  ```sh
+    npm install -g yarn
+  ```
+- grunt cli
+  ```sh
+    npm install -g grunt-cli
+  ```
 
 ### Installation
 
 _Below is an example of how you can run the project._
 
 1. Clone the repo
-    ```sh
-    git clone https://github.com/rinaldilucas/personal-portfolio.git
-    ```
+   ```sh
+   git clone https://github.com/rinaldilucas/personal-portfolio.git
+   ```
 2. Install the dependencies via yarn
-    ```sh
-    yarn install
-    ```
+   ```sh
+   yarn install
+   ```
 3. Build the project to develop
-    ```js
-    yarn dev
-    ```
+   ```js
+   yarn dev
+   ```
 4. Build the dist folder
-    ```js
-    yarn build --tiny-key={apikey}
-    ```
+   ```js
+   yarn build --tiny-key={apikey}
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -181,14 +182,14 @@ Project Link: [https://github.com/rinaldilucas/personal-portfolio](https://githu
 If you feel that this project has helped you in any way, whether it's attracting clients or teaching you about the technologies used, feel free to make a donation.
 It helps me a lot to continue developing open source codes.
 
--   Metamask (USDT):
-    ```sh
-    0xA0410641515F06fF6a9AdAFf1c3e90a3905ba271
-    ```
--   PIX (BRL):
-    ```sh
-    72140bc8-fadc-42f5-abb6-9c13cc80a59f
-    ```
+- Metamask (USDT):
+  ```sh
+  0xA0410641515F06fF6a9AdAFf1c3e90a3905ba271
+  ```
+- PIX (BRL):
+  ```sh
+  72140bc8-fadc-42f5-abb6-9c13cc80a59f
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
