@@ -1,28 +1,28 @@
 .chat {
-    height: vw(55);
-    width: vw(55);
-    position: fixed;
-    bottom: vw(20);
-    right: vw(20);
-    z-index: 20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: vw(99);
-    background-color: $green;
+  height: vw(55);
+  width: vw(55);
+  position: fixed;
+  bottom: vw(20);
+  right: vw(20);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: vw(99);
+  background-color: $green;
 
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        background-color: $ice;
-        border: 2px solid $blue;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    background-color: $ice;
+    border: 2px solid $blue;
+  }
+
+  a {
+    font-size: vw(38);
+    color: $white;
+
+    &:hover {
+      filter: brightness(0) invert(1);
+      transform: scale(1.1);
     }
-
-    a {
-        font-size: vw(38);
-        color: $white;
-
-        &:hover {
-            filter: brightness(0) invert(1);
-            transform: scale(1.1);
-        }
-    }
+  }
 }

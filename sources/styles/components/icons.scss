@@ -1,66 +1,66 @@
 .icon {
-    font-style: normal;
-    display: inline-block;
-    background: no-repeat;
-    vertical-align: middle;
-    width: vw(22);
-    height: vw(22);
-    background-position: center;
+  font-style: normal;
+  display: inline-block;
+  background: no-repeat;
+  vertical-align: middle;
+  width: vw(22);
+  height: vw(22);
+  background-position: center;
 
-    &--hide {
-        display: none;
+  &--hide {
+    display: none;
+  }
+
+  &--smaller {
+    width: vw(18);
+    height: vw(18);
+  }
+
+  &--bigger {
+    width: vw(35);
+    height: vw(35);
+  }
+
+  &--dots {
+    background-image: url(../images/icons/dots.svg);
+    background-size: contain;
+  }
+
+  &--whatsapp {
+    background-image: url(../images/icons/whatsapp.svg);
+    background-size: cover;
+
+    &-white {
+      filter: brightness(0) invert(1);
+      background-size: contain;
     }
+  }
 
-    &--smaller {
-        width: vw(18);
-        height: vw(18);
-    }
+  &--insta {
+    background-image: url(../images/icons/instagram.svg);
+    background-size: cover;
+  }
 
-    &--bigger {
-        width: vw(35);
-        height: vw(35);
-    }
+  &--envelope {
+    background-image: url(../images/icons/envelope.svg);
+    background-size: cover;
+  }
 
-    &--dots {
-        background-image: url(../images/icons/dots.svg);
-        background-size: contain;
-    }
+  &--spinner {
+    background-image: url(../images/icons/spinner.svg);
+    background-size: contain;
+    margin: 0 vw(15) 0 0;
+    animation: rotate 2s linear infinite;
+  }
 
-    &--whatsapp {
-        background-image: url(../images/icons/whatsapp.svg);
-        background-size: cover;
+  &--upload {
+    background-image: url(../images/icons/upload.svg);
+    background-size: contain;
+    margin: 0 vw(12) 0 0;
+  }
 
-        &-white {
-            filter: brightness(0) invert(1);
-            background-size: contain;
-        }
-    }
-
-    &--insta {
-        background-image: url(../images/icons/instagram.svg);
-        background-size: cover;
-    }
-
-    &--envelope {
-        background-image: url(../images/icons/envelope.svg);
-        background-size: cover;
-    }
-
-    &--spinner {
-        background-image: url(../images/icons/spinner.svg);
-        background-size: contain;
-        margin: 0 vw(15) 0 0;
-        animation: rotate 2s linear infinite;
-    }
-
-    &--upload {
-        background-image: url(../images/icons/upload.svg);
-        background-size: contain;
-        margin: 0 vw(12) 0 0;
-    }
-
-    &--undo {
-        background-image: url(../images/icons/undo.svg);
-        background-size: contain;
-    }
+  &--undo {
+    background-image: url(../images/icons/undo.svg);
+    background-size: contain;
+  }
 }

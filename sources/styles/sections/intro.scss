@@ -1,160 +1,160 @@
 .intro {
-    padding: 0;
-    height: calc(100vh - 0.85rem);
-    top: vw(85);
+  padding: 0;
+  height: calc(100vh - 0.85rem);
+  top: vw(85);
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media(">desktop") {
+    height: 100vh;
+    top: 0;
+  }
+
+  &__wrapper {
     display: flex;
     align-items: center;
-    position: relative;
     flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
 
     @include media(">desktop") {
-        height: 100vh;
-        top: 0;
+      max-width: vw(1180);
+      top: vw(80);
+    }
+  }
+
+  &__image {
+    width: vw(108);
+    height: vw(108);
+    margin: vw(10) 0 vw(20);
+
+    @include media(">desktop") {
+      margin: 0 0 vw(20);
     }
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        box-sizing: border-box;
-        margin: auto;
-        position: relative;
+    img {
+      width: 100%;
+    }
+  }
 
-        @include media(">desktop") {
-            max-width: vw(1180);
-            top: vw(80);
-        }
+  &__name {
+    color: $blue-strong;
+    font-weight: 700;
+    font-size: vw(38);
+    line-height: vw(38);
+  }
+
+  &__text {
+    max-width: vw(360);
+    margin: vw(15) 0 vw(30) 0;
+  }
+
+  &__social {
+    display: flex;
+
+    a {
+      margin: 0 vw(10);
     }
 
-    &__image {
-        width: vw(108);
-        height: vw(108);
-        margin: vw(10) 0 vw(20);
+    i {
+      transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+      font-size: vw(24);
+      width: vw(25);
+      height: vw(25);
+      color: $blue-strong;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
 
-        @include media(">desktop") {
-            margin: 0 0 vw(20);
-        }
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
 
-        img {
-            width: 100%;
-        }
+  &__language {
+    display: flex;
+  }
+
+  &__button {
+    margin: vw(30) 0 vw(20);
+    @extend .button;
+  }
+
+  &__flag {
+    padding: 0 vw(12);
+    margin: 0 vw(12);
+    position: relative;
+    width: vw(60);
+
+    img {
+      width: 100%;
     }
 
-    &__name {
-        color: $blue-strong;
-        font-weight: 700;
-        font-size: vw(38);
-        line-height: vw(38);
+    &:hover {
+      transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+      transform: scale(1.15);
+    }
+  }
+
+  &__scroll {
+    margin: vw(15) 0 vw(30);
+
+    @media screen and (min-width: $size-tablet) and (max-width: $size-desktop) and (orientation: portrait) {
+      display: none;
     }
 
-    &__text {
-        max-width: vw(360);
-        margin: vw(15) 0 vw(30) 0;
+    > a {
+      padding: vw(8);
     }
 
-    &__social {
-        display: flex;
+    &-wrapper {
+      color: $font-color;
+      font-size: vw(14);
+      display: block;
+      max-width: vw(100);
+      margin: auto;
+      text-align: center;
 
-        a {
-            margin: 0 vw(10);
-        }
+      > span {
+        color: $font-color;
+      }
 
-        i {
-            transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
-            font-size: vw(24);
-            width: vw(25);
-            height: vw(25);
-            color: $blue-strong;
-            font-style: normal;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-
-            &:hover {
-                color: $blue;
-            }
-        }
+      &:hover {
+        color: $font-color;
+      }
     }
 
-    &__language {
-        display: flex;
+    &-mouse {
+      border: solid 2px $blue;
+      border-radius: vw(16);
+      display: block;
+      margin: auto;
+      margin-top: vw(10);
+      height: vw(26);
+      position: relative;
+      width: vw(20);
+      @extend .hover-zoom;
     }
 
-    &__button {
-        margin: vw(30) 0 vw(20);
-        @extend .button;
+    &-wheel {
+      background: $accent;
+      border-radius: 100%;
+      display: block;
+      position: absolute;
+      top: vw(8);
+      left: 50%;
+      transform: translateX(-50%);
+      height: vw(4);
+      width: vw(4);
+      animation: ani-mouse 2s linear infinite;
     }
-
-    &__flag {
-        padding: 0 vw(12);
-        margin: 0 vw(12);
-        position: relative;
-        width: vw(60);
-
-        img {
-            width: 100%;
-        }
-
-        &:hover {
-            transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
-            transform: scale(1.15);
-        }
-    }
-
-    &__scroll {
-        margin: vw(15) 0 vw(30);
-
-        @media screen and (min-width: $size-tablet) and (max-width: $size-desktop) and (orientation: portrait) {
-            display: none;
-        }
-
-        > a {
-            padding: vw(8);
-        }
-
-        &-wrapper {
-            color: $font-color;
-            font-size: vw(14);
-            display: block;
-            max-width: vw(100);
-            margin: auto;
-            text-align: center;
-
-            > span {
-                color: $font-color;
-            }
-
-            &:hover {
-                color: $font-color;
-            }
-        }
-
-        &-mouse {
-            border: solid 2px $blue;
-            border-radius: vw(16);
-            display: block;
-            margin: auto;
-            margin-top: vw(10);
-            height: vw(26);
-            position: relative;
-            width: vw(20);
-            @extend .hover-zoom;
-        }
-
-        &-wheel {
-            background: $accent;
-            border-radius: 100%;
-            display: block;
-            position: absolute;
-            top: vw(8);
-            left: 50%;
-            transform: translateX(-50%);
-            height: vw(4);
-            width: vw(4);
-            animation: ani-mouse 2s linear infinite;
-        }
-    }
+  }
 }

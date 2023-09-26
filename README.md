@@ -57,6 +57,7 @@
 <div align="center">
 
 [![Project Screenshot][project-screenshot]](https://rinaldilucas.github.io/personal-portfolio/)
+
 </div>
 
 After mature my pure SPA stack, I decided to cristalyze my knowledge in this project. There is some really cool features on this, like: typescript coding, a really usefull sass logic to maintain website aspect ratio (almost mitigating the need of media queries), webpack5 bundling and deploy optimizations, eslinting, favicon cli generator, generation and replacing of webp images (without any server), tinypng api convertion via cli, ie 11 support, lazy loading, multilingual tweaks among other stuff.
@@ -163,8 +164,7 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 ## Contact
 
 [![Website](https://img.shields.io/badge/-Website-0078D4?style=flat-square&logo=html5&logoColor=white&link=https://rinaldilucas.com)](https://rinaldilucas.com)
-[![Github](https://img.shields.io/badge/-Github-967bb5?style=flat-square&labelColor=967bb5&logo=github&logoColor=white&link=https://github.com/rinaldilucas
-)](https://github.com/rinaldilucas)
+[![Github](https://img.shields.io/badge/-Github-967bb5?style=flat-square&labelColor=967bb5&logo=github&logoColor=white&link=https://github.com/rinaldilucas)](https://github.com/rinaldilucas)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lucasreinaldi@gmail.com)](mailto:lucasreinaldi@gmail.com)
 [![Hotmail Badge](https://img.shields.io/badge/-Hotmail-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:lucasreinaldi@hotmail.com)](mailto:lucasreinaldi@hotmail.com)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rinaldilucas/)](https://www.linkedin.com/in/rinaldilucas/)

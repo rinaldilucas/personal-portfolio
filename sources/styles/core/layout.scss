@@ -3,88 +3,88 @@
 /* ============================================== */
 
 html {
-    max-width: 100vw;
-    overflow-x: hidden;
-    font-size: mobile-vw($pixel-base + $mobile-factor, true);
-    background-color: $ice;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: mobile-vw($pixel-base + $mobile-factor, true);
+  background-color: $ice;
 
-    @include media(">=desktop") {
-        font-size: fixed-vw($pixel-base);
-    }
+  @include media(">=desktop") {
+    font-size: fixed-vw($pixel-base);
+  }
 }
 
 body {
-    height: auto;
-    font-size: vw(16);
-    color: $font-color;
-    font-family: $font-main;
-    width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  font-size: vw(16);
+  color: $font-color;
+  font-family: $font-main;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    &::-webkit-scrollbar {
-        width: vw(9);
-    }
+  &::-webkit-scrollbar {
+    width: vw(9);
+  }
 
-    &::-webkit-scrollbar-track {
-        background: $white;
-    }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
 
-    &::-webkit-scrollbar-thumb {
-        background-color: $blue;
-        border-radius: vw(6);
-        border: vw(3) solid $blue;
-    }
+  &::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    border-radius: vw(6);
+    border: vw(3) solid $blue;
+  }
 }
 
 #main {
-    margin: 0 auto;
-    min-height: 100vh;
-    position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
 
-    * {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  audio {
+    visibility: hidden;
+  }
+
+  *:not(div):focus {
+    outline: 2px dashed $outline;
+    outline-offset: 2px;
+
+    &.error {
+      outline: 2px dashed $alert;
+      margin-bottom: vw(5);
     }
+  }
 
-    audio {
-        visibility: hidden;
-    }
-
-    *:not(div):focus {
-        outline: 2px dashed $outline;
-        outline-offset: 2px;
-
-        &.error {
-            outline: 2px dashed $alert;
-            margin-bottom: vw(5);
-        }
-    }
-
-    p.error {
-        color: $alert;
-        font-size: vw(12);
-        margin: vw(2) 0 0 vw(15);
-    }
+  p.error {
+    color: $alert;
+    font-size: vw(12);
+    margin: vw(2) 0 0 vw(15);
+  }
 }
 
 #site-content {
-    width: 100%;
-    margin: 0 auto;
-    opacity: 0;
-    box-sizing: border-box;
-    z-index: 1;
-    padding: 0 vw(30) 0 vw(320);
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 0 vw(30) 0 vw(320);
 
-    @include media("<desktop") {
-        padding: 0;
-    }
+  @include media("<desktop") {
+    padding: 0;
+  }
 
-    .on-loaded & {
-        opacity: 1;
-    }
+  .on-loaded & {
+    opacity: 1;
+  }
 }
 
 h1,
@@ -93,89 +93,89 @@ h3,
 h4,
 h5,
 h6 {
-    color: $font-color;
-    font-family: $font-main;
-    font-weight: 700;
-    margin: vw(20) 0;
-    width: 100%;
+  color: $font-color;
+  font-family: $font-main;
+  font-weight: 700;
+  margin: vw(20) 0;
+  width: 100%;
 }
 
 h1 {
-    font-size: vw(36);
+  font-size: vw(36);
 }
 
 h2 {
-    font-size: vw(28);
+  font-size: vw(28);
 }
 
 h3 {
-    font-size: vw(24);
+  font-size: vw(24);
 }
 
 h4 {
-    font-size: vw(18);
+  font-size: vw(18);
 }
 
 p {
-    margin: 0;
-    line-height: vw(22);
-    width: 100%;
+  margin: 0;
+  line-height: vw(22);
+  width: 100%;
 }
 
 i {
-    font-style: normal;
+  font-style: normal;
 }
 
 a {
+  text-decoration: none;
+  color: $accent;
+  outline: 0;
+  transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+  cursor: pointer;
+
+  &:hover {
     text-decoration: none;
-    color: $accent;
+    filter: brightness(108%);
+  }
+
+  &:focus {
     outline: 0;
-    transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
-    cursor: pointer;
-
-    &:hover {
-        text-decoration: none;
-        filter: brightness(108%);
-    }
-
-    &:focus {
-        outline: 0;
-    }
+  }
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:disabled {
-        filter: brightness(80%);
-    }
+  &:disabled {
+    filter: brightness(80%);
+  }
 }
 
 img {
-    width: 100%;
-    image-rendering: -webkit-optimize-contrast;
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 section {
-    padding-top: vw(110);
+  padding-top: vw(110);
 }
 
 .toast {
-    background: $accent !important;
-    color: $white !important;
-    border-radius: vw(15);
-    font-size: vw(18);
-    text-align: center;
-    width: vw(160);
-    margin-bottom: 0 !important;
+  background: $accent !important;
+  color: $white !important;
+  border-radius: vw(15);
+  font-size: vw(18);
+  text-align: center;
+  width: vw(160);
+  margin-bottom: 0 !important;
 
-    &--success {
-        background: $green-strong !important;
-        width: vw(280);
-    }
+  &--success {
+    background: $green-strong !important;
+    width: vw(280);
+  }
 
-    &--error {
-        background: $alert !important;
-        width: vw(280);
-    }
+  &--error {
+    background: $alert !important;
+    width: vw(280);
+  }
 }

@@ -1,44 +1,44 @@
 <section id="contact" class="contact" data-anchor-scroll="contact">
-    <div class="spacer" data-height="30"></div>
-    <div class="contact__wrapper">
-        <h2 class="contact__title wow animated fadeIn" data-wow-delay="0.1s">Get in Touch</h2>
-        <div class="spacer" data-height="60"></div>
-        <div class="contact__content">
-            <div class="contact__text wow animated fadeIn" data-wow-delay="0.3s">
-                <h1>Do you have any questions?</h1>
-                <p class="wow fadeIn">Send me an<a title="Send e-mail" href="mailto:contact@rinaldilucas.com"> e-mail here </a>👋<br>or send me a message<br>via this form.</p>
-            </div>
-            <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form action="https://getform.io/f/{{getformApiKey}}" method="POST">
-                <div class="messages"></div>
-                <div class="contact__form-row">
-                    <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
-                        <input type="text" name="nome" placeholder="*Your name" data-rule-required data-rule-fullname />
-                    </div>
-                    <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
-                        <input type="email" name="email" placeholder="*E-mail" data-rule-required data-rule-minlength="3" />
-                    </div>
-                </div>
-                <div class="contact__form-row">
-                    <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.2s">
-                        <input type="text" name="whatsapp" placeholder="Subject" data-rule-required />
-                    </div>
-                </div>
-                <div class="contact__form-row contact__form-row--no-margin">
-                    <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.3s">
-                        <textarea name="message" rows="4" placeholder="*Message" data-rule-minlength="3"></textarea>
-                    </div>
-                </div>
-                <small class="contact__disclaimer wow animated fadeIn" data-wow-delay="0.3s">* mandatory fields</small>
-                <button title="Send Message" type="submit" class="contact__button wow animated fadeIn" data-wow-delay="0.4s" data-prevent-double-click><i class="icon icon--smaller icon--spinner icon--hide"></i>Send Message</button>
-                <div class="contact__recaptcha g-recaptcha" data-sitekey="{{captchaSecret}}" data-callback="recaptchaCallback"></div>
-                <input type="hidden" data-recaptcha data-rule-required name="hiddenRecaptcha">
-            </form>
+  <div class="spacer" data-height="30"></div>
+  <div class="contact__wrapper">
+    <h2 class="contact__title wow animated fadeIn" data-wow-delay="0.1s">Get in Touch</h2>
+    <div class="spacer" data-height="60"></div>
+    <div class="contact__content">
+      <div class="contact__text wow animated fadeIn" data-wow-delay="0.3s">
+        <h1>Do you have any questions?</h1>
+        <p class="wow fadeIn">Send me an<a title="Send e-mail" href="mailto:contact@rinaldilucas.com"> e-mail here </a>👋<br>or send me a message<br>via this form.</p>
+      </div>
+      <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form action="https://getform.io/f/{{getformApiKey}}" method="POST">
+        <div class="messages"></div>
+        <div class="contact__form-row">
+          <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
+            <input type="text" name="nome" placeholder="*Your name" data-rule-required data-rule-fullname />
+          </div>
+          <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
+            <input type="email" name="email" placeholder="*E-mail" data-rule-required data-rule-minlength="3" />
+          </div>
         </div>
-        <div class="contact__tags">
-            {{#each tags}}
-                <span class="wow animated fadeIn" data-wow-delay="0.2s">{{name}}</span>
-            {{/each}}
+        <div class="contact__form-row">
+          <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.2s">
+            <input type="text" name="whatsapp" placeholder="Subject" data-rule-required />
+          </div>
         </div>
-        <div class="spacer" data-height="90"></div>
+        <div class="contact__form-row contact__form-row--no-margin">
+          <div class="contact__input-group wow animated fadeIn" data-wow-delay="0.3s">
+            <textarea name="message" rows="4" placeholder="*Message" data-rule-minlength="3"></textarea>
+          </div>
+        </div>
+        <small class="contact__disclaimer wow animated fadeIn" data-wow-delay="0.3s">* mandatory fields</small>
+        <button title="Send Message" type="submit" class="contact__button wow animated fadeIn" data-wow-delay="0.4s" data-prevent-double-click><i class="icon icon--smaller icon--spinner icon--hide"></i>Send Message</button>
+        <div class="contact__recaptcha g-recaptcha" data-sitekey="{{captchaSecret}}" data-callback="recaptchaCallback"></div>
+        <input type="hidden" data-recaptcha data-rule-required name="hiddenRecaptcha">
+      </form>
     </div>
+    <div class="contact__tags">
+      {{#each tags}}
+        <span class="wow animated fadeIn" data-wow-delay="0.2s">{{name}}</span>
+      {{/each}}
+    </div>
+    <div class="spacer" data-height="90"></div>
+  </div>
 </section>

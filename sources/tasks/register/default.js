@@ -1,3 +1,3 @@
-module.exports = function(grunt) {
-    grunt.registerTask('default', ['dev']);
+module.exports = function (grunt) {
+  grunt.registerTask('default', ['dev']);
 };

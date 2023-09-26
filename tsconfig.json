@@ -1,38 +1,38 @@
 {
-    "compilerOptions": {
-        "paths": {
-            "@app/*": [
-                "./sources/*"
-            ],
-            "@styles/*": [
-                "./sources/styles/*"
-            ],
-            "@scripts/*": [
-                "./sources/scripts/*"
-            ],
-            "@templates/*": [
-                "./sources/templates/*"
-            ]
-        },
-        "baseUrl": ".",
-        "outDir": "./docs/assets/scripts",
-        "module": "es6",
-        "target": "es5",
-        "noEmitOnError": true,
-        "noImplicitAny": false,
-        "removeComments": true,
-        "strictNullChecks": true,
-        "experimentalDecorators": true,
-        "typeRoots": [
-            "./node_modules/@types"
-        ],
-        "sourceMap": true,
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "resolveJsonModule": true
+  "compilerOptions": {
+    "paths": {
+      "@app/*": [
+        "./sources/*"
+      ],
+      "@styles/*": [
+        "./sources/styles/*"
+      ],
+      "@scripts/*": [
+        "./sources/scripts/*"
+      ],
+      "@templates/*": [
+        "./sources/templates/*"
+      ]
     },
-    "include": [
-        "./sources",
-        "./sources/scripts"
-    ]
+    "baseUrl": ".",
+    "outDir": "./docs/assets/scripts",
+    "module": "es6",
+    "target": "es5",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./sources",
+    "./sources/scripts"
+  ]
 }

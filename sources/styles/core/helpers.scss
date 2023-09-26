@@ -3,43 +3,43 @@
 /* ============================================== */
 
 .title {
-    font-size: vw(36);
-    line-height: vw(40);
-    margin: 0;
-    margin-left: vw(14);
-    position: relative;
+  font-size: vw(36);
+  line-height: vw(40);
+  margin: 0;
+  margin-left: vw(14);
+  position: relative;
 
-    @include media(">desktop") {
-        font-size: vw(42);
-        line-height: vw(46);
-    }
+  @include media(">desktop") {
+    font-size: vw(42);
+    line-height: vw(46);
+  }
 
-    &:before {
-        content: "";
-        background-image: url(../images/general/dots-bg.svg);
-        display: block;
-        height: vw(37);
-        left: vw(-14);
-        top: vw(-14);
-        position: absolute;
-        width: vw(37);
-    }
+  &:before {
+    content: "";
+    background-image: url(../images/general/dots-bg.svg);
+    display: block;
+    height: vw(37);
+    left: vw(-14);
+    top: vw(-14);
+    position: absolute;
+    width: vw(37);
+  }
 }
 
 .hover-zoom {
-    transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+  transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .drop-shadow {
-    box-shadow: vw(0) vw(5) vw(20) vw(0) rgba(69, 67, 96, 0.1);
+  box-shadow: vw(0) vw(5) vw(20) vw(0) rgba(69, 67, 96, 0.1);
 
-    &--bottom {
-        box-shadow: vw(0) vw(5) vw(20) vw(0) rgba(69, 67, 96, 0.25);
-    }
+  &--bottom {
+    box-shadow: vw(0) vw(5) vw(20) vw(0) rgba(69, 67, 96, 0.25);
+  }
 }
 
 /* ============================================= */
@@ -47,13 +47,13 @@
 /* ============================================= */
 
 @include media(">=desktop") {
-    .only-mobile {
-        display: none !important;
-    }
+  .only-mobile {
+    display: none !important;
+  }
 }
 
 @include media("<desktop") {
-    .only-desktop {
-        display: none !important;
-    }
+  .only-desktop {
+    display: none !important;
+  }
 }

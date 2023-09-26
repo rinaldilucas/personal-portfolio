@@ -15,31 +15,31 @@ import Spacer from '@scripts/behaviors/spacer';
 import Waypoint from '@scripts/behaviors/waypoint';
 
 scope.views.Home = Base.extend({
-    template: require('@templates/pages/br/home.hbs'),
-    templateContext: {
-        portfolio: data.portfolio,
-        testimonials: data.testimonials,
-        repositories: data.repositories,
-        tags: data.tags,
-        captchaSecret: process.env.CAPTCHA_SECRET,
-        getformApiKey: process.env.GETFORM_API_KEY
-    },
-    name: 'home',
-    behaviors: {
-        Header,
-        CopyToClipboard,
-        Spacer,
-        Carousel,
-        Parallax,
-        Morphext,
-        Background: BackgroundColor,
-        Waypoint,
-        PortfolioViewer,
-        Captcha,
-        ...Form({
-            rules: [require('@scripts/behaviors/Form/Commons')]
-        })
-    }
+  template: require('@templates/pages/br/home.hbs'),
+  templateContext: {
+    portfolio: data.portfolio,
+    testimonials: data.testimonials,
+    repositories: data.repositories,
+    tags: data.tags,
+    captchaSecret: process.env.CAPTCHA_SECRET,
+    getformApiKey: process.env.GETFORM_API_KEY
+  },
+  name: 'home',
+  behaviors: {
+    Header,
+    CopyToClipboard,
+    Spacer,
+    Carousel,
+    Parallax,
+    Morphext,
+    Background: BackgroundColor,
+    Waypoint,
+    PortfolioViewer,
+    Captcha,
+    ...Form({
+      rules: [require('@scripts/behaviors/Form/Commons')]
+    })
+  }
 });
 
 export default scope.views.Home;

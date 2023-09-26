@@ -3,54 +3,54 @@ const env = require('./sources/tasks/env');
 ('use strict');
 
 module.exports = function (grunt) {
-    require('time-grunt')(grunt);
-    require('jit-grunt')(grunt);
+  require('time-grunt')(grunt);
+  require('jit-grunt')(grunt);
 
-    let includeAll;
+  let includeAll;
 
+  try {
+    includeAll = require('include-all');
+    grunt.initConfig({
+      config: env(),
+    });
+  } catch (e0) {
     try {
-        includeAll = require('include-all');
-        grunt.initConfig({
-            config: env(),
-        });
-    } catch (e0) {
-        try {
-            includeAll = require('sails/node_modules/include-all');
-        } catch (e1) {
-            console.error('To fix this, please run: yarn add include-all --save`');
+      includeAll = require('sails/node_modules/include-all');
+    } catch (e1) {
+      console.error('To fix this, please run: yarn add include-all --save`');
 
-            grunt.registerTask('default', []);
-            return;
-        }
+      grunt.registerTask('default', []);
+      return;
     }
+  }
 
-    var loadTasks = function (relPath) {
-        return (
-            includeAll({
-                dirname: require('path').resolve(__dirname, relPath),
-                filter: /(.+)\.js$/,
-                excludeDirs: /^\.(git|svn)$/,
-            }) || {}
-        );
-    };
+  var loadTasks = function (relPath) {
+    return (
+      includeAll({
+        dirname: require('path').resolve(__dirname, relPath),
+        filter: /(.+)\.js$/,
+        excludeDirs: /^\.(git|svn)$/,
+      }) || {}
+    );
+  };
 
-    var invokeConfigFn = function (tasks) {
-        for (const taskName in tasks) {
-            if (tasks.hasOwnProperty(taskName)) {
-                tasks[taskName](grunt);
-            }
-        }
-    };
-
-    const taskConfigurations = loadTasks('./sources/tasks/config');
-    const registerDefinitions = loadTasks('./sources/tasks/register');
-
-    if (!registerDefinitions.default) {
-        registerDefinitions.default = function (grunt) {
-            grunt.registerTask('default', []);
-        };
+  var invokeConfigFn = function (tasks) {
+    for (const taskName in tasks) {
+      if (tasks.hasOwnProperty(taskName)) {
+        tasks[taskName](grunt);
+      }
     }
+  };
 
-    invokeConfigFn(taskConfigurations);
-    invokeConfigFn(registerDefinitions);
+  const taskConfigurations = loadTasks('./sources/tasks/config');
+  const registerDefinitions = loadTasks('./sources/tasks/register');
+
+  if (!registerDefinitions.default) {
+    registerDefinitions.default = function (grunt) {
+      grunt.registerTask('default', []);
+    };
+  }
+
+  invokeConfigFn(taskConfigurations);
+  invokeConfigFn(registerDefinitions);
 };
