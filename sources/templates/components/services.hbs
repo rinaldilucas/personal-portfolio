@@ -1,0 +1,18 @@
+<section id="{{resources.services.id}}" data-anchor-scroll="{{resources.services.id}}" class="services">
+  <div class="services__wrapper">
+    <h2 class="services__title wow animated fadeIn" data-wow-delay="0.1s">{{resources.services.title}}</h2>
+    <div class="spacer" data-height="60"></div>
+    <div class="services__content">
+      {{#each resources.services.items}}
+        <div class="services__block">
+          <div class="services__item wow animated fadeIn" data-wow-delay="0.1s" data-color="{{color}}">
+            <img loading="lazy" src="{{src}}" alt="{{alt}}" />
+            <h2>{{{title}}}</h2>
+            <p>{{description}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <p class="services__disclaimer wow animated fadeIn" data-wow-delay="0.2s">{{{resources.services.disclaimer}}}</p>
+  </div>
+</section>

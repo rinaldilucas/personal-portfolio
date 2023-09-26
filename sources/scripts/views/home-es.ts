@@ -1,4 +1,5 @@
-import data from '@scripts/data/default.json';
+import data from '@scripts/data/database.json';
+import resources from '@scripts/data/i18n/es-es.json';
 import scope from '@scripts/scope';
 import Base from '@scripts/views/base-view';
 
@@ -17,6 +18,7 @@ import Waypoint from '@scripts/behaviors/waypoint';
 export default scope.views.Home = Base.extend({
   template: require('@templates/pages/es/home.hbs'),
   templateContext: {
+    resources,
     portfolio: data.portfolio,
     testimonials: data.testimonials,
     repositories: data.repositories,
@@ -39,5 +41,11 @@ export default scope.views.Home = Base.extend({
     ...Form({
       rules: [require('@scripts/behaviors/Form/Commons')],
     }),
+  },
+  ui: {
+    flag: '[data-flag-spanish]',
+  },
+  onAttach: function () {
+    this.ui.flag.hide();
   },
 });

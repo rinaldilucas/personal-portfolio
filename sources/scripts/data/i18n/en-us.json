@@ -1,0 +1,122 @@
+{
+  "general": {
+    "logo-alt": "Lucas Rinaldi Logo",
+    "name": "Lucas Rinaldi"
+  },
+  "header": {
+    "visit-source-code": "Visit source code",
+    "source-code-link": "https://github.com/rinaldilucas/personal-portfolio",
+    "source-code": "source code",
+    "menu": {
+      "home": {
+        "title": "Home",
+        "link": "./en/!#intro"
+      },
+      "about": {
+        "title": "About",
+        "link": "./en/!#about"
+      },
+      "services": {
+        "title": "Services",
+        "link": "./en/!#services"
+      },
+      "hubcomercial": {
+        "title": "Commercial Hub",
+        "link": "./en/!#hub"
+      },
+      "experience": {
+        "title": "Experience",
+        "link": "./en/!#experience"
+      },
+      "works": {
+        "title": "Works",
+        "link": "./en/!#works"
+      },
+      "testimonials": {
+        "title": "Testimonials",
+        "link": "./en/!#testimonials"
+      },
+      "repositories": {
+        "title": "Repositories",
+        "link": "./en/!#repositories"
+      },
+      "contact": {
+        "title": "Contact",
+        "link": "./en/!#contact"
+      }
+    },
+    "links": {
+      "decrypto": {
+        "title": "Go to Decrypto Music website",
+        "link": "https://decrypto.com.br"
+      },
+      "hubcomercial": {
+        "title": "Go to Commercial Hub website",
+        "link": "https://hubcomercial.com.br"
+      }
+    }
+  },
+  "intro": {
+    "i-am": "I am",
+    "description": "passionate about technology, front-end (and full-stack) developer, systems analyst from UTFPR, code enthusiast",
+    "curriculum": {
+      "title": "See Curriculum Vitae",
+      "link": "./assets/files/curriculum-en.pdf"
+    },
+    "go-to-english": "Go to English version",
+    "go-to-spanish": "Go to Spanish version",
+    "go-to-portuguese": "Go to Portuguese version",
+    "see-more": {
+      "title": "See more",
+      "link": "./en/!#about"
+    }
+  },
+  "about": {
+    "id": "about",
+    "title": "About Me",
+    "description": "My name is Lucas Rinaldi and I have been working with technology since 2016. <br>Curious and passionate about challenges, I seek my professional and personal development by contributing to incredible people.",
+    "value-frontend": "98",
+    "value-backend": "89",
+    "value-databases": "81"
+  },
+  "services": {
+    "id": "servicos",
+    "title": "Services",
+    "items": [
+      {
+        "title": "Custom <br>Store Creation",
+        "alt": "Custom Store Creation",
+        "color": "#F9D74C",
+        "description": "Bring your idea to life and start making money on the internet!",
+        "src": "./assets/images/services/shop.svg"
+      },
+      {
+        "title": "Institutional <br>Websites and More",
+        "alt": "Institutional Websites and More",
+        "color": "#417dc7",
+        "description": "Create your website and become more present to your clients effectively.",
+        "src": "./assets/images/services/websites.svg"
+      },
+      {
+        "title": "Custom System Development",
+        "alt": "Custom System Development",
+        "color": "#F97B8B",
+        "description": "Build a customized solution to streamline your routine.",
+        "src": "./assets/images/services/custom.svg"
+      }
+    ],
+    "disclaimer": "Have an idea?<br>Send me an<a target=\"_blank\" title=\"Email Contact\" href=\"mailto:lucasreinaldi@gmail.com\"> email </a>or contact me on<a target=\"_blank\" title=\"WhatsApp Contact\" href=\"https://api.whatsapp.com/send?1=pt_BR&amp;phone=5543996168589\"> WhatsApp</a>! 👋"
+  },
+  "overlay": {
+    "text": "Select the website <br>version:",
+    "open-mobile-version": "Open mobile version",
+    "open-desktop-version": "Open desktop version",
+    "hint": "You can use the scroll <br>to navigate the website"
+  },
+  "chat": {
+    "cta": {
+      "title": "Send message via WhatsApp",
+      "link": "https://api.whatsapp.com/send?1=en&phone=5543996168589&text=Hi! I came through your personal website"
+    }
+  }
+}

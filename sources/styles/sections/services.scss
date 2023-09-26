@@ -42,7 +42,7 @@
       margin: 0 0 vw(10) 0;
     }
 
-    &--white {
+    &:nth-child(even) {
       h2,
       p {
         color: $white;
