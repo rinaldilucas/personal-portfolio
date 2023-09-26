@@ -91,6 +91,7 @@
   "scripts": {
     "build": "grunt build",
     "dev": "grunt dev",
+    "test": "grunt test",
     "sync": "concurrently \"syncdir --watch ./sources/images/ ./develop/assets/images/ ./sources/videos/ ./develop/assets/videos/\""
   }
 }
