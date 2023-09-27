@@ -1,0 +1,1254 @@
+{
+  "general": {
+    "tags": [
+      {
+        "name": "html"
+      },
+      {
+        "name": "css"
+      },
+      {
+        "name": "less"
+      },
+      {
+        "name": "sass"
+      },
+      {
+        "name": "javascript es5+"
+      },
+      {
+        "name": "typescript"
+      },
+      {
+        "name": "git"
+      },
+      {
+        "name": "angular"
+      },
+      {
+        "name": "protractor"
+      },
+      {
+        "name": "jest"
+      },
+      {
+        "name": "handlebars.js"
+      },
+      {
+        "name": "marioenette.js"
+      },
+      {
+        "name": "node"
+      },
+      {
+        "name": "c#"
+      },
+      {
+        "name": "express.js"
+      },
+      {
+        "name": "mongodb"
+      },
+      {
+        "name": "jwt"
+      },
+      {
+        "name": "grunt"
+      },
+      {
+        "name": "gulp"
+      },
+      {
+        "name": "webpack5"
+      },
+      {
+        "name": "docker"
+      },
+      {
+        "name": "aws"
+      },
+      {
+        "name": "photoshop"
+      },
+      {
+        "name": "illustrator"
+      },
+      {
+        "name": "premiere"
+      },
+      {
+        "name": "lightroom"
+      },
+      {
+        "name": "xd"
+      },
+      {
+        "name": "figma"
+      },
+      {
+        "name": "webhosting"
+      }
+    ]
+  },
+  "pt-br": {
+    "portfolio": [
+      {
+        "id": "reggi",
+        "name": "Pec Comercial & Reggi",
+        "src": "./assets/images/portfolio/thumb/pec.jpg"
+      },
+      {
+        "id": "dbug2",
+        "name": "d-bug clothings",
+        "src": "./assets/images/portfolio/thumb/dbug.jpg"
+      },
+      {
+        "id": "decrypto",
+        "name": "Decrypto",
+        "src": "./assets/images/portfolio/thumb/decrypto.jpg"
+      },
+      {
+        "id": "yumusick",
+        "name": "Yumusick",
+        "src": "./assets/images/portfolio/thumb/yumusick.jpg"
+      },
+      {
+        "id": "hubcomercial",
+        "name": "Hub Comercial",
+        "src": "./assets/images/portfolio/thumb/hubcomercial.jpg"
+      },
+      {
+        "id": "magaluconecta",
+        "name": "Magalu Conecta",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/magaluconecta.jpg"
+      },
+      {
+        "id": "happymeal-mario",
+        "name": "Happy Meal - Mario",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "churrascata",
+        "name": "Friboi - Churrascata",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/friboi.jpg"
+      },
+      {
+        "id": "nerdbot",
+        "name": "nerdBOT",
+        "src": "./assets/images/portfolio/thumb/nerdbot.jpg"
+      },
+      {
+        "id": "happymeal-stitch",
+        "name": "Happy Meal - Stitch",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "benedictionvault",
+        "name": "Benediction Vault",
+        "src": "./assets/images/portfolio/thumb/benedictionvault.jpg"
+      },
+      {
+        "id": "happymeal-sing",
+        "name": "Happy Meal - Sing2",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "carrefour-automotivo",
+        "name": "Carrefour - Centros Automotivos",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/carrefour.jpg"
+      },
+      {
+        "id": "happymeal-encanto",
+        "name": "Happy Meal - Encanto",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "fundacaolemann",
+        "name": "Fundação Lemann",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/fundacaolemann.jpg"
+      },
+      {
+        "id": "happymeal-disney50",
+        "name": "Happy Meal - Disney 50th",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "happymeal-spacejam",
+        "name": "Happy Meal - Space Jam",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "casasbahia",
+        "name": "Suporte Técnico Casas Bahia",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/casasbahia.jpg"
+      },
+      {
+        "id": "51",
+        "name": "51 Institucional",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/51.jpg"
+      },
+      {
+        "id": "comgas",
+        "name": "Manutenção Preventina Comgás",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/comgas.jpg"
+      },
+      {
+        "id": "extra",
+        "name": "Extra Serviços",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/extra.jpg"
+      },
+      {
+        "id": "pontofrio",
+        "name": "Suporte Técnico Ponto Frio",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/pontofrio.jpg"
+      },
+      {
+        "id": "ultragaz",
+        "name": "Serviços Ultragaz",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/ultragaz.jpg"
+      },
+      {
+        "id": "happymeal-luca",
+        "name": "Happy Meal - Luca",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "twway",
+        "name": "TW Way Negócios",
+        "src": "./assets/images/portfolio/thumb/twway.jpg"
+      },
+      {
+        "id": "mcdonalds-bbbox",
+        "name": "Mc Donald's BBBox",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/bbb.jpg"
+      },
+      {
+        "id": "cdi",
+        "name": "CDI Cursos",
+        "disclaimer": "Todos os direitos reservados à Infinite Cloud. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/cdi.jpg"
+      },
+      {
+        "id": "happymeal-ty",
+        "name": "Happy Meal - TY",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "rendem",
+        "name": "Rendem Institucinal",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/rendem.jpg"
+      },
+      {
+        "id": "happymeal-pokemon",
+        "name": "Happy Meal - Pokemón",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "unifilcatete",
+        "name": "Unifil Catete",
+        "disclaimer": "Todos os direitos reservados à Infinite Cloud. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/unifil.jpg"
+      },
+      {
+        "id": "friboi",
+        "name": "Friboi",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/friboi.jpg"
+      },
+      {
+        "id": "amaoka",
+        "name": "Igor Amaoka Arquitetura",
+        "src": "./assets/images/portfolio/thumb/amaoka.jpg"
+      },
+      {
+        "id": "especializa",
+        "name": "Samsung Especializa",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/samsung.jpg"
+      },
+      {
+        "id": "osphere",
+        "name": "Osphere Clothing",
+        "src": "./assets/images/portfolio/thumb/osphere.jpg"
+      },
+      {
+        "id": "hpsemprejuntos",
+        "name": "Sempre Juntos HP",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/hp.jpg"
+      },
+      {
+        "id": "peccomercial",
+        "name": "PEC Comercial",
+        "src": "./assets/images/portfolio/thumb/pec.jpg"
+      },
+      {
+        "id": "51ice",
+        "name": "51 Ice",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/51ice.jpg"
+      },
+      {
+        "id": "arroba",
+        "name": "Arroba Websites",
+        "src": "./assets/images/portfolio/thumb/arroba.jpg"
+      },
+      {
+        "id": "happymeal-raya",
+        "name": "Happy Meal - Raya",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "dbugclothings",
+        "name": "d-bug clothings",
+        "src": "./assets/images/portfolio/thumb/dbug.jpg"
+      },
+      {
+        "id": "asppas",
+        "name": "Asppas",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/asppas.jpg"
+      },
+      {
+        "id": "flamingo",
+        "name": "Flamingo",
+        "src": "./assets/images/portfolio/thumb/flamingo.jpg"
+      },
+      {
+        "id": "carrefour",
+        "name": "Carrefour",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/carrefour.jpg"
+      },
+      {
+        "id": "gordox",
+        "name": "Gordox Burger",
+        "src": "./assets/images/portfolio/thumb/gordox.jpg"
+      },
+      {
+        "id": "castrol",
+        "name": "Castrol",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/castrol.jpg"
+      },
+      {
+        "id": "cluborion",
+        "name": "Club Orion",
+        "disclaimer": "Todos os direitos reservados à Infinite Cloud. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/cluborion.jpg"
+      },
+      {
+        "id": "lovecolors",
+        "name": "Samsung Love Colors",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/samsung.jpg"
+      },
+      {
+        "id": "unifilitajai",
+        "name": "Unifil Itajaí",
+        "disclaimer": "Todos os direitos reservados à Infinite Cloud. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/unifil.jpg"
+      },
+      {
+        "id": "rmoreira",
+        "name": "Corretor Imobiliário Roberto Moreira",
+        "src": "./assets/images/portfolio/thumb/rmoreira.jpg"
+      },
+      {
+        "id": "happymeal-starwars",
+        "name": "Happy Meal - Star Wars",
+        "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "nebulus",
+        "name": "nebulUS music",
+        "src": "./assets/images/portfolio/thumb/nebulus.jpg"
+      },
+      {
+        "id": "technoturn",
+        "name": "TECHNOTURN",
+        "src": "./assets/images/portfolio/thumb/technoturn.jpg"
+      },
+      {
+        "id": "vivaemfesta",
+        "name": "Viva em Festa",
+        "src": "./assets/images/portfolio/thumb/vivaemfesta.jpg"
+      },
+      {
+        "id": "wantedsneakers",
+        "name": "Wanted Sneakers",
+        "src": "./assets/images/portfolio/thumb/wantedsneakers.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Marcos Walnei",
+        "title": "Diretor Administrativo PEC",
+        "text": "Lucas tem agregado significativamente em nossos negócios pelo Brasil e estamos muito satisfeitos com sua qualidade de entrega e resultados nesse parceria de quase três anos. 👍",
+        "src": "./assets/images/testimonials/marcoswalnei.svg"
+      },
+      {
+        "name": "Laiza Zotarelli",
+        "title": "Proprietária Viva em Festa",
+        "text": "Lucas teve toda tranquilidade e segurança que precisávamos ao abrir nossa loja virtual, desenvolvendo tudo sem eu precisar me preocupar com nada! Fico muito satisfeita e segura em saber que posso contar com ele quando precisar. 🙌",
+        "src": "./assets/images/testimonials/laizazotarelli.svg"
+      },
+      {
+        "name": "Jean Gonçalves",
+        "title": "Desenvolvedor full stack",
+        "text": "Un profesional excepcional, que siempre apunta a cumplir sus objetivos de la mejor manera posible. Es muy satisfactorio resolver problemas con alguien que nunca ha perdido las ganas de enseñar y ayudar. 👌",
+        "src": "./assets/images/testimonials/jeangoncalves.svg"
+      },
+      {
+        "name": "Pedro Perna",
+        "title": "Proprietário Osphere Clothing",
+        "text": "Extremamente atencioso e profissional. Recomendo a todos que precisem de alguém de confiança e em alguém que possa contar! 🔥",
+        "src": "./assets/images/testimonials/pedroperna.svg"
+      }
+    ],
+    "repositories": [
+      {
+        "name": "Exemplo de CRUD utilizando MEAN Stack",
+        "src": "./assets/images/repositories/meanstack.jpg",
+        "link": "https://github.com/rinaldilucas/mean-stack-template"
+      },
+      {
+        "name": "Código fonte deste website",
+        "src": "./assets/images/repositories/sourcecode.jpg",
+        "link": "https://github.com/rinaldilucas/personal-portfolio"
+      },
+      {
+        "name": "Exemplo em AngularJS",
+        "src": "./assets/images/repositories/angularjs.jpg",
+        "link": "https://github.com/rinaldilucas/angularjs-example"
+      },
+      {
+        "name": "Exemplo em Compass",
+        "src": "./assets/images/repositories/compass.jpg",
+        "link": "https://github.com/rinaldilucas/compass-example"
+      },
+      {
+        "name": "Exemplo em Less",
+        "src": "./assets/images/repositories/less.jpg",
+        "link": "https://github.com/rinaldilucas/less-example"
+      },
+      {
+        "name": "Modelo de Flexbox Grid",
+        "src": "./assets/images/repositories/flexbox-grid.jpg",
+        "link": "https://github.com/rinaldilucas/flexbox-grid-example"
+      },
+      {
+        "name": "Modelo de Linktree Melhorado",
+        "src": "./assets/images/repositories/improved-linktree.jpg",
+        "link": "https://github.com/rinaldilucas/improved-linktree-template"
+      },
+      {
+        "name": "Exemplo de Node Api",
+        "src": "./assets/images/repositories/node-api.jpg",
+        "link": "https://github.com/rinaldilucas/node-api-example"
+      },
+      {
+        "name": "Material de Graduação",
+        "src": "./assets/images/repositories/graduation-material.jpg",
+        "link": "https://github.com/rinaldilucas/graduation-material"
+      }
+    ]
+  },
+  "en-us": {
+    "portfolio": [
+      {
+        "id": "reggi",
+        "name": "Pec Comercial & Reggi",
+        "src": "./assets/images/portfolio/thumb/pec.jpg"
+      },
+      {
+        "id": "dbug2",
+        "name": "d-bug clothings",
+        "src": "./assets/images/portfolio/thumb/dbug.jpg"
+      },
+      {
+        "id": "decrypto",
+        "name": "Decrypto",
+        "src": "./assets/images/portfolio/thumb/decrypto.jpg"
+      },
+      {
+        "id": "yumusick",
+        "name": "Yumusick",
+        "src": "./assets/images/portfolio/thumb/yumusick.jpg"
+      },
+      {
+        "id": "hubcomercial",
+        "name": "Hub Comercial",
+        "src": "./assets/images/portfolio/thumb/hubcomercial.jpg"
+      },
+      {
+        "id": "magaluconecta",
+        "name": "Magalu Conecta",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/magaluconecta.jpg"
+      },
+      {
+        "id": "happymeal-mario",
+        "name": "Happy Meal - Mario",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "churrascata",
+        "name": "Friboi - Churrascata",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/friboi.jpg"
+      },
+      {
+        "id": "nerdbot",
+        "name": "nerdBOT",
+        "src": "./assets/images/portfolio/thumb/nerdbot.jpg"
+      },
+      {
+        "id": "happymeal-stitch",
+        "name": "Happy Meal - Stitch",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "benedictionvault",
+        "name": "Benediction Vault",
+        "src": "./assets/images/portfolio/thumb/benedictionvault.jpg"
+      },
+      {
+        "id": "happymeal-sing",
+        "name": "Happy Meal - Sing2",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "carrefour-automotivo",
+        "name": "Carrefour - Automotive Center",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/carrefour.jpg"
+      },
+      {
+        "id": "happymeal-encanto",
+        "name": "Happy Meal - Encanto",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "fundacaolemann",
+        "name": "Lemann Foundation",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/fundacaolemann.jpg"
+      },
+      {
+        "id": "happymeal-disney50",
+        "name": "Happy Meal - Disney 50th",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "happymeal-spacejam",
+        "name": "Happy Meal - Space Jam",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "casasbahia",
+        "name": "Technical Support Casas Bahia",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/casasbahia.jpg"
+      },
+      {
+        "id": "51",
+        "name": "51 Institucional",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/51.jpg"
+      },
+      {
+        "id": "comgas",
+        "name": "Comgás Preventive Maintenance",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/comgas.jpg"
+      },
+      {
+        "id": "extra",
+        "name": "Extra Services",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/extra.jpg"
+      },
+      {
+        "id": "pontofrio",
+        "name": "Ponto Frio Technical Support",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/pontofrio.jpg"
+      },
+      {
+        "id": "ultragaz",
+        "name": "Ultragaz Services",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/ultragaz.jpg"
+      },
+      {
+        "id": "happymeal-luca",
+        "name": "Happy Meal - Luca",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "twway",
+        "name": "TW Way Business",
+        "src": "./assets/images/portfolio/thumb/twway.jpg"
+      },
+      {
+        "id": "mcdonalds-bbbox",
+        "name": "Mc Donald's BBBox",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/bbb.jpg"
+      },
+      {
+        "id": "cdi",
+        "name": "CDI Courses",
+        "disclaimerEnUs": "All rights reserved to Infinite Cloud. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/cdi.jpg"
+      },
+      {
+        "id": "happymeal-ty",
+        "name": "Happy Meal - TY",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "rendem",
+        "name": "Rendem Institucinal",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/rendem.jpg"
+      },
+      {
+        "id": "happymeal-pokemon",
+        "name": "Happy Meal - Pokemón",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "unifilcatete",
+        "name": "Unifil Catete",
+        "disclaimerEnUs": "All rights reserved to Infinite Cloud. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/unifil.jpg"
+      },
+      {
+        "id": "friboi",
+        "name": "Friboi",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/friboi.jpg"
+      },
+      {
+        "id": "amaoka",
+        "name": "Igor Amaoka Architecture",
+        "src": "./assets/images/portfolio/thumb/amaoka.jpg"
+      },
+      {
+        "id": "especializa",
+        "name": "Samsung Especializa",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/samsung.jpg"
+      },
+      {
+        "id": "osphere",
+        "name": "Osphere Clothing",
+        "src": "./assets/images/portfolio/thumb/osphere.jpg"
+      },
+      {
+        "id": "hpsemprejuntos",
+        "name": "HP - Always Togheter",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/hp.jpg"
+      },
+      {
+        "id": "peccomercial",
+        "name": "PEC Comercial",
+        "src": "./assets/images/portfolio/thumb/pec.jpg"
+      },
+      {
+        "id": "51ice",
+        "name": "51 Ice",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/51ice.jpg"
+      },
+      {
+        "id": "arroba",
+        "name": "Arroba Websites",
+        "src": "./assets/images/portfolio/thumb/arroba.jpg"
+      },
+      {
+        "id": "happymeal-raya",
+        "name": "Happy Meal - Raya",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "dbugclothings",
+        "name": "d-bug clothings",
+        "src": "./assets/images/portfolio/thumb/dbug.jpg"
+      },
+      {
+        "id": "asppas",
+        "name": "Asppas",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/asppas.jpg"
+      },
+      {
+        "id": "flamingo",
+        "name": "Flamingo",
+        "src": "./assets/images/portfolio/thumb/flamingo.jpg"
+      },
+      {
+        "id": "carrefour",
+        "name": "Carrefour",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/carrefour.jpg"
+      },
+      {
+        "id": "gordox",
+        "name": "Gordox Burger",
+        "src": "./assets/images/portfolio/thumb/gordox.jpg"
+      },
+      {
+        "id": "castrol",
+        "name": "Castrol",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/castrol.jpg"
+      },
+      {
+        "id": "cluborion",
+        "name": "Orion Club",
+        "disclaimerEnUs": "All rights reserved to Infinite Cloud. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/cluborion.jpg"
+      },
+      {
+        "id": "lovecolors",
+        "name": "Samsung Love Colors",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/samsung.jpg"
+      },
+      {
+        "id": "unifilitajai",
+        "name": "Unifil Itajaí",
+        "disclaimerEnUs": "All rights reserved to Infinite Cloud. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/unifil.jpg"
+      },
+      {
+        "id": "rmoreira",
+        "name": "Realtor Roberto Moreira",
+        "src": "./assets/images/portfolio/thumb/rmoreira.jpg"
+      },
+      {
+        "id": "happymeal-starwars",
+        "name": "Happy Meal - Star Wars",
+        "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "nebulus",
+        "name": "nebulUS music",
+        "src": "./assets/images/portfolio/thumb/nebulus.jpg"
+      },
+      {
+        "id": "technoturn",
+        "name": "TECHNOTURN",
+        "src": "./assets/images/portfolio/thumb/technoturn.jpg"
+      },
+      {
+        "id": "vivaemfesta",
+        "name": "Viva em Festa",
+        "src": "./assets/images/portfolio/thumb/vivaemfesta.jpg"
+      },
+      {
+        "id": "wantedsneakers",
+        "name": "Wanted Sneakers",
+        "src": "./assets/images/portfolio/thumb/wantedsneakers.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Marcos Walnei",
+        "title": "Managing Director PEC",
+        "text": "Lucas has added significantly to our business throughout Brazil and we are very satisfied with his delivery quality and results in this partnership of almost three years. 👍",
+        "src": "./assets/images/testimonials/marcoswalnei.svg"
+      },
+      {
+        "name": "Laiza Zotarelli",
+        "title": "Viva em Festa's Owner",
+        "text": "Lucas had all the tranquility and security we needed when opening our online store, developing everything without me having to worry about anything! I am very pleased and confident to know that I can count on him when I need to. 🙌",
+        "src": "./assets/images/testimonials/laizazotarelli.svg"
+      },
+      {
+        "name": "Jean Gonçalves",
+        "title": "Full stack Developer",
+        "text": "An exceptional professional, who always aims to fulfill his goals in the best possible way. It is very satisfying to solve problems with those who have never lost the will to teach and help. 👌",
+        "src": "./assets/images/testimonials/jeangoncalves.svg"
+      },
+      {
+        "name": "Pedro Perna",
+        "title": "Osphere Clothing's Owner",
+        "text": "Lucas has added significantly to our business throughout Brazil and we are very satisfied with his delivery quality and results in this partnership of almost three years. 👍",
+        "src": "./assets/images/testimonials/pedroperna.svg"
+      }
+    ],
+    "repositories": [
+      {
+        "name": "CRUD Example using MEAN Stack",
+        "src": "./assets/images/repositories/meanstack.jpg",
+        "link": "https://github.com/rinaldilucas/mean-stack-template"
+      },
+      {
+        "name": "This website source code",
+        "src": "./assets/images/repositories/sourcecode.jpg",
+        "link": "https://github.com/rinaldilucas/personal-portfolio"
+      },
+      {
+        "name": "AngularJS Example",
+        "src": "./assets/images/repositories/angularjs.jpg",
+        "link": "https://github.com/rinaldilucas/angularjs-example"
+      },
+      {
+        "name": "Compass Example",
+        "src": "./assets/images/repositories/compass.jpg",
+        "link": "https://github.com/rinaldilucas/compass-example"
+      },
+      {
+        "name": "Less Example",
+        "src": "./assets/images/repositories/less.jpg",
+        "link": "https://github.com/rinaldilucas/less-example"
+      },
+      {
+        "name": "Flexbox and Grid Example",
+        "src": "./assets/images/repositories/flexbox-grid.jpg",
+        "link": "https://github.com/rinaldilucas/flexbox-grid-example"
+      },
+      {
+        "name": "Improved Linktree Template",
+        "src": "./assets/images/repositories/improved-linktree.jpg",
+        "link": "https://github.com/rinaldilucas/improved-linktree-template"
+      },
+      {
+        "name": "Node Api Example",
+        "src": "./assets/images/repositories/node-api.jpg",
+        "link": "https://github.com/rinaldilucas/node-api-example"
+      },
+      {
+        "name": "Graduation Material",
+        "src": "./assets/images/repositories/graduation-material.jpg",
+        "link": "https://github.com/rinaldilucas/graduation-material"
+      }
+    ]
+  },
+  "es-es": {
+    "portfolio": [
+      {
+        "id": "reggi",
+        "name": "Pec Comercial & Reggi",
+        "src": "./assets/images/portfolio/thumb/pec.jpg"
+      },
+      {
+        "id": "dbug2",
+        "name": "d-bug clothings",
+        "src": "./assets/images/portfolio/thumb/dbug.jpg"
+      },
+      {
+        "id": "decrypto",
+        "name": "Decrypto",
+        "src": "./assets/images/portfolio/thumb/decrypto.jpg"
+      },
+      {
+        "id": "yumusick",
+        "name": "Yumusick",
+        "src": "./assets/images/portfolio/thumb/yumusick.jpg"
+      },
+      {
+        "id": "hubcomercial",
+        "name": "Hub Comercial",
+        "src": "./assets/images/portfolio/thumb/hubcomercial.jpg"
+      },
+      {
+        "id": "magaluconecta",
+        "name": "Magalu Conecta",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/magaluconecta.jpg"
+      },
+      {
+        "id": "happymeal-mario",
+        "name": "Happy Meal - Mario",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "churrascata",
+        "name": "Friboi - Churrascata",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/friboi.jpg"
+      },
+      {
+        "id": "nerdbot",
+        "name": "nerdBOT",
+        "src": "./assets/images/portfolio/thumb/nerdbot.jpg"
+      },
+      {
+        "id": "happymeal-stitch",
+        "name": "Happy Meal - Stitch",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "benedictionvault",
+        "name": "Benediction Vault",
+        "src": "./assets/images/portfolio/thumb/benedictionvault.jpg"
+      },
+      {
+        "id": "happymeal-sing",
+        "name": "Happy Meal - Sing2",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "carrefour-automotivo",
+        "name": "Carrefour - Centro Automotriz",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/carrefour.jpg"
+      },
+      {
+        "id": "happymeal-encanto",
+        "name": "Happy Meal - Encanto",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "fundacaolemann",
+        "name": "Fundación Lemann",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/fundacaolemann.jpg"
+      },
+      {
+        "id": "happymeal-disney50",
+        "name": "Happy Meal - Disney 50th",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "happymeal-spacejam",
+        "name": "Happy Meal - Space Jam",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "casasbahia",
+        "name": "Soporte Técnico Casas Bahía",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/casasbahia.jpg"
+      },
+      {
+        "id": "51",
+        "name": "51 Institucional",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/51.jpg"
+      },
+      {
+        "id": "comgas",
+        "name": "Mantenimiento Preventivo Comgás",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/comgas.jpg"
+      },
+      {
+        "id": "extra",
+        "name": "Servicios Extra",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/extra.jpg"
+      },
+      {
+        "id": "pontofrio",
+        "name": "Soporte Técnico de Ponto Frio",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/pontofrio.jpg"
+      },
+      {
+        "id": "ultragaz",
+        "name": "Servicios Ultragaz",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/ultragaz.jpg"
+      },
+      {
+        "id": "happymeal-luca",
+        "name": "Happy Meal - Luca",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "twway",
+        "name": "TW Way Negocios",
+        "src": "./assets/images/portfolio/thumb/twway.jpg"
+      },
+      {
+        "id": "mcdonalds-bbbox",
+        "name": "Mc Donald's BBBox",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/bbb.jpg"
+      },
+      {
+        "id": "cdi",
+        "name": "CDI Cursos",
+        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/cdi.jpg"
+      },
+      {
+        "id": "happymeal-ty",
+        "name": "Happy Meal - TY",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "rendem",
+        "name": "Rendem Institucinal",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/rendem.jpg"
+      },
+      {
+        "id": "happymeal-pokemon",
+        "name": "Happy Meal - Pokemón",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "unifilcatete",
+        "name": "Unifil Catete",
+        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/unifil.jpg"
+      },
+      {
+        "id": "friboi",
+        "name": "Friboi",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/friboi.jpg"
+      },
+      {
+        "id": "amaoka",
+        "name": "Igor Amaoka Arquitectura",
+        "src": "./assets/images/portfolio/thumb/amaoka.jpg"
+      },
+      {
+        "id": "especializa",
+        "name": "Samsung Especializa",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/samsung.jpg"
+      },
+      {
+        "id": "osphere",
+        "name": "Osphere Clothing",
+        "src": "./assets/images/portfolio/thumb/osphere.jpg"
+      },
+      {
+        "id": "hpsemprejuntos",
+        "name": "HP - Siempre Juntos",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/hp.jpg"
+      },
+      {
+        "id": "peccomercial",
+        "name": "PEC Comercial",
+        "src": "./assets/images/portfolio/thumb/pec.jpg"
+      },
+      {
+        "id": "51ice",
+        "name": "51 Ice",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/51ice.jpg"
+      },
+      {
+        "id": "arroba",
+        "name": "Arroba Websites",
+        "src": "./assets/images/portfolio/thumb/arroba.jpg"
+      },
+      {
+        "id": "happymeal-raya",
+        "name": "Happy Meal - Raya",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "dbugclothings",
+        "name": "d-bug clothings",
+        "src": "./assets/images/portfolio/thumb/dbug.jpg"
+      },
+      {
+        "id": "asppas",
+        "name": "Asppas",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/asppas.jpg"
+      },
+      {
+        "id": "flamingo",
+        "name": "Flamingo",
+        "src": "./assets/images/portfolio/thumb/flamingo.jpg"
+      },
+      {
+        "id": "carrefour",
+        "name": "Carrefour",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/carrefour.jpg"
+      },
+      {
+        "id": "gordox",
+        "name": "Gordox Burger",
+        "src": "./assets/images/portfolio/thumb/gordox.jpg"
+      },
+      {
+        "id": "castrol",
+        "name": "Castrol",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/castrol.jpg"
+      },
+      {
+        "id": "cluborion",
+        "name": "Club Orion",
+        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/cluborion.jpg"
+      },
+      {
+        "id": "lovecolors",
+        "name": "Samsung Love Colors",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/samsung.jpg"
+      },
+      {
+        "id": "unifilitajai",
+        "name": "Unifil Itajaí",
+        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/unifil.jpg"
+      },
+      {
+        "id": "rmoreira",
+        "name": "Agente Inmobiliario Roberto Moreira",
+        "src": "./assets/images/portfolio/thumb/rmoreira.jpg"
+      },
+      {
+        "id": "happymeal-starwars",
+        "name": "Happy Meal - Star Wars",
+        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "src": "./assets/images/portfolio/thumb/happymeal.jpg"
+      },
+      {
+        "id": "nebulus",
+        "name": "nebulUS music",
+        "src": "./assets/images/portfolio/thumb/nebulus.jpg"
+      },
+      {
+        "id": "technoturn",
+        "name": "TECHNOTURN",
+        "src": "./assets/images/portfolio/thumb/technoturn.jpg"
+      },
+      {
+        "id": "vivaemfesta",
+        "name": "Viva em Festa",
+        "src": "./assets/images/portfolio/thumb/vivaemfesta.jpg"
+      },
+      {
+        "id": "wantedsneakers",
+        "name": "Wanted Sneakers",
+        "src": "./assets/images/portfolio/thumb/wantedsneakers.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "name": "Marcos Walnei",
+        "title": "Director Administrativo PEC",
+        "text": "Lucas tuvo toda la tranquilidad y seguridad que necesitábamos al abrir nuestra tienda online, ¡desarrollando todo sin que yo me tuviera que preocupar por nada! Estoy muy contento y confiado de saber que puedo contar con él cuando lo necesito. 👍",
+        "src": "./assets/images/testimonials/marcoswalnei.svg"
+      },
+      {
+        "name": "Laiza Zotarelli",
+        "title": "Propietario Viva em Festa",
+        "text": "Lucas tuvo toda la tranquilidad y seguridad que necesitábamos al abrir nuestra tienda online, ¡desarrollando todo sin que yo me tuviera que preocupar por nada! Estoy muy contento y confiado de saber que puedo contar con él cuando lo necesito. 👍",
+        "src": "./assets/images/testimonials/laizazotarelli.svg"
+      },
+      {
+        "name": "Jean Gonçalves",
+        "title": "Desarrollador full stack",
+        "text": "Un profesional excepcional, que siempre apunta a cumplir sus objetivos de la mejor manera posible. Es muy satisfactorio ver cómo ha evolucionado técnicamente y nunca ha perdido el deseo de enseñar y ayudar. 👌",
+        "src": "./assets/images/testimonials/jeangoncalves.svg"
+      },
+      {
+        "name": "Pedro Perna",
+        "title": "Propietario Osphere Clothing",
+        "text": "Extremadamente atento y profesional. Se lo recomiendo a todos los que necesitan a alguien en quien puedan confiar y en quien puedan contar. 🔥",
+        "src": "./assets/images/testimonials/pedroperna.svg"
+      }
+    ],
+    "repositories": [
+      {
+        "name": "Ejemplo CRUD usando MEAN Stack",
+        "src": "./assets/images/repositories/meanstack.jpg",
+        "link": "https://github.com/rinaldilucas/mean-stack-template"
+      },
+      {
+        "name": "Código fuente de este sitio web",
+        "src": "./assets/images/repositories/sourcecode.jpg",
+        "link": "https://github.com/rinaldilucas/personal-portfolio"
+      },
+      {
+        "name": "Ejemplo de AngularJS",
+        "src": "./assets/images/repositories/angularjs.jpg",
+        "link": "https://github.com/rinaldilucas/angularjs-example"
+      },
+      {
+        "name": "Ejemplo de Compass",
+        "src": "./assets/images/repositories/compass.jpg",
+        "link": "https://github.com/rinaldilucas/compass-example"
+      },
+      {
+        "name": "Ejemplo de Less",
+        "src": "./assets/images/repositories/less.jpg",
+        "link": "https://github.com/rinaldilucas/less-example"
+      },
+      {
+        "name": "Ejemplo de Flexbox y Grid",
+        "src": "./assets/images/repositories/flexbox-grid.jpg",
+        "link": "https://github.com/rinaldilucas/flexbox-grid-example"
+      },
+      {
+        "name": "Modelo de Linktree Mejorado",
+        "src": "./assets/images/repositories/improved-linktree.jpg",
+        "link": "https://github.com/rinaldilucas/improved-linktree-template"
+      },
+      {
+        "name": "Ejemplo de Node Api",
+        "src": "./assets/images/repositories/node-api.jpg",
+        "link": "https://github.com/rinaldilucas/node-api-example"
+      },
+      {
+        "name": "Material de Draduación",
+        "src": "./assets/images/repositories/graduation-material.jpg",
+        "link": "https://github.com/rinaldilucas/graduation-material"
+      }
+    ]
+  }
+}

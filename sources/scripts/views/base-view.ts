@@ -1,6 +1,6 @@
 import Marionette from 'backbone.marionette/lib/backbone.marionette.min';
 
-import defaultJson from '@scripts/data/database.json';
+import defaultJson from '@app/data/database.json';
 import helper from '@scripts/libraries/helpers';
 import scope from '@scripts/scope';
 

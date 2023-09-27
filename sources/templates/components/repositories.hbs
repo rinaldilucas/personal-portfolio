@@ -1,16 +1,16 @@
-<section id="repositorios" data-anchor-scroll="repositorios" class="repositories">
+<section id="{{resources.repositories.id}}" data-anchor-scroll="{{resources.repositories.id}}" class="repositories">
   <div class="repositories__wrapper">
-    <h2 class="repositories__title wow animated fadeIn" data-wow-delay="0.1s">Repositórios</h2>
+    <h2 class="repositories__title wow animated fadeIn" data-wow-delay="0.1s">{{resources.repositories.title}}</h2>
     <div class="spacer" data-height="60"></div>
     <div class="repositories__content">
       {{#each repositories}}
         <div class="repositories__item wow animated fadeIn" data-wow-delay="0.1s">
-          <a class="repositories__item-image" title="{{namePtBr}}" href="{{link}}" target="_blank">
+          <a class="repositories__item-image" title="{{name}}" href="{{link}}" target="_blank">
             <div class="repositories__item-details">
-              <h4 class="repositories__item-title">{{namePtBr}}</h4>
+              <h4 class="repositories__item-title">{{name}}</h4>
             </div>
             <div class="repositories__item-thumb">
-              <img loading="lazy" src="{{logoPath}}" alt="{{namePtBr}}" title="{{namePtBr}}" />
+              <img loading="lazy" src="{{src}}" alt="{{name}}" title="{{name}}" />
               <div class="repositories__item-mask"></div>
             </div>
           </a>

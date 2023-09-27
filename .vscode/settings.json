@@ -2,4 +2,7 @@
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
+  "cSpell.words": [
+    "Webdesign"
+  ],
 }

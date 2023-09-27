@@ -1,0 +1,40 @@
+<section id="{{resources.experience.id}}" data-anchor-scroll="{{resources.experience.id}}" class="experience">
+  <div class="experience__wrapper">
+    <h2 class="experience__title wow animated fadeIn" data-wow-delay="0.1s">{{resources.experience.title}}</h2>
+    <div class="spacer" data-height="60"></div>
+    <div class="experience__content">
+      <div class="experience__timeline wow animated fadeIn" data-wow-delay="0.3s">
+        <div class="experience__timeline-content">
+          {{#each resources.experience.works}}
+            <div class="experience__timeline-container experience__timeline-container--work wow fadeIn" data-wow-delay="0.2s">
+              <span class="wow fadeInLeft">{{date}}</span>
+              <h3 class="wow fadeInLeft">{{name}}<br><small>({{title}})</small></h3>
+              {{#each items}}
+                <p class="wow fadeInLeft">- {{text}}</p>
+              {{/each}}
+            </div>
+          {{/each}}
+          <span class="experience__timeline-line experience__timeline-line--blue wow fadeIn" data-wow-delay="0.2s"></span>
+        </div>
+      </div>
+      <div class="experience__timeline experience__timeline--education wow animated fadeIn" data-wow-delay="0.5s">
+        <div class="experience__timeline-content">
+          {{#each resources.experience.courses}}
+            <div class="experience__timeline-container experience__timeline-container--education wow fadeIn" data-wow-delay="0.2s">
+              <span class="wow fadeInLeft">{{date}}</span>
+              <h3 class="wow fadeInLeft">{{name}}<br>
+                {{#if title}}
+                  <small>{{{title}}}</small>
+                {{/if}}
+              </h3>
+              {{#each items}}
+                <p class="wow fadeInLeft">- {{text}}</p>
+              {{/each}}
+            </div>
+            <span class="experience__timeline-line experience__timeline-line--yellow wow fadeIn" data-wow-delay="0.2s"></span>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

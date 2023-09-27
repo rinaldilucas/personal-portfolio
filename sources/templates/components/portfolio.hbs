@@ -1,16 +1,16 @@
-<section id="portafolio" data-anchor-scroll="portafolio" class="portfolio">
+<section id="{{resources.works.id}}" data-anchor-scroll="{{resources.works.id}}" class="portfolio">
   <div class="portfolio__wrapper">
-    <h2 class="portfolio__title wow animated fadeIn" data-wow-delay="0.1s">Portafolio</h2>
+    <h2 class="portfolio__title wow animated fadeIn" data-wow-delay="0.1s">{{resources.works.title}}</h2>
     <div class="spacer" data-height="60"></div>
     <div class="portfolio__content">
       {{#each portfolio}}
         <div class="portfolio__item wow animated fadeIn" data-wow-delay="0.4s">
-          <a class="portfolio__item-image" title="{{nameEsEs}}" data-portfolio-anchor data-disclaimer="{{disclaimerEsEs}}" data-image="{{id}}">
+          <a class="portfolio__item-image" title="{{name}}" data-portfolio-anchor data-disclaimer="{{disclaimer}}" data-image="{{id}}">
             <div class="portfolio__item-details">
-              <h4 class="portfolio__item-title">{{nameEsEs}}</h4>
+              <h4 class="portfolio__item-title">{{name}}</h4>
             </div>
             <div class="portfolio__item-thumb">
-              <img loading="lazy" src="{{logoPath}}" alt="{{nameEsEs}}" title="{{nameEsEs}}" />
+              <img loading="lazy" src="{{src}}" alt="{{name}}" title="{{name}}" />
               <div class="portfolio__item-mask"></div>
             </div>
           </a>

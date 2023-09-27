@@ -1,0 +1,455 @@
+{
+  "general": {
+    "logo-alt": "Logo Lucas Rinaldi",
+    "name": "Lucas Rinaldi"
+  },
+  "header": {
+    "visit-source-code": "Visitar código fonte",
+    "source-code-link": "https://github.com/rinaldilucas/personal-portfolio",
+    "source-code": "código fonte",
+    "menu": [
+      {
+        "title": "Início",
+        "link": "./br/#!intro",
+        "scroll": "intro",
+        "icon": "icon-home",
+        "active": true
+      },
+      {
+        "title": "Sobre",
+        "link": "./br/#!sobre",
+        "scroll": "sobre",
+        "icon": "icon-user-following"
+      },
+      {
+        "title": "Serviços",
+        "link": "./br/#!servicos",
+        "scroll": "servicos",
+        "icon": "icon-briefcase"
+      },
+      {
+        "title": "Hub Comercial",
+        "link": "./br/#!hub",
+        "scroll": "hub",
+        "icon": "icon-link"
+      },
+      {
+        "title": "Experiência",
+        "link": "./br/#!experiencia",
+        "scroll": "experiencia",
+        "icon": "icon-graduation"
+      },
+      {
+        "title": "Trabalhos",
+        "link": "./br/#!trabalhos",
+        "scroll": "trabalhos",
+        "icon": "icon-docs"
+      },
+      {
+        "title": "Depoimentos",
+        "link": "./br/#!depoimentos",
+        "scroll": "depoimentos",
+        "icon": "icon-pencil"
+      },
+      {
+        "title": "Repositórios",
+        "link": "./br/#!repositorios",
+        "scroll": "repositorios",
+        "icon": "icon-grid"
+      },
+      {
+        "title": "Contato",
+        "link": "./br/#!contato",
+        "scroll": "contato",
+        "icon": "icon-bubbles"
+      }
+    ],
+    "links": {
+      "decrypto": {
+        "title": "Ir para o site do Decrypto Music",
+        "link": "https://decrypto.com.br"
+      },
+      "hubcomercial": {
+        "title": "Ir para o site do Hub Comercial",
+        "link": "https://hubcomercial.com.br"
+      }
+    }
+  },
+  "intro": {
+    "i-am": "Sou",
+    "description": "apaixonado por tecnologia, desenvolvedor front-end (e full stack), analista de sistemas pela UTFPR, amante de código",
+    "curriculum": {
+      "title": "Ver Curriculum Vitae",
+      "link": "./assets/files/curriculum-br.pdf"
+    },
+    "go-to-english": "Ir para versão em inglês",
+    "go-to-spanish": "Ir para versão em espanhol",
+    "go-to-portuguese": "Ir para versão em português",
+    "see-more": {
+      "title": "Ver mais",
+      "link": "./br/!#sobre"
+    }
+  },
+  "about": {
+    "id": "sobre",
+    "title": "Sobre Mim",
+    "description": "Me chamo Lucas Rinaldi e trabalho com tecnologia desde 2016. <br>Curioso e apaixonado por desafios, busco meu desenvolvimento profissional e pessoal contribuindo com pessoas incríveis.",
+    "value-frontend": "98",
+    "value-backend": "89",
+    "value-databases": "81"
+  },
+  "services": {
+    "id": "servicos",
+    "title": "Serviços",
+    "items": [
+      {
+        "title": "Criação de Lojas <br>Personalizadas",
+        "alt": "Criação de Lojas Personalizadas",
+        "color": "#F9D74C",
+        "description": "Tire sua ideia do papel e comece ganhar dinheiro com a internet!",
+        "src": "./assets/images/services/shop.svg"
+      },
+      {
+        "title": "Sites Institucionais <br>e Demais",
+        "alt": "Sites Institucionais e Demais",
+        "color": "#417dc7",
+        "description": "Realize seu site e fique mais presente para seus clientes de forma eficaz.",
+        "src": "./assets/images/services/websites.svg"
+      },
+      {
+        "title": "Desenvolvimento de Sistemas",
+        "alt": "Desenvolvimento de Sistemas Customizados",
+        "color": "#F97B8B",
+        "description": "Crie uma solução personalizada para agilizar sua rotina.",
+        "src": "./assets/images/services/custom.svg"
+      }
+    ],
+    "disclaimer": "Tem alguma ideia?<br>Me envie um<a target=\"_blank\" title=\"Contato por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> email </a>ou me <br>chame pelo<a target=\"_blank\" title=\"Contato por WhatsApp\" href=\"https://api.whatsapp.com/send?1=pt_BR&amp;phone=5543996168589\"> WhatsApp</a>! 👋"
+  },
+  "hub": {
+    "id": "hub",
+    "title": "Hub Comercial",
+    "text": "Conhece o Hub Comercial?",
+    "sub-text": "Tenha um cartão de visita profissional <br>pronto para divulgar em suas redes sociais <br>de forma prática!",
+    "alt": "Exemplo de Hub Comercial",
+    "cta": {
+      "text": "Saiba mais",
+      "title": "Ir para o website do Hub Comercial",
+      "link": "https://hubcomercial.com.br"
+    }
+  },
+  "experience": {
+    "id": "experiencia",
+    "title": "Experiências",
+    "works": [
+      {
+        "date": "2023 — presente",
+        "name": "ForLogic",
+        "title": "Desenvolvedor Full Stack",
+        "items": [
+          {
+            "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa utilizando Kanban"
+          },
+          {
+            "text": "Desenvolvimento e manutenção de relatórios utilizando Stimulsoft"
+          },
+          {
+            "text": "Desenvolvimento de novas funcionalidades seguindo a metodologia Scrum utilizando a stack Angular, C# e MSQL"
+          },
+          {
+            "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa utilizando Kanban"
+          }
+        ]
+      },
+      {
+        "date": "2020 — 2022",
+        "name": "Slingshot Digital",
+        "title": "Desenvolvedor Front-end",
+        "items": [
+          {
+            "text": "Criação de páginas a partir de protótipos em .psd e .xd, fornecidos pelos clientes"
+          },
+          {
+            "text": "Desenvolvimento de novos features para aplicações já existentes/para lançamento"
+          },
+          {
+            "text": "Facelifts e mudanças de layout em geral"
+          },
+          {
+            "text": "Estimativa e definição de prazos de entrega"
+          },
+          {
+            "text": "Manutenção da fila de bugs de projetos mantidos"
+          },
+          {
+            "text": "Implementação e teste de métricas (Adobe Audience Manager, Facebook Pixel, Google Tag Manager)"
+          },
+          {
+            "text": "Utilização do pacote Adobe para edição de imagens/vídeos"
+          }
+        ]
+      },
+      {
+        "date": "2019 — 2020",
+        "name": "ForLogic",
+        "title": "Desenvolvedor Full Stack",
+        "items": [
+          {
+            "text": "Migração dos produtos digitais da organização do modelo MVC para Angular, utilizando REST API (C#) e Scrum como metodologia ágil"
+          },
+          {
+            "text": "Manutenção da fila de bugs dos produto legado da companhia utilizando a metodologia Kanban"
+          },
+          {
+            "text": "Desenvolvimento e manutenção de APIs consumidas internamente e ofertadas como serviços"
+          },
+          {
+            "text": "Criação e refatoração de testes unitários utilizando xUnit"
+          }
+        ]
+      },
+      {
+        "date": "2019",
+        "name": "Robert Walters",
+        "title": "Recrutador em Tecnologia da Informação",
+        "items": [
+          {
+            "text": "Recrutamento e seleção especialista profissionais da área de tecnologia da informação"
+          },
+          {
+            "text": "Análise e avaliação curricular de profissionais na divisão de infraestrutura, desenvolvimento, segurança da informação e DevOps"
+          },
+          {
+            "text": "Suporte e acompanhamento dos profissionais até o momento da contratação de fato"
+          }
+        ]
+      },
+      {
+        "date": "2018 — 2019",
+        "name": "Infinite Cloud",
+        "title": "Desenvolvedor Front-end",
+        "items": [
+          {
+            "text": "Desenvolvimento de projetos web como e-commerce, sites institucionais, portfólios e websites em geral"
+          },
+          {
+            "text": "Consultoria e acompanhamento de publicidade no Facebook e Google AdWords"
+          },
+          {
+            "text": "Produção, desenvolvimento e aplicação artística voltada à web"
+          },
+          {
+            "text": "Responsável por deploy e release dos produtos desenvolvidos"
+          }
+        ]
+      },
+      {
+        "date": "2016 — 2017",
+        "name": "S4W",
+        "title": "Desenvolvedor Full Stack",
+        "items": [
+          {
+            "text": "Desenvolvimento web a partir de protótipos utilizando PhotoShop"
+          },
+          {
+            "text": "Manutenção dos bancos de dados SQL server"
+          },
+          {
+            "text": "Desenvolvimento e codificação lógica dos projetos ASP.NET e C#"
+          },
+          {
+            "text": "Refatoração e facelifts de projetos mantidos"
+          },
+          {
+            "text": "Implementação de testes e refatoração de códigos legados"
+          }
+        ]
+      },
+      {
+        "date": "2014 — 2015",
+        "name": "Prefeitura de Cornélio Procópio",
+        "title": "Estagiário em infraestrutura de Cornélio Procópio",
+        "items": [
+          {
+            "text": "Manutenção dos equipamentos de hardware e software utilizados nas dependências da prefeitura"
+          },
+          {
+            "text": "Otimização e melhor uso de recursos computacionais físicos"
+          },
+          {
+            "text": "Suporte técnico presencial e remoto"
+          },
+          {
+            "text": "Auxiliar na instalação da infraestrutura interna"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "date": "2017 — presente",
+        "name": "Certificações Alura",
+        "items": [
+          {
+            "text": "Acessibilidade web"
+          },
+          {
+            "text": "Agilidade"
+          },
+          {
+            "text": "Angular"
+          },
+          {
+            "text": "Comunicação assertiva"
+          },
+          {
+            "text": "Design Gráfico"
+          },
+          {
+            "text": "Design Gráfico usando Gestalt"
+          },
+          {
+            "text": "Engenharia de requisitos"
+          },
+          {
+            "text": "FlexBox"
+          },
+          {
+            "text": "Fotografia"
+          },
+          {
+            "text": "Fotografia"
+          },
+          {
+            "text": "Git e Github"
+          },
+          {
+            "text": "Grunt"
+          },
+          {
+            "text": "HTML5 e CSS3"
+          },
+          {
+            "text": "HTTP"
+          },
+          {
+            "text": "JavaScript"
+          },
+          {
+            "text": "Kanban"
+          },
+          {
+            "text": "Marketing digital"
+          },
+          {
+            "text": "NGINX"
+          },
+          {
+            "text": "Node.js e JWT"
+          },
+          {
+            "text": "Performance Web I"
+          },
+          {
+            "text": "PNL"
+          },
+          {
+            "text": "React"
+          },
+          {
+            "text": "Sass e Compass"
+          },
+          {
+            "text": "Scrum"
+          },
+          {
+            "text": "Swagger"
+          },
+          {
+            "text": "TypeScript"
+          },
+          {
+            "text": "UML"
+          },
+          {
+            "text": "UX and UX Strategy"
+          },
+          {
+            "text": "Web Design Responsivo"
+          },
+          {
+            "text": "Webpack"
+          },
+          {
+            "text": "WordPress"
+          }
+        ]
+      },
+      {
+        "date": "2013 — 2017",
+        "name": "Universidade Tecnológica Federal do Paraná",
+        "title": "Análise e Desenvolvimento de Sistemas",
+        "items": []
+      },
+      {
+        "date": "2011 — 2013",
+        "name": "Cursos de Especialização",
+        "items": [
+          {
+            "text": "Web Design"
+          },
+          {
+            "text": "Montagem e manutenção de hardwares"
+          },
+          {
+            "text": "Programação e algoritmo básico"
+          },
+          {
+            "text": "Desenhos Industriais"
+          },
+          {
+            "text": "Designer Gráfico"
+          }
+        ]
+      }
+    ]
+  },
+  "works": {
+    "id": "trabalhos",
+    "title": "Trabalhos"
+  },
+  "testimonials": {
+    "id": "depoimentos",
+    "title": "Testimonials"
+  },
+  "repositories": {
+    "id": "repositorios",
+    "title": "Repositórios"
+  },
+  "contact": {
+    "id": "contato",
+    "title": "Entre em Contato",
+    "text": "Gostaria de tirar <br>alguma dúvida?",
+    "sub-text": "Me envie um<a data-metrics=\"redirect\" title=\"Enviar e-mail\" href=\"mailto:lucasreinaldi@gmail.com\"> e-mail por aqui </a>👋<br>ou me envie uma mensagem<br>pelo formulário.",
+    "fields": {
+      "your-name": "Seu nome",
+      "email": "E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "required": "campos obrigatórios",
+      "send-message": "Enviar Mensagem"
+    }
+  },
+  "overlay": {
+    "text": "Selecione a versão <br>do website:",
+    "open-mobile-version": "Abrir versão mobile",
+    "open-desktop-version": "Abrir versão desktop",
+    "hint": "Você pode usar o scroll <br>para navegar no website"
+  },
+  "chat": {
+    "cta": {
+      "title": "Enviar mensagem pelo WhatsApp",
+      "link": "https://api.whatsapp.com/send?1=pt_BR&phone=5543996168589&text=Oi! Vim pelo seu website pessoal"
+    }
+  }
+}

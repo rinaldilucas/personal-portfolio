@@ -4,7 +4,7 @@ module.exports = (grunt) => {
   const path = require('path');
   const rename = require('gulp-rename');
   const vinylFs = require('vinyl-fs');
-  const defaults = require('../../scripts/data/database.json');
+  const defaults = require('../../data/database.json');
 
   const compileHandlebarsLayout = () => {
     grunt.registerMultiTask('hb', 'Renders Handlebars templates to static HTML.', function () {

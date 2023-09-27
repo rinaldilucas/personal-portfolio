@@ -1,5 +1,5 @@
-import data from '@scripts/data/database.json';
-import resources from '@scripts/data/i18n/en-us.json';
+import data from '@app/data/database.json';
+import resources from '@app/i18n/en-us.json';
 import scope from '@scripts/scope';
 import Base from '@scripts/views/base-view';
 
@@ -19,10 +19,10 @@ export default scope.views.Home = Base.extend({
   template: require('@templates/pages/home.hbs'),
   templateContext: {
     resources,
-    portfolio: data.portfolio,
-    testimonials: data.testimonials,
-    repositories: data.repositories,
-    tags: data.tags,
+    portfolio: data['en-us'].portfolio,
+    testimonials: data['en-us'].testimonials,
+    repositories: data['en-us'].repositories,
+    tags: data.general.tags,
     captchaSecret: process.env.CAPTCHA_SECRET,
     getformApiKey: process.env.GETFORM_API_KEY,
   },

@@ -24,7 +24,7 @@
     position: relative;
 
     @include media(">desktop") {
-      padding: vw(50) vw(40);
+      padding: vw(75) vw(40) vw(50);
       max-width: vw(1000);
       max-width: vw(360);
       flex-direction: column;
@@ -56,8 +56,8 @@
 
     @include media(">desktop") {
       width: vw(80);
-      top: vw(28);
       left: vw(10);
+      padding-bottom: vw(12);
     }
   }
 
@@ -136,14 +136,14 @@
     color: $font-color-alt;
     font-weight: 400;
     margin: vw(8);
-    font-size: vw(18);
-    line-height: vw(28);
+    font-size: vw(16);
+    line-height: vw(22);
   }
 
   &__text {
     color: $font-color;
     font-weight: 400;
-    margin: vw(8);
+    margin: vw(14) vw(8) vw(8) vw(8);
     font-size: vw(16);
     line-height: vw(28);
   }
