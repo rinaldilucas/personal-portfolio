@@ -7,7 +7,7 @@ module.exports = (grunt) => {
       files: [
         {
           expand: true,
-          cwd: '<%= config.source %>/images',
+          cwd: '<%= config.source %>/assets/images',
           src: '**/*.{png,jpg,jpeg}',
           dest: '<%= config.temp %>/images',
           rename: (dest, src) => {
@@ -16,7 +16,7 @@ module.exports = (grunt) => {
         },
         {
           expand: true,
-          cwd: '<%= config.source %>/images',
+          cwd: '<%= config.source %>/assets/images',
           src: '**/*.{svg,gif,ico}',
           dest: '<%= config.temp %>/images',
         },

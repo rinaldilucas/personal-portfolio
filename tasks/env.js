@@ -1,7 +1,7 @@
 module.exports = function () {
   return {
     root: './',
-    temp: './.temp/compress',
+    temp: './.temp/',
     source: './src',
     develop: './develop',
     dist: './dist',

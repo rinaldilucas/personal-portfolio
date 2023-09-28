@@ -1,5 +1,4 @@
-.DS_Store
-/delivery
+/dist
 /develop
 /node_modules
 /.temp
