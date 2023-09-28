@@ -11,10 +11,10 @@ const buildWebpackConfig = () => {
   const resolve = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@templates': path.resolve(__dirname, './sources/templates'),
-      '@app': path.resolve(__dirname, './sources'),
-      '@styles': path.resolve(__dirname, './sources/styles'),
-      '@scripts': path.resolve(__dirname, './sources/scripts'),
+      '@templates': path.resolve(__dirname, './src/templates'),
+      '@app': path.resolve(__dirname, './src'),
+      '@styles': path.resolve(__dirname, './src/styles'),
+      '@scripts': path.resolve(__dirname, './src/scripts'),
     },
   };
 
@@ -42,8 +42,8 @@ const buildWebpackConfig = () => {
       exclude: /(node_modules)/,
       loader: 'handlebars-loader',
       options: {
-        helperDirs: [path.resolve(__dirname, './sources/scripts/helpers')],
-        partialDirs: [path.resolve(__dirname, './sources/templates')],
+        helperDirs: [path.resolve(__dirname, './src/scripts/helpers')],
+        partialDirs: [path.resolve(__dirname, './src/templates')],
       },
     },
   ];
@@ -57,7 +57,7 @@ const buildWebpackConfig = () => {
   const config = {
     cache: true,
     module: { rules },
-    entry: { main: path.resolve(__dirname, './sources/scripts/main.ts') },
+    entry: { main: path.resolve(__dirname, './src/scripts/main.ts') },
     output: {
       path: path.resolve(__dirname, './develop/assets'),
       filename: 'scripts/[name].js',

@@ -93,6 +93,6 @@
     "build": "grunt build",
     "dev": "grunt dev",
     "test": "grunt test",
-    "sync": "concurrently \"syncdir --watch ./sources/images/ ./develop/assets/images/ ./sources/videos/ ./develop/assets/videos/\""
+    "sync": "concurrently \"syncdir --watch ./src/assets/images/ ./develop/assets/images/ ./src/assets/videos/ ./develop/assets/videos/\""
   }
 }

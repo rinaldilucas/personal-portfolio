@@ -1,4 +1,4 @@
-const env = require('./sources/tasks/env');
+const env = require('./tasks/env');
 
 ('use strict');
 
@@ -42,8 +42,8 @@ module.exports = function (grunt) {
     }
   };
 
-  const taskConfigurations = loadTasks('./sources/tasks/config');
-  const registerDefinitions = loadTasks('./sources/tasks/register');
+  const taskConfigurations = loadTasks('./tasks/config');
+  const registerDefinitions = loadTasks('./tasks/register');
 
   if (!registerDefinitions.default) {
     registerDefinitions.default = function (grunt) {

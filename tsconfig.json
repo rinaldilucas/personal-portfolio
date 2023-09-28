@@ -2,20 +2,20 @@
   "compilerOptions": {
     "paths": {
       "@app/*": [
-        "./sources/*"
+        "./src/*"
       ],
       "@styles/*": [
-        "./sources/styles/*"
+        "./src/styles/*"
       ],
       "@scripts/*": [
-        "./sources/scripts/*"
+        "./src/scripts/*"
       ],
       "@templates/*": [
-        "./sources/templates/*"
+        "./src/templates/*"
       ]
     },
     "baseUrl": ".",
-    "outDir": "./docs/assets/scripts",
+    "outDir": "./dist/assets/scripts",
     "module": "es6",
     "target": "es5",
     "noEmitOnError": true,
@@ -32,7 +32,7 @@
     "resolveJsonModule": true
   },
   "include": [
-    "./sources",
-    "./sources/scripts"
+    "./src",
+    "./src/scripts"
   ]
 }
