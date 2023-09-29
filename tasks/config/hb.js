@@ -7,7 +7,7 @@ module.exports = (grunt) => {
   const defaults = require('../../src/assets/data/database.json');
 
   const compileHandlebarsLayout = () => {
-    grunt.registerMultiTask('hb', 'Renders Handlebars templates to static HTML.', function () {
+    grunt.registerMultiTask('hb', 'Renders Handlebars templates to static HTML.', function() {
       let done;
       const options = this.options();
       const files = this.files;
@@ -31,9 +31,9 @@ module.exports = (grunt) => {
           .src(file.src)
           .pipe(
             hb(options)
-              .helpers(require('handlebars-layouts'))
-              .data(options.more || {})
-              .data(defaults),
+            .helpers(require('handlebars-layouts'))
+            .data(options.more || {})
+            .data(defaults),
           )
           .pipe(rename(basename))
           .pipe(vinylFs.dest(dirname))
@@ -63,15 +63,13 @@ module.exports = (grunt) => {
           cdn_url: './',
         },
       },
-      files: [
-        {
-          expand: true,
-          cwd: '<%= config.source %>/pages/',
-          src: '**/*.hbs',
-          dest: '<%= config.develop %>/',
-          ext: '.html',
-        },
-      ],
+      files: [{
+        expand: true,
+        cwd: '<%= config.source %>/pages/',
+        src: '**/*.hbs',
+        dest: '<%= config.develop %>/',
+        ext: '.html',
+      }, ],
     },
     dist: {
       options: {
@@ -86,15 +84,13 @@ module.exports = (grunt) => {
           })(new Date()),
         },
       },
-      files: [
-        {
-          expand: true,
-          cwd: '<%= config.source %>/pages/',
-          src: '**/*.hbs',
-          dest: '<%= config.dist %>',
-          ext: '.html',
-        },
-      ],
+      files: [{
+        expand: true,
+        cwd: '<%= config.source %>/pages/',
+        src: '**/*.hbs',
+        dest: '<%= config.dist %>',
+        ext: '.html',
+      }, ],
     },
   });
 };

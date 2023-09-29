@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "HookyQR.beautify"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"

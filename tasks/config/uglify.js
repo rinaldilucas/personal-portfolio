@@ -5,14 +5,12 @@ module.exports = (grunt) => {
       collapseWhitespace: true,
     },
     target: {
-      files: [
-        {
-          expand: true,
-          cwd: '<%= config.dist %>/assets/scripts',
-          src: '**/*.js',
-          dest: '<%= config.dist %>/assets/scripts',
-        },
-      ],
+      files: [{
+        expand: true,
+        cwd: '<%= config.dist %>/assets/scripts',
+        src: '**/*.js',
+        dest: '<%= config.dist %>/assets/scripts',
+      }, ],
     },
   });
 };
