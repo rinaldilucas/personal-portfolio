@@ -43,6 +43,7 @@
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^23.0.0",
+    "grunt-gh-pages": "^4.0.0",
     "grunt-real-favicon": "^0.2.4",
     "grunt-rev": "^0.1.0",
     "grunt-run": "^0.7.0",
@@ -91,8 +92,9 @@
   "private": true,
   "scripts": {
     "build": "grunt build",
+    "deploy": "grunt deploy",
     "dev": "grunt dev",
-    "test": "grunt test",
-    "sync": "concurrently \"syncdir --watch ./src/assets/images/ ./develop/assets/images/ ./src/assets/videos/ ./develop/assets/videos/\""
+    "sync": "concurrently \"syncdir --watch ./src/assets/images/ ./develop/assets/images/ ./src/assets/videos/ ./develop/assets/videos/\"",
+    "test": "grunt test"
   }
 }

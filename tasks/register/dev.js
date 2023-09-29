@@ -1,8 +1,8 @@
 module.exports = function (grunt) {
   grunt.registerTask(
-    'dev', //
+    'dev',
     [
-      'browserSync:dev', //
+      'browserSync:dev',
       'concurrent:dev',
     ],
   );
