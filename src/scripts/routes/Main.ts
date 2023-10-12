@@ -11,7 +11,7 @@ const AppController = {
   es: () => scope.app.go(new HomeEs()),
 };
 
-export default scope.routes.Main = AppRouter.extend({
+export default scope.routes.main = AppRouter.extend({
   controller: AppController,
   appRoutes: {
     '(/)(index.html)': 'index',
