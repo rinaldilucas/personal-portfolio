@@ -7,7 +7,7 @@ module.exports = (grunt) => {
   const defaults = require('../../assets/data/database.json');
 
   const compileHandlebarsLayout = () => {
-    grunt.registerMultiTask('hb', 'Renders Handlebars templates to static HTML.', function() {
+    grunt.registerMultiTask('hb', 'Renders Handlebars templatesTEST to static HTML.', function() {
       let done;
       const options = this.options();
       const files = this.files;
@@ -54,7 +54,7 @@ module.exports = (grunt) => {
     options: {
       data: ['src/scripts/data/**/*.json'],
       helpers: ['src/scripts/helpers/*.js'],
-      partials: ['src/templates/**/*.hbs'],
+      partials: ['src/templatesTEST/**/*.hbs'],
     },
     watch: {
       options: {

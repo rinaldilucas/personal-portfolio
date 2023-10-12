@@ -11,7 +11,7 @@ const buildWebpackConfig = () => {
   const resolve = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@templates': path.resolve(__dirname, './src/templates'),
+      '@templatesTEST': path.resolve(__dirname, './src/templatesTEST'),
       '@app': path.resolve(__dirname, './src'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@scripts': path.resolve(__dirname, './src/scripts'),
@@ -43,7 +43,7 @@ const buildWebpackConfig = () => {
       loader: 'handlebars-loader',
       options: {
         helperDirs: [path.resolve(__dirname, './src/scripts/helpers')],
-        partialDirs: [path.resolve(__dirname, './src/templates')],
+        partialDirs: [path.resolve(__dirname, './src/templatesTEST')],
       },
     },
   ];
