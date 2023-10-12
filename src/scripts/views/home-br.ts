@@ -16,7 +16,7 @@ import Spacer from '@scripts/behaviors/spacer';
 import Waypoint from '@scripts/behaviors/waypoint';
 
 export default scope.views.Home = Base.extend({
-  template: require('@templatesTEST/br/home.hbs'),
+  template: require('@pages/br/home.hbs'),
   templateContext: {
     resources,
     portfolio: data['pt-br'].portfolio,

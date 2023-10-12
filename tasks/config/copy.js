@@ -63,7 +63,7 @@ module.exports = (grunt) => {
         // works
         {
           expand: true,
-          cwd: '<%= config.source %>/pages',
+          cwd: '<%= config.source %>/pagesxxx',
           dest: '<%= config.develop %>',
           src: '**.html',
         },

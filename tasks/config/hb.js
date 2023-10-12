@@ -7,7 +7,7 @@ module.exports = (grunt) => {
   const defaults = require('../../assets/data/database.json');
 
   const compileHandlebarsLayout = () => {
-    grunt.registerMultiTask('hb', 'Renders Handlebars templatesTEST to static HTML.', function() {
+    grunt.registerMultiTask('hb', 'Renders Handlebars pages to static HTML.', function() {
       let done;
       const options = this.options();
       const files = this.files;
@@ -31,7 +31,7 @@ module.exports = (grunt) => {
           .src(file.src)
           .pipe(
             hb(options)
-            .helpers(require('handlebars-layouts'))
+            .helpers(require('handlebars-pagess'))
             .data(options.more || {})
             .data(defaults),
           )
@@ -54,18 +54,18 @@ module.exports = (grunt) => {
     options: {
       data: ['src/scripts/data/**/*.json'],
       helpers: ['src/scripts/helpers/*.js'],
-      partials: ['src/templatesTEST/**/*.hbs'],
+      partials: ['src/pages/**/*.hbs', 'src/components/**/*.hbs'],
     },
     watch: {
       options: {
         more: {
-          layout: 'html/skel',
+          pages: 'html/skel',
           cdn_url: './',
         },
       },
       files: [{
         expand: true,
-        cwd: '<%= config.source %>/pages/',
+        cwd: '<%= config.source %>/pagesxxx/',
         src: '**/*.hbs',
         dest: '<%= config.develop %>/',
         ext: '.html',
@@ -76,7 +76,7 @@ module.exports = (grunt) => {
         bustCache: true,
         more: {
           full: grunt.option('hml') ? env().url.hml : env().url.prod,
-          layout: 'html/skel',
+          pages: 'html/skel',
           version: '1.0.0',
           cdn_url: './',
           date: ((date) => {
@@ -86,7 +86,7 @@ module.exports = (grunt) => {
       },
       files: [{
         expand: true,
-        cwd: '<%= config.source %>/pages/',
+        cwd: '<%= config.source %>/pagesxxx/',
         src: '**/*.hbs',
         dest: '<%= config.dist %>',
         ext: '.html',

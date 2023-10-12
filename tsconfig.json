@@ -13,8 +13,8 @@
       "@scripts/*": [
         "./src/scripts/*"
       ],
-      "@templatesTEST/*": [
-        "./src/templatesTEST/*"
+      "@pages/*": [
+        "./src/pages/*"
       ]
     },
     "baseUrl": ".",

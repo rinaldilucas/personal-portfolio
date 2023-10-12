@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const mode = process.env.NODE_ENV || 'development';
 
-('use scrict');
+('use strict');
 dotenv.config();
 
 const buildWebpackConfig = () => {
@@ -11,7 +11,7 @@ const buildWebpackConfig = () => {
   const resolve = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@templatesTEST': path.resolve(__dirname, './src/templatesTEST'),
+      '@pages': path.resolve(__dirname, './src/pages'),
       '@app': path.resolve(__dirname, './src'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@scripts': path.resolve(__dirname, './src/scripts'),
@@ -43,7 +43,7 @@ const buildWebpackConfig = () => {
       loader: 'handlebars-loader',
       options: {
         helperDirs: [path.resolve(__dirname, './src/scripts/helpers')],
-        partialDirs: [path.resolve(__dirname, './src/templatesTEST')],
+        partialDirs: [path.resolve(__dirname, './src/pages'), path.resolve(__dirname, './src/components')],
       },
     },
   ];

@@ -8,7 +8,7 @@ module.exports = (grunt) => {
       },
     },
     html: {
-      files: ['<%= config.source %>/templatesTEST/**', '<%= config.source %>/pages/**', '<%= config.source %>/elements/**', '<%= config.source %>/scripts/data/**'],
+      files: ['<%= config.source %>/pages/**', '<%= config.source %>/pagesxxx/**', '<%= config.source %>/elements/**', '<%= config.source %>/scripts/data/**'],
       tasks: ['hb:watch'],
       options: {
         atBegin: true,
