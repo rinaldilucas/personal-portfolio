@@ -59,7 +59,7 @@ module.exports = (grunt) => {
     watch: {
       options: {
         more: {
-          layout: 'layouts/skel',
+          layout: 'html/skel',
           cdn_url: './',
         },
       },
@@ -76,7 +76,7 @@ module.exports = (grunt) => {
         bustCache: true,
         more: {
           full: grunt.option('hml') ? env().url.hml : env().url.prod,
-          layout: 'layouts/skel',
+          layout: 'html/skel',
           version: '1.0.0',
           cdn_url: './',
           date: ((date) => {

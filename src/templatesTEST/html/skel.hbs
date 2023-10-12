@@ -69,12 +69,12 @@
     {{!-- /SCRIPTS --}}
 
     {{!-- METRICS --}}
-    {{>layouts/metrics}}
+    {{>html/metrics}}
     {{!-- /METRICS --}}
   </head>
 
   <body id="main" class="{{page}}">
-    {{> layouts/metrics-fallback }}
+    {{> html/metrics-fallback }}
     {{> components/loading }}
 
     {{#block "content"}}
