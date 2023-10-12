@@ -11,6 +11,7 @@ const buildWebpackConfig = () => {
   const resolve = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
+      '@root': path.resolve(__dirname, './'),
       '@templates': path.resolve(__dirname, './src/templates'),
       '@app': path.resolve(__dirname, './src'),
       '@styles': path.resolve(__dirname, './src/styles'),

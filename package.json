@@ -95,6 +95,6 @@
     "deploy": "grunt deploy",
     "dev": "grunt dev",
     "test": "grunt test",
-    "sync": "concurrently \"syncdir --watch ./src/assets/images/ ./develop/assets/images/ ./src/assets/videos/ ./develop/assets/videos/\""
+    "sync": "concurrently \"syncdir --watch ./assets/images/ ./develop/assets/images/ ./assets/videos/ ./develop/assets/videos/\""
   }
 }

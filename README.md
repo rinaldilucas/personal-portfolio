@@ -9,7 +9,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/rinaldilucas/personal-portfolio">
-    <img src="./src/assets/images/_readme/logo.svg" alt="Logo" width="120">
+    <img src="./assets/images/_readme/logo.svg" alt="Logo" width="120">
   </a>
 
   <h3 align="center">Personal Portfolio Source Code</h3>
@@ -201,4 +201,4 @@ It helps me a lot to continue developing open source codes.
 [license-url]: https://github.com/rinaldilucas/personal-portfolio/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/rinaldilucas/
-[project-screenshot]: ./src/assets/images/_readme/screenshot.gif
+[project-screenshot]: ./assets/images/_readme/screenshot.gif

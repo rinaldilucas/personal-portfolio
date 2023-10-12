@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
+      "@root/*": [
+        "./*"
+      ],
       "@app/*": [
         "./src/*"
       ],
@@ -32,7 +35,6 @@
     "resolveJsonModule": true
   },
   "include": [
-    "./src",
-    "./src/scripts"
+    "./",
   ]
 }

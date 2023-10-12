@@ -1,5 +1,5 @@
-import data from '@app/assets/data/database.json';
-import resources from '@app/assets/i18n/pt-br.json';
+import data from '@root/assets/data/database.json';
+import resources from '@root/assets/i18n/pt-br.json';
 import scope from '@scripts/scope';
 import Base from '@scripts/views/base-view';
 

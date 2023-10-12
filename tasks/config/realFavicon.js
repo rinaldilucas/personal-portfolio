@@ -1,7 +1,7 @@
 module.exports = (grunt) => {
   grunt.config.set('realFavicon', {
     dist: {
-      src: '<%= config.source %>/assets/images/_favicon/favicon.png',
+      src: '<%= config.root %>/assets/images/_favicon/favicon.png',
       dest: '<%= config.dist %>',
       options: {
         iconsPath: '/',
