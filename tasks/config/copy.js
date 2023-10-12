@@ -14,7 +14,7 @@ module.exports = (grunt) => {
         // thumb
         {
           expand: true,
-          cwd: '<%= config.source %>/assets/images/_favicon',
+          cwd: '<%= config.root %>/assets/images/_favicon',
           dest: '<%= config.dist %>',
           src: 'thumb.jpg',
         },
@@ -22,7 +22,7 @@ module.exports = (grunt) => {
         {
           expand: true,
           dot: true,
-          cwd: '<%= config.source %>/assets/fonts',
+          cwd: '<%= config.root %>/assets/fonts',
           dest: '<%= config.dist %>/assets/fonts',
           src: '**/*.{eot,svg,ttf,woff,woff2}',
         },
@@ -36,14 +36,14 @@ module.exports = (grunt) => {
         // videos
         {
           expand: true,
-          cwd: '<%= config.source %>/assets/videos',
+          cwd: '<%= config.root %>/assets/videos',
           dest: '<%= config.dist %>/assets/videos',
           src: '**/*.{mp4,avi,ogg,ogv,webm}',
         },
         // data
         {
           expand: true,
-          cwd: '<%= config.source %>/assets/static',
+          cwd: '<%= config.root %>/assets/static',
           dest: '<%= config.dist %>/assets/files',
           src: '**',
         },
@@ -71,21 +71,21 @@ module.exports = (grunt) => {
         {
           expand: true,
           dot: true,
-          cwd: '<%= config.source %>/assets/fonts',
+          cwd: '<%= config.root %>/assets/fonts',
           dest: '<%= config.develop %>/assets/fonts',
           src: '**/*.{eot,svg,ttf,woff,woff2}',
         },
         // videos
         {
           expand: true,
-          cwd: '<%= config.source %>/assets/videos',
+          cwd: '<%= config.root %>/assets/videos',
           dest: '<%= config.develop %>/assets/videos',
           src: '**/*.{mp4,avi,ogg,ogv,webm}',
         },
         // data
         {
           expand: true,
-          cwd: '<%= config.source %>/assets/static',
+          cwd: '<%= config.root %>/assets/static',
           dest: '<%= config.develop %>/assets/files',
           src: '**',
         },

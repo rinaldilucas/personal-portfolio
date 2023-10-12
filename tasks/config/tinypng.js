@@ -10,7 +10,7 @@ module.exports = (grunt) => {
     },
     files: {
       src: ['**/*.{png,jpg,jpeg}'],
-      cwd: './<%= config.source %>/assets/images',
+      cwd: './<%= config.root %>/assets/images',
       dest: './<%= config.temp %>/images',
       expand: true,
     },

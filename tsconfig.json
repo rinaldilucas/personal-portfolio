@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
+      "@root/*": [
+        "./*"
+      ],
       "@app/*": [
         "./src/*"
       ],
@@ -33,6 +36,5 @@
   },
   "include": [
     "./src",
-    "./src/scripts"
   ]
 }

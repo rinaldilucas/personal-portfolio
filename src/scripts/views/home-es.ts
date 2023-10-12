@@ -1,7 +1,7 @@
-import data from '@app/assets/data/database.json';
-import resources from '@app/assets/i18n/es-es.json';
 import scope from '@scripts/scope';
 import Base from '@scripts/views/base-view';
+import data from '../../../assets/data/database.json';
+import resources from '../../../assets/i18n/es-es.json';
 
 import BackgroundColor from '@scripts/behaviors/background-color';
 import Captcha from '@scripts/behaviors/captcha';

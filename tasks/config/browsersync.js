@@ -9,7 +9,7 @@ module.exports = (grunt) => {
   grunt.config.set('browserSync', {
     dev: {
       bsFiles: {
-        src: ['develop/assets/styles/*.css', 'develop/assets/scripts/*.js', 'develop/*.html', 'src/assets/images/*.**'],
+        src: ['develop/assets/styles/*.css', 'develop/assets/scripts/*.js', 'develop/*.html', 'assets/images/*.**'],
       },
       options: {
         watchTask: true,
