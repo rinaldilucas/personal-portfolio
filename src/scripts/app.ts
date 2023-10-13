@@ -60,16 +60,16 @@ const Application = Marionette.Application.extend({
       .mousemove((e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
       .keydown((e) => {
         switch (e.key) {
-        case 'Escape':
-          self.trigger('esc');
-          break;
+          case 'Escape':
+            self.trigger('esc');
+            break;
         }
       });
     $(document)
       .on('mouseup', () => self.trigger('mouseup'))
       .on('mousemove', (e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
       .on('touchend', () => self.trigger('touchend'))
-      .on('touchmove', (e) => self.trigger('touchmove', { left: e.touches[0].pageX, top: e.touches[0].pageY }));
+      .on('touchmove', (e) => self.trigger('touchmove', { left: e.touches[0]?.pageX, top: e.touches[0]?.pageY }));
   },
   initialize: function () {
     setTimeout(() => new WOW().init(), 0);

@@ -1,5 +1,30 @@
 {
   "compilerOptions": {
+    /* base */
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    /* strictness */
+    // "strict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    /* types */
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    /* config */
+    "baseUrl": ".",
+    "outDir": "./dist/assets/scripts",
+    "module": "es6",
+    "target": "es5",
+    /* aliases */
     "paths": {
       "@root/*": [
         "./*"
@@ -16,23 +41,7 @@
       "@templates/*": [
         "./src/templates/*"
       ]
-    },
-    "baseUrl": ".",
-    "outDir": "./dist/assets/scripts",
-    "module": "es6",
-    "target": "es5",
-    "noEmitOnError": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "strictNullChecks": true,
-    "experimentalDecorators": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
-    "sourceMap": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    }
   },
   "include": [
     "./",
