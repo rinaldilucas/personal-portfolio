@@ -115,7 +115,7 @@
 }
 
 .slick-loading .slick-list {
-  background: #fff url("../images/general/ajax-loader.gif") center center no-repeat;
+  background: $white url("../images/general/ajax-loader.gif") center center no-repeat;
 }
 
 @font-face {
@@ -365,7 +365,7 @@
 
 .slick-prev:before {
   content: "";
-  background: #fff;
+  background: $white;
   display: block;
   width: vw(1);
   height: vw(14);
@@ -380,7 +380,7 @@
 
 .slick-prev:after {
   content: "";
-  background: #fff;
+  background: $white;
   display: block;
   width: vw(1);
   height: vw(14);
@@ -395,7 +395,7 @@
 
 .slick-next:before {
   content: "";
-  background: #fff;
+  background: $white;
   display: block;
   width: vw(1);
   height: vw(14);
@@ -410,7 +410,7 @@
 
 .slick-next:after {
   content: "";
-  background: #fff;
+  background: $white;
   display: block;
   width: vw(1);
   height: vw(14);

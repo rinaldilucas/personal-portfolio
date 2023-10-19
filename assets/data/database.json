@@ -2,16 +2,10 @@
   "general": {
     "tags": [
       {
-        "name": "html"
+        "name": "html/php"
       },
       {
-        "name": "css"
-      },
-      {
-        "name": "less"
-      },
-      {
-        "name": "sass"
+        "name": "css/less/sass"
       },
       {
         "name": "javascript es5+"
@@ -20,10 +14,16 @@
         "name": "typescript"
       },
       {
-        "name": "git"
+        "name": "angular"
       },
       {
-        "name": "angular"
+        "name": "laravel"
+      },
+      {
+        "name": "node"
+      },
+      {
+        "name": "c#"
       },
       {
         "name": "protractor"
@@ -36,12 +36,6 @@
       },
       {
         "name": "marioenette.js"
-      },
-      {
-        "name": "node"
-      },
-      {
-        "name": "c#"
       },
       {
         "name": "express.js"
@@ -87,6 +81,9 @@
       },
       {
         "name": "webhosting"
+      },
+      {
+        "name": "git"
       }
     ]
   },
@@ -409,6 +406,12 @@
         "title": "Diretor Administrativo PEC",
         "text": "Lucas tem agregado significativamente em nossos negócios pelo Brasil e estamos muito satisfeitos com sua qualidade de entrega e resultados nesse parceria de quase três anos. 👍",
         "src": "./assets/images/testimonials/marcoswalnei.svg"
+      },
+      {
+        "name": "Jair Brann",
+        "title": "Desenvolvedor full stack",
+        "text": "Lucas é um profissional muito acima da média, que reconhecemos seu valor logo no primeiro dia, extremamente engajado e preocupado na qualidade em tudo que faz, inconformado com seu trabalho e sempre buscando a excelência. 🫱🏻‍🫲🏼",
+        "src": "./assets/images/testimonials/jairbrann.svg"
       },
       {
         "name": "Laiza Zotarelli",
@@ -798,6 +801,12 @@
         "src": "./assets/images/testimonials/marcoswalnei.svg"
       },
       {
+        "name": "Jair Brann",
+        "title": "Full stack Developer",
+        "text": "Lucas is a well above average professional, whose value we recognized on the first day, extremely engaged and concerned about quality in everything he does, unsatisfied with his work and always seeking excellence. 🫱🏻‍🫲🏼",
+        "src": "./assets/images/testimonials/jairbrann.svg"
+      },
+      {
         "name": "Laiza Zotarelli",
         "title": "Viva em Festa's Owner",
         "text": "Lucas had all the tranquility and security we needed when opening our online store, developing everything without me having to worry about anything! I am very pleased and confident to know that I can count on him when I need to. 🙌",
@@ -1183,6 +1192,12 @@
         "title": "Director Administrativo PEC",
         "text": "Lucas tuvo toda la tranquilidad y seguridad que necesitábamos al abrir nuestra tienda online, ¡desarrollando todo sin que yo me tuviera que preocupar por nada! Estoy muy contento y confiado de saber que puedo contar con él cuando lo necesito. 👍",
         "src": "./assets/images/testimonials/marcoswalnei.svg"
+      },
+      {
+        "name": "Jair Brann",
+        "title": "Desarrollador full stack",
+        "text": "Lucas es un profesional muy por encima de la media, cuyo valor reconocimos el primer día, sumamente comprometido y preocupado por la calidad en todo lo que hace, insatisfecho con su trabajo y buscando siempre la excelencia. 🫱🏻‍🫲🏼",
+        "src": "./assets/images/testimonials/jairbrann.svg"
       },
       {
         "name": "Laiza Zotarelli",

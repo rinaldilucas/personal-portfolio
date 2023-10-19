@@ -1,4 +1,4 @@
-.portfolio {
+.blocks {
   &__wrapper {
     max-width: vw(340);
     margin: auto;
@@ -39,14 +39,14 @@
     }
 
     @include media(">desktop") {
-      width: vw(165);
-      height: vw(165);
+      width: vw(150);
+      height: vw(150);
       margin: 0 vw(30) vw(30) 0;
     }
 
     &:hover {
-      .portfolio__item-mask,
-      .portfolio__item-title {
+      .repositories__item-mask,
+      .repositories__item-title {
         opacity: 0.95 !important;
         transform: translateY(0);
       }
@@ -58,10 +58,12 @@
       display: block;
       border-radius: vw(20);
       @extend .drop-shadow;
+      height: 100%;
+      width: 100%;
     }
 
     &-details {
-      color: #fff;
+      color: $white;
       position: absolute;
       height: 100%;
       width: 100%;
@@ -71,7 +73,7 @@
     }
 
     &-title {
-      color: #fff;
+      color: $white;
       font-size: vw(18);
       margin: 0;
       opacity: 0;

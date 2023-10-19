@@ -1,6 +1,6 @@
-module.exports = function () {
+module.exports = function() {
   return {
-    root: './',
+    root: '.',
     temp: './.temp/',
     source: './src',
     develop: './develop',

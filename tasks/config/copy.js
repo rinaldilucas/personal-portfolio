@@ -31,7 +31,7 @@ module.exports = (grunt) => {
           expand: true,
           cwd: '<%= config.temp %>/images',
           dest: '<%= config.dist %>/assets/images',
-          src: '**/*.{ico,png,jpg,jpeg,svg,gif,png.webp,jpg.webp,jpeg.webp,svg.webp,webp}',
+          src: '**/*.{ico,png,jpg,jpeg,svg,gif,webp,png.webp,jpg.webp,jpeg.webp,svg.webp}',
         },
         // videos
         {
