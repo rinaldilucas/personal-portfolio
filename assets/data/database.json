@@ -2,10 +2,16 @@
   "general": {
     "tags": [
       {
-        "name": "html/php"
+        "name": "html"
       },
       {
-        "name": "css/less/sass"
+        "name": "css"
+      },
+      {
+        "name": "less"
+      },
+      {
+        "name": "sass"
       },
       {
         "name": "javascript es5+"
@@ -17,13 +23,19 @@
         "name": "angular"
       },
       {
+        "name": "php"
+      },
+      {
         "name": "laravel"
+      },
+      {
+        "name": "c#"
       },
       {
         "name": "node"
       },
       {
-        "name": "c#"
+        "name": "nestJS"
       },
       {
         "name": "protractor"
@@ -35,7 +47,7 @@
         "name": "handlebars.js"
       },
       {
-        "name": "marioenette.js"
+        "name": "marionette.js"
       },
       {
         "name": "express.js"
@@ -54,6 +66,12 @@
       },
       {
         "name": "webpack5"
+      },
+      {
+        "name": "webhosting"
+      },
+      {
+        "name": "git"
       },
       {
         "name": "docker"
@@ -78,12 +96,6 @@
       },
       {
         "name": "figma"
-      },
-      {
-        "name": "webhosting"
-      },
-      {
-        "name": "git"
       }
     ]
   },
