@@ -5,8 +5,7 @@
 .title {
   font-size: vw(36);
   line-height: vw(40);
-  margin: 0;
-  margin-left: vw(14);
+  margin: 0 0 vw(14) 0;
   position: relative;
 
   @include media(">desktop") {
@@ -23,6 +22,10 @@
     top: vw(-14);
     position: absolute;
     width: vw(37);
+
+    .dark & {
+      background-image: url(../images/general/dots-bg--white.svg);
+    }
   }
 }
 

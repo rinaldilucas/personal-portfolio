@@ -24,7 +24,7 @@
     background: $blue;
   }
   75% {
-    background: $blue-strong;
+    background: darken($accent, 50%);
   }
   100% {
     offset-distance: 100%;
@@ -48,7 +48,7 @@
     left: vw(-8);
   }
   25% {
-    background: $blue-strong;
+    background: darken($accent, 50%);
   }
   75% {
     background: $blue;

@@ -9,10 +9,12 @@ export default scope.behaviors.Header = Marionette.Behavior.extend({
     menuLink: '[data-header-link]',
     menuLabel: '[data-header-label]',
     menuCopyright: '[data-header-copyright]',
+    darkModeButton: '[data-toggle-dark-mode]',
   },
   events: {
     'click @ui.menuButton': 'toggleMenu',
     'click @ui.menuLink': 'closeMenu',
+    'click @ui.darkModeButton': 'toggleDarkMode',
   },
   onAttach: function (view) {
     this.build(view.$el);
@@ -28,6 +30,8 @@ export default scope.behaviors.Header = Marionette.Behavior.extend({
         $('.header__button input').prop('checked', false);
       }
     });
+
+    localStorage.getItem('dark-mode') === 'true' && $('html').addClass('dark');
   },
   toggleMenu: () => {
     $('html').toggleClass('active-menu');
@@ -38,5 +42,10 @@ export default scope.behaviors.Header = Marionette.Behavior.extend({
   closeMenu: () => {
     $('html').removeClass('active-menu');
     $('.header__button input').prop('checked', false);
+  },
+  toggleDarkMode: () => {
+    $('html').toggleClass('dark');
+    const isDarkMode = $('html').hasClass('dark');
+    localStorage.setItem('dark-mode', isDarkMode.toString());
   },
 });

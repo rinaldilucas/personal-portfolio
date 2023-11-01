@@ -28,12 +28,15 @@
 
   &__timeline {
     height: 100%;
-    background-color: $white;
     border-radius: vw(20);
     overflow: hidden;
     padding: vw(40);
     box-sizing: border-box;
     @extend .drop-shadow;
+
+    .dark & {
+      border: 2px solid $accent;
+    }
 
     @include media(">desktop") {
       max-width: vw(570);
@@ -67,6 +70,10 @@
         &:after {
           content: "";
           color: $blue;
+
+          .dark & {
+            color: lighten($accent, 20%);
+          }
         }
       }
 
@@ -74,6 +81,10 @@
         &:after {
           content: "";
           color: $yellow-strong;
+
+          .dark & {
+            color: lighten($accent, 20%);
+          }
         }
       }
 
@@ -84,10 +95,14 @@
         left: vw(-20);
         top: 0;
         z-index: 1;
-        background-color: $white;
+        background-color: $background-primary;
         padding: vw(4);
         box-sizing: border-box;
         width: vw(25);
+
+        .dark & {
+          background-color: $background-primary-dark;
+        }
 
         @include media(">desktop") {
           left: vw(-11);
@@ -129,10 +144,18 @@
 
       &--blue {
         background-color: $blue;
+
+        .dark & {
+          background-color: lighten($accent, 20%);
+        }
       }
 
       &--yellow {
         background-color: $yellow-strong;
+
+        .dark & {
+          background-color: lighten($accent, 20%);
+        }
       }
     }
   }

@@ -43,10 +43,14 @@
   }
 
   &__name {
-    color: $blue-strong;
+    color: darken($accent, 50%);
     font-weight: 700;
     font-size: vw(38);
     line-height: vw(38);
+
+    .dark & {
+      color: $accent-dark;
+    }
   }
 
   &__text {
@@ -66,15 +70,23 @@
       font-size: vw(24);
       width: vw(25);
       height: vw(25);
-      color: $blue-strong;
+      color: $accent;
       font-style: normal;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: auto;
 
+      .dark & {
+        color: $accent-dark;
+      }
+
       &:hover {
-        color: $blue;
+        color: darken($accent, 50%);
+
+        .dark & {
+          color: darken($accent-dark, 30%);
+        }
       }
     }
   }
@@ -123,17 +135,18 @@
       margin: auto;
       text-align: center;
 
-      > span {
-        color: $font-color;
-      }
-
+      > span,
       &:hover {
         color: $font-color;
+
+        .dark & {
+          color: $font-color-dark;
+        }
       }
     }
 
     &-mouse {
-      border: solid 2px $blue;
+      border: solid 2px $accent;
       border-radius: vw(16);
       display: block;
       margin: auto;

@@ -3,7 +3,11 @@
     <a title="{{resources.header.visit-source-code}}" target="_blank" class="header__code only-desktop" href="https://github.com/rinaldilucas/personal-portfolio">
       <i class="fa fa-cogs"></i>{{resources.header.source-code}}
     </a>
+    <a title="{{resources.header.toggle-dark-mode}}" data-toggle-dark-mode class="header__dark-mode only-desktop" href="javascript:;">
+      <i class="fa fa-moon-o"></i>
+    </a>
     <img class="header__logo" src="./assets/images/general/typo.svg" alt="{{resources.general.logo-alt}}" />
+    <img class="header__logo header__logo--dark" src="./assets/images/general/typo--white.svg" alt="{{resources.general.logo-alt}}" />
 
     <label class="header__button" for="header__button-input" data-header-label>
       <input type="checkbox" id="header__button-input" data-header-toggle />
@@ -18,6 +22,7 @@
           <li><a title="{{title}}" href="{{link}}" class="header__link {{#if active}}active{{/if}}" data-header-link="#{{scroll}}"><i class="{{icon}}"></i>{{title}}</a></li>
         {{/each}}
         <li><a title="{{resources.header.visit-source-code}}" target="_blank" class="header__code only-mobile" href="https://github.com/rinaldilucas/personal-portfolio"><i class="fa fa-cogs"></i>{{resources.header.source-code}}</a></li>
+        <li><a title="{{resources.header.toggle-dark-mode}}" data-toggle-dark-mode class="header__dark-mode only-mobile" href="javascript:;"><i class="fa fa-moon-o"></i></a></li>
       </ul>
     </nav>
 

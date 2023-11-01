@@ -52,14 +52,18 @@
       }
     }
 
-    &-baloon {
-      background-color: $white;
+    &-balloon {
       border-radius: vw(20);
       margin: vw(30) auto 0;
       padding: vw(30);
       position: relative;
       color: $font-color;
       @extend .drop-shadow;
+
+      .dark & {
+        color: $font-color-dark;
+        border: 2px solid $accent;
+      }
 
       @include media("<desktop") {
         width: vw(320);
@@ -72,11 +76,15 @@
         height: 0;
         border-left: vw(10) solid transparent;
         border-right: vw(10) solid transparent;
-        border-bottom: vw(15) solid $white;
+        border-bottom: vw(15) solid $background-primary;
         position: absolute;
         left: 50%;
         top: vw(-15);
         transform: translateX(vw(-7));
+
+        .dark & {
+          border-bottom: vw(15) solid $accent;
+        }
       }
     }
 

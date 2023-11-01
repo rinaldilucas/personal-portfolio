@@ -64,6 +64,11 @@
     text-align: center;
     width: 100%;
 
+    .dark & {
+      background-color: transparent !important;
+      border: 2px solid $accent;
+    }
+
     h2 {
       margin: 0 0 vw(20) 0;
       font-size: vw(22);

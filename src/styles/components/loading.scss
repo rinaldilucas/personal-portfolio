@@ -110,7 +110,7 @@
 }
 
 #preloader {
-  background: $white;
+  background: $background-primary;
   height: 100%;
   position: fixed;
   width: 100%;
@@ -121,6 +121,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .dark & {
+    background: $background-primary-dark;
   }
 }
 

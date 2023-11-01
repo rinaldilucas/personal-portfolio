@@ -38,8 +38,8 @@
     }
   }
 
-  &__baloon {
-    background-color: $white;
+  &__balloon {
+    background-color: $background-primary;
     padding: vw(25) vw(30);
     border-radius: vw(20);
     @extend .drop-shadow;
@@ -48,6 +48,11 @@
     position: relative;
     margin: vw(35) 0 0;
     flex-direction: column;
+
+    .dark & {
+      background-color: $background-primary-dark;
+      border: 2px solid $accent;
+    }
 
     @include media(">desktop") {
       flex-direction: row;
@@ -60,11 +65,15 @@
       height: 0;
       border-left: vw(10) solid transparent;
       border-right: vw(10) solid transparent;
-      border-bottom: vw(10) solid $white;
+      border-bottom: vw(10) solid $background-primary;
       position: absolute;
       left: 50%;
       top: vw(-10);
       transform: translateX(-50%);
+
+      .dark & {
+        border-bottom: vw(10) solid $accent;
+      }
 
       @include media(">desktop") {
         content: "";
@@ -72,10 +81,15 @@
         height: 0;
         border-top: vw(10) solid transparent;
         border-bottom: vw(10) solid transparent;
-        border-right: vw(15) solid $white;
+        border-right: vw(15) solid $background-primary;
         position: absolute;
         left: vw(-12);
         top: 20%;
+
+        .dark & {
+          border-bottom: vw(10) solid transparent;
+          border-right: vw(15) solid $accent;
+        }
       }
     }
 
@@ -119,7 +133,7 @@
     }
 
     &-background {
-      background-color: $ice;
+      background-color: $background-primary;
       border-radius: vw(15);
     }
 

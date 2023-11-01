@@ -11,6 +11,10 @@
   border-radius: vw(99);
   background-color: $green;
 
+  .dark & {
+    background-color: $accent;
+  }
+
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     background-color: $ice;
     border: 2px solid $blue;

@@ -120,7 +120,13 @@
       color: $font-color;
       background-image: none;
       border: 0;
+      background-color: $background-primary;
       @extend .drop-shadow;
+
+      .dark & {
+        background-color: $background-primary-dark;
+        border: 1px solid $accent;
+      }
 
       &:focus {
         @extend .drop-shadow;
@@ -130,6 +136,10 @@
       &::placeholder {
         font-family: $font-main;
         color: $font-color;
+
+        .dark & {
+          color: $font-color-dark;
+        }
       }
     }
 
@@ -197,11 +207,14 @@
 
     span {
       border-radius: vw(3);
-      background-color: $white;
-      border: 1px solid $blue;
+      border: 1px solid $accent;
       font-size: vw(11);
       line-height: vw(32);
       padding: vw(4);
+
+      .dark & {
+        border: 1px solid $accent;
+      }
     }
   }
 

@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: $white;
+  background-color: $background-primary;
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
@@ -13,6 +13,10 @@
   @include media(">desktop") {
     width: vw(290);
     height: 100vh;
+  }
+
+  .dark & {
+    background-color: darken($background-primary-dark, 5%);
   }
 
   &__wrapper {
@@ -33,7 +37,7 @@
   }
 
   &__code {
-    background-color: $blue-strong;
+    background-color: darken($accent, 60%);
     color: $white;
     font-size: vw(12);
     border-radius: vw(50);
@@ -42,8 +46,34 @@
     position: absolute;
     padding: vw(4) vw(8);
 
+    .dark & {
+      background-color: transparent;
+      border: 2px solid $accent;
+    }
+
     i {
       margin-right: vw(8);
+    }
+  }
+
+  &__dark-mode {
+    background-color: darken($accent, 50%);
+    color: $white;
+    font-size: vw(18);
+    border-radius: vw(50);
+    bottom: vw(5);
+    left: vw(5);
+    position: absolute;
+    padding: vw(10) vw(10);
+    width: vw(14);
+    height: vw(14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dark & {
+      background-color: transparent;
+      border: 2px solid $accent;
     }
   }
 
@@ -54,10 +84,22 @@
     justify-content: center;
     position: relative;
 
+    .dark & {
+      display: none;
+    }
+
     @include media(">desktop") {
       width: vw(80);
       left: vw(10);
       padding-bottom: vw(12);
+    }
+
+    &--dark {
+      display: none;
+
+      .dark & {
+        display: flex;
+      }
     }
   }
 
@@ -83,16 +125,24 @@
     left: -90%;
     transition: left 0.3s ease-out;
     @extend .drop-shadow;
-    background: $white;
+    background: $background-primary;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    .dark & {
+      background: $background-primary-dark;
+    }
 
     @include media(">desktop") {
       position: static;
       box-shadow: none;
       width: auto;
       height: auto;
+
+      .dark & {
+        background: transparent;
+      }
     }
 
     .active-menu & {
@@ -107,8 +157,11 @@
     font-size: vw(20);
     display: block;
 
+    .dark & {
+      color: $font-color-dark;
+    }
+
     @include media(">desktop") {
-      color: $font-color;
       font-weight: 600;
       font-size: vw(18);
     }
@@ -133,11 +186,15 @@
   }
 
   &__websites {
-    color: $font-color-alt;
+    color: lighten($font-color, 20%);
     font-weight: 400;
     margin: vw(8);
     font-size: vw(16);
     line-height: vw(22);
+
+    .dark & {
+      color: lighten($font-color-dark, 20%);
+    }
   }
 
   &__text {
@@ -146,6 +203,10 @@
     margin: vw(14) vw(8) vw(8) vw(8);
     font-size: vw(16);
     line-height: vw(28);
+
+    .dark & {
+      color: $font-color-dark;
+    }
   }
 
   &__button {

@@ -12,12 +12,13 @@ $primary: $onix;
 $primary-hover: $gray;
 
 $accent: $blue;
+$accent-dark: $white;
 $alert: $red;
 
-$font-color: $blue-strong;
+$font-color: darken($accent, 50%);
 $font-color-alt: $blue;
-$font-color-inverted: $ice;
-$font-color-alt-inverted: $ice;
+$font-color-dark: $ice;
+$font-color-alt-dark: $ice;
 
 $button: $blue;
 $button-hover: $blue;
@@ -25,17 +26,17 @@ $button-hover: $blue;
 $shadow: $black-transparent;
 $shadow-alt: $onix-strong;
 
-$background-primary: $white;
-$background-primary-inverted: $onix-strong;
+$background-primary: $ice;
+$background-primary-dark: $onix-strong;
 $background-secondary: $ice;
-$background-secondary-inverted: $onix;
+$background-secondary-dark: $onix;
 
 $body: $white;
-$body-inverted: $black-light;
+$body-dark: $onix;
 
 $border: $ice-light;
 $border-primary: $primary;
-$border-secondary: $blue-strong;
+$border-secondary: darken($accent, 50%);
 
 $outline: $blue;
 
