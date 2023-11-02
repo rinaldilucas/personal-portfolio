@@ -126,6 +126,7 @@
       .dark & {
         background-color: $background-primary-dark;
         border: 1px solid $accent;
+        color: $font-color-dark;
       }
 
       &:focus {

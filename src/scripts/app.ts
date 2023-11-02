@@ -59,9 +59,9 @@ const Application = Marionette.Application.extend({
       .mousemove((e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
       .keydown((e) => {
         switch (e.key) {
-          case 'Escape':
-            self.trigger('esc');
-            break;
+        case 'Escape':
+          self.trigger('esc');
+          break;
         }
       });
     $(document)

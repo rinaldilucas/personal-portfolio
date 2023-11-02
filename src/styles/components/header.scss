@@ -59,14 +59,14 @@
   &__dark-mode {
     background-color: darken($accent, 50%);
     color: $white;
-    font-size: vw(18);
+    font-size: vw(16);
     border-radius: vw(50);
-    bottom: vw(5);
-    left: vw(5);
+    top: vw(5);
+    right: vw(5);
     position: absolute;
     padding: vw(10) vw(10);
-    width: vw(14);
-    height: vw(14);
+    width: vw(12);
+    height: vw(12);
     display: flex;
     align-items: center;
     justify-content: center;
