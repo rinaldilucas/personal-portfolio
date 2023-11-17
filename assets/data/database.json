@@ -446,9 +446,9 @@
     ],
     "repositories": [
       {
-        "name": "Exemplo de CRUD utilizando MEAN Stack",
+        "name": "Gerenciador de Tarefas em Angular 14 (MEAN)",
         "src": "./assets/images/repositories/meanstack.jpg",
-        "link": "https://github.com/rinaldilucas/mean-stack-template"
+        "link": "https://github.com/rinaldilucas/angular14-task-crud-mean"
       },
       {
         "name": "Código fonte deste website",
@@ -839,9 +839,9 @@
     ],
     "repositories": [
       {
-        "name": "CRUD Example using MEAN Stack",
+        "name": "Angular 14 Task Manager (MEAN)",
         "src": "./assets/images/repositories/meanstack.jpg",
-        "link": "https://github.com/rinaldilucas/mean-stack-template"
+        "link": "https://github.com/rinaldilucas/angular14-task-crud-mean"
       },
       {
         "name": "This website source code",
@@ -1232,9 +1232,9 @@
     ],
     "repositories": [
       {
-        "name": "Ejemplo CRUD usando MEAN Stack",
+        "name": "Administrador de Tareas en Angular 14 (MEAN)",
         "src": "./assets/images/repositories/meanstack.jpg",
-        "link": "https://github.com/rinaldilucas/mean-stack-template"
+        "link": "https://github.com/rinaldilucas/angular14-task-crud-mean"
       },
       {
         "name": "Código fuente de este sitio web",
