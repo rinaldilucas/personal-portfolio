@@ -6,7 +6,11 @@ import Main from '@scripts/views/init';
 ((scope) => {
   ('use strict');
 
-  const base: any = (document.getElementById('base-id') as HTMLAnchorElement).href.split(location.host).pop();
+  const base: any = (
+    document.getElementById('base-id') as HTMLAnchorElement
+  ).href
+    .split(location.host)
+    .pop();
 
   scope.app = App;
   scope.config = {

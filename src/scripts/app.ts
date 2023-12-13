@@ -10,7 +10,10 @@ const Application = Marionette.Application.extend({
   go: function (view) {
     const self = this;
 
-    this.layout.go(view, () => (self.sections = $('section[data-anchor-scroll]')));
+    this.layout.go(
+      view,
+      () => (self.sections = $('section[data-anchor-scroll]')),
+    );
   },
   anchor: function (where) {
     helper.anchor(where);
@@ -46,29 +49,54 @@ const Application = Marionette.Application.extend({
 
     $(window)
       .scroll(() => {
-        const top = typeof window.scrollY === 'undefined' ? window.pageYOffset : window.scrollY;
+        const top =
+          typeof window.scrollY === 'undefined'
+            ? window.pageYOffset
+            : window.scrollY;
 
-        self.trigger('scroll', { top, width: $(window).width(), height: $(window).height() });
+        self.trigger('scroll', {
+          top,
+          width: $(window).width(),
+          height: $(window).height(),
+        });
       })
       .resize(() => {
-        const top = typeof window.scrollY === 'undefined' ? window.pageYOffset : window.scrollY;
+        const top =
+          typeof window.scrollY === 'undefined'
+            ? window.pageYOffset
+            : window.scrollY;
 
-        self.trigger('resize', { top, width: $(window).width(), height: $(window).height() });
+        self.trigger('resize', {
+          top,
+          width: $(window).width(),
+          height: $(window).height(),
+        });
       })
-      .mousemove((e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
-      .mousemove((e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
+      .mousemove((e) =>
+        self.trigger('mousemove', { left: e.pageX, top: e.pageY }),
+      )
+      .mousemove((e) =>
+        self.trigger('mousemove', { left: e.pageX, top: e.pageY }),
+      )
       .keydown((e) => {
         switch (e.key) {
-        case 'Escape':
-          self.trigger('esc');
-          break;
+          case 'Escape':
+            self.trigger('esc');
+            break;
         }
       });
     $(document)
       .on('mouseup', () => self.trigger('mouseup'))
-      .on('mousemove', (e) => self.trigger('mousemove', { left: e.pageX, top: e.pageY }))
+      .on('mousemove', (e) =>
+        self.trigger('mousemove', { left: e.pageX, top: e.pageY }),
+      )
       .on('touchend', () => self.trigger('touchend'))
-      .on('touchmove', (e) => self.trigger('touchmove', { left: e.touches[0]?.pageX, top: e.touches[0]?.pageY }));
+      .on('touchmove', (e) =>
+        self.trigger('touchmove', {
+          left: e.touches[0]?.pageX,
+          top: e.touches[0]?.pageY,
+        }),
+      );
   },
   initialize: function () {
     setTimeout(() => new WOW().init(), 0);
@@ -90,7 +118,10 @@ const Application = Marionette.Application.extend({
 
     $(window)
       .scroll(function () {
-        const top = typeof window.scrollY === 'undefined' ? window.pageYOffset : window.scrollY;
+        const top =
+          typeof window.scrollY === 'undefined'
+            ? window.pageYOffset
+            : window.scrollY;
         let current;
 
         self.trigger('scroll', { top });
@@ -105,7 +136,11 @@ const Application = Marionette.Application.extend({
           }
         }
 
-        if (current && current.attr('data-anchor-scroll') && current.attr('data-anchor-scroll') !== last) {
+        if (
+          current &&
+          current.attr('data-anchor-scroll') &&
+          current.attr('data-anchor-scroll') !== last
+        ) {
           if (!self.loaded) return;
 
           last = current.attr('data-anchor-scroll');
@@ -119,14 +154,20 @@ const Application = Marionette.Application.extend({
 
           document.location.hash = '#!' + last;
           menuLinks.each(function () {
-            if (last.toString() === ($(this).attr('data-header-link') as any).replace('#', '')) {
+            if (
+              last.toString() ===
+              ($(this).attr('data-header-link') as any).replace('#', '')
+            ) {
               $(this).addClass('active');
 
               const pos = ($(this).offset() as any).left;
               const scrollPos = $('.navigation__container').scrollLeft();
               const offset = parseInt($('.navigation').css('padding-left'));
 
-              $('.navigation__container').animate({ scrollLeft: (scrollPos as number) + pos - offset }, 100);
+              $('.navigation__container').animate(
+                { scrollLeft: (scrollPos as number) + pos - offset },
+                100,
+              );
             } else {
               $(this).removeClass('active');
             }
@@ -134,9 +175,16 @@ const Application = Marionette.Application.extend({
         }
       })
       .resize(() => {
-        const top = typeof window.scrollY === 'undefined' ? window.pageYOffset : window.scrollY;
+        const top =
+          typeof window.scrollY === 'undefined'
+            ? window.pageYOffset
+            : window.scrollY;
 
-        self.trigger('resize', { top, width: $(window).width(), height: $(window).height() });
+        self.trigger('resize', {
+          top,
+          width: $(window).width(),
+          height: $(window).height(),
+        });
       });
   },
 });

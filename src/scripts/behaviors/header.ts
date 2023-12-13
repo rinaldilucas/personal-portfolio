@@ -22,10 +22,18 @@ export default scope.behaviors.Header = Marionette.Behavior.extend({
   build: function () {
     const self = this;
 
-    this.ui.menuCopyright.html(`50.762.113/0001-00 <br>© ${new Date().getFullYear()} Rinaldi, Lucas F.`);
+    this.ui.menuCopyright.html(
+      `50.762.113/0001-00 <br>© ${new Date().getFullYear()} Rinaldi, Lucas F.`,
+    );
 
     $(document).on('mouseup', (event: any) => {
-      if (!$(self.ui.menuNav).is(event.target) && $(self.ui.menuNav).has(event.target).length === 0 && !$(self.ui.menuLabel).is(event.target) && $(self.ui.menuLabel).has(event.target).length === 0 && !event.target.hasAttribute('data-outer-link')) {
+      if (
+        !$(self.ui.menuNav).is(event.target) &&
+        $(self.ui.menuNav).has(event.target).length === 0 &&
+        !$(self.ui.menuLabel).is(event.target) &&
+        $(self.ui.menuLabel).has(event.target).length === 0 &&
+        !event.target.hasAttribute('data-outer-link')
+      ) {
         $('html').removeClass('active-menu');
         $('.header__button input').prop('checked', false);
       }

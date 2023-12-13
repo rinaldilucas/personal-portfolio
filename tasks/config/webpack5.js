@@ -7,7 +7,10 @@ module.exports = (grunt) => {
     build: {
       mode: 'production',
       output: {
-        path: require('path').resolve(__dirname, '../../' + env().dist + '/assets'),
+        path: require('path').resolve(
+          __dirname,
+          '../../' + env().dist + '/assets',
+        ),
         environment: {
           arrowFunction: false,
           bigIntLiteral: false,

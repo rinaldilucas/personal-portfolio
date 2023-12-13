@@ -26,7 +26,7 @@ export default scope.behaviors.Carousel = Marionette.Behavior.extend({
       $(object).slick({
         dots: true,
         arrows: false,
-        autoplay: isMobile ? false : (autoplay || false),
+        autoplay: isMobile ? false : autoplay || false,
         autoplaySpeed: interval || 3000,
         adaptiveHeight: true,
       });

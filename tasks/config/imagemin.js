@@ -4,9 +4,10 @@ module.exports = (grunt) => {
   grunt.config.set('imagemin', {
     webp: {
       options: {
-        use: [webp()]
+        use: [webp()],
       },
-      files: [{
+      files: [
+        {
           expand: true,
           cwd: '<%= config.root %>/assets/images',
           src: '**/*.{png,jpg,jpeg}',

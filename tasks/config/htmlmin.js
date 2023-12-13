@@ -5,12 +5,14 @@ module.exports = (grunt) => {
         removeComments: true,
         collapseWhitespace: true,
       },
-      files: [{
-        expand: true,
-        cwd: '<%= config.dist %>',
-        dest: '<%= config.dist %>',
-        src: ['**/*.html'],
-      }, ],
+      files: [
+        {
+          expand: true,
+          cwd: '<%= config.dist %>',
+          dest: '<%= config.dist %>',
+          src: ['**/*.html'],
+        },
+      ],
     },
   });
 

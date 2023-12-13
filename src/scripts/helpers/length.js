@@ -1,3 +1,3 @@
-module.exports = function(array) {
+module.exports = function (array) {
   return array.length + 1;
 };

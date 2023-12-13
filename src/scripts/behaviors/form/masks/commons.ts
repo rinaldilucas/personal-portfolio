@@ -9,7 +9,8 @@ const masks = {
   phone: '(00) 90000-0000',
 };
 
-const SPMaskBehavior = (val) => (val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009');
+const SPMaskBehavior = (val) =>
+  val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
 const spOptions = {
   onKeyPress: function (value, element, field, options) {
     field.mask(SPMaskBehavior.apply({}, arguments), options);

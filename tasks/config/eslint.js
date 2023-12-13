@@ -1,13 +1,13 @@
 module.exports = (grunt) => {
   grunt.config.set('eslint', {
     options: {
-      fix: true
+      fix: true,
     },
     all: {
-      src: ['<%= config.source %>/scripts/**/*.ts']
+      src: ['<%= config.source %>/scripts/**/*.ts'],
     },
     watch: {
-      src: ['<%= config.changedFiles %>']
+      src: ['<%= config.changedFiles %>'],
     },
   });
 

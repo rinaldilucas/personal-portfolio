@@ -10,8 +10,10 @@ module.exports = (grunt) => {
     },
     watch: {
       files: {
-        '<%= config.develop %>/assets/styles/main.css': '<%= config.source %>/styles/main.scss',
-        '<%= config.develop %>/assets/styles/fonts.css': '<%= config.source %>/styles/fonts.scss',
+        '<%= config.develop %>/assets/styles/main.css':
+          '<%= config.source %>/styles/main.scss',
+        '<%= config.develop %>/assets/styles/fonts.css':
+          '<%= config.source %>/styles/fonts.scss',
       },
     },
     dist: {
@@ -20,8 +22,10 @@ module.exports = (grunt) => {
         sourceMap: false,
       },
       files: {
-        '<%= config.dist %>/assets/styles/main.css': '<%= config.source %>/styles/main.scss',
-        '<%= config.dist %>/assets/styles/fonts.css': '<%= config.source %>/styles/fonts.scss',
+        '<%= config.dist %>/assets/styles/main.css':
+          '<%= config.source %>/styles/main.scss',
+        '<%= config.dist %>/assets/styles/fonts.css':
+          '<%= config.source %>/styles/fonts.scss',
       },
     },
   });

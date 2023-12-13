@@ -8,7 +8,10 @@ const Helper = Marionette.Object.extend({
 
     setTimeout(() => {
       let offtop = ($(window) as any).scrollTop();
-      let discount = $('.navigation').height() === undefined ? 0 : ($('.navigation').height() as number);
+      let discount =
+        $('.navigation').height() === undefined
+          ? 0
+          : ($('.navigation').height() as number);
 
       if ($.isNumeric(where)) {
         offtop = where;
@@ -26,7 +29,10 @@ const Helper = Marionette.Object.extend({
           return;
         }
         if (element.data('anchor-scroll-align') === 'bottom') {
-          discount = ((element.height() as number) - Math.abs(($(window) as any).height())) * -1;
+          discount =
+            ((element.height() as number) -
+              Math.abs(($(window) as any).height())) *
+            -1;
         }
 
         offtop = (element as any).offset().top;
@@ -43,7 +49,8 @@ const Helper = Marionette.Object.extend({
     const imgElement = document.createElement('img');
 
     imgElement.onload = () => deferred.resolve(imgElement);
-    imgElement.onerror = () => deferred.reject(new Error(`Image not found: ${source.src}`));
+    imgElement.onerror = () =>
+      deferred.reject(new Error(`Image not found: ${source.src}`));
 
     imgElement.src = source.src || source;
 
@@ -54,7 +61,9 @@ const Helper = Marionette.Object.extend({
     const self = this;
 
     $.each(sources, (index, element) => {
-      if (element.src) { deferreds.push(self.loadImage(element)); }
+      if (element.src) {
+        deferreds.push(self.loadImage(element));
+      }
     });
 
     return when.all(deferreds);
@@ -70,7 +79,11 @@ const Helper = Marionette.Object.extend({
         if ((element as HTMLImageElement).src) {
           const validExtensions = 'jpeg,jpg,png';
 
-          if (validExtensions.includes((element as HTMLImageElement).src.replace(/^.*\./, ''))) {
+          if (
+            validExtensions.includes(
+              (element as HTMLImageElement).src.replace(/^.*\./, ''),
+            )
+          ) {
             $(element).attr('src', (element as HTMLImageElement).src + '.webp');
           }
         }

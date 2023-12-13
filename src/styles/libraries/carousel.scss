@@ -115,7 +115,8 @@
 }
 
 .slick-loading .slick-list {
-  background: $white url("../images/general/ajax-loader.gif") center center no-repeat;
+  background: $white url("../images/general/ajax-loader.gif") center center
+    no-repeat;
 }
 
 @font-face {
@@ -124,7 +125,10 @@
   font-style: normal;
 
   src: url("../fonts/slick.eot");
-  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"),
+  src:
+    url("../fonts/slick.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/slick.woff") format("woff"),
+    url("../fonts/slick.ttf") format("truetype"),
     url("../fonts/slick.svg#slick") format("svg");
 }
 

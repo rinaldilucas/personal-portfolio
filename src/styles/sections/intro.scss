@@ -1,6 +1,7 @@
 .intro {
   padding: 0;
   height: calc(100vh - 0.85rem);
+  height: calc(100dvh - 0.85rem);
   top: vw(85);
   display: flex;
   align-items: center;
@@ -10,6 +11,7 @@
 
   @include media(">desktop") {
     height: 100vh;
+    height: 100dvh;
     top: 0;
   }
 
@@ -66,7 +68,11 @@
     }
 
     i {
-      transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+      transition:
+        color $transition-time,
+        background-image $transition-time,
+        transform $transition-time,
+        filter $transition-time;
       font-size: vw(24);
       width: vw(25);
       height: vw(25);
@@ -111,7 +117,11 @@
     }
 
     &:hover {
-      transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+      transition:
+        color $transition-time,
+        background-image $transition-time,
+        transform $transition-time,
+        filter $transition-time;
       transform: scale(1.15);
     }
   }

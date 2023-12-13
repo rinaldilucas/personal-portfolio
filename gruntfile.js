@@ -2,7 +2,7 @@ const env = require('./tasks/env');
 
 ('use strict');
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt);
 
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     }
   }
 
-  var loadTasks = function(relPath) {
+  var loadTasks = function (relPath) {
     return (
       includeAll({
         dirname: require('path').resolve(__dirname, relPath),
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     );
   };
 
-  var invokeConfigFn = function(tasks) {
+  var invokeConfigFn = function (tasks) {
     for (const taskName in tasks) {
       if (tasks.hasOwnProperty(taskName)) {
         tasks[taskName](grunt);
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
   const registerDefinitions = loadTasks('./tasks/register');
 
   if (!registerDefinitions.default) {
-    registerDefinitions.default = function(grunt) {
+    registerDefinitions.default = function (grunt) {
       grunt.registerTask('default', []);
     };
   }

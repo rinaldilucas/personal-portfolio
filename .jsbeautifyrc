@@ -6,11 +6,12 @@
   "indent_with_tabs": false,
   "indent_inner_html": true,
   "wrap_attributes": "preserve",
-  "wrap_attributes_indent_size": 5,
   "newline_between_rules": true,
   "selector_separator_newline": true,
   "space_around_combinator": true,
+  "wrap_line_length": 80,
   "extra_liners": [
     "body"
-  ]
+  ],
+  "brace_style": "expand"
 }

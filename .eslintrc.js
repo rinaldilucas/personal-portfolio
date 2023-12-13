@@ -24,8 +24,8 @@ module.exports = {
         SharedArrayBuffer: 'readonly',
       },
       rules: {
-        indent: [2, 2],
-        semi: [ERROR, 'always'],
+        'indent': [2, 2],
+        'semi': [ERROR, 'always'],
         'dot-notation': OFF,
         'no-undef': OFF,
         '@typescript-eslint/no-var-requires': OFF,

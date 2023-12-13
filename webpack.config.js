@@ -26,7 +26,9 @@ const buildWebpackConfig = () => {
     }),
     new webpack.DefinePlugin({
       'process.env.CAPTCHA_SECRET': JSON.stringify(process.env.CAPTCHA_SECRET),
-      'process.env.GETFORM_API_KEY': JSON.stringify(process.env.GETFORM_API_KEY),
+      'process.env.GETFORM_API_KEY': JSON.stringify(
+        process.env.GETFORM_API_KEY,
+      ),
     }),
   ];
 

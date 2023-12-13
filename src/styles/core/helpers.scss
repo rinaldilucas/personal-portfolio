@@ -30,7 +30,11 @@
 }
 
 .hover-zoom {
-  transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+  transition:
+    color $transition-time,
+    background-image $transition-time,
+    transform $transition-time,
+    filter $transition-time;
 
   &:hover {
     transform: scale(1.05);

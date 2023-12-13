@@ -16,9 +16,7 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     /* types */
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
+    "typeRoots": ["./node_modules/@types"],
     /* config */
     "baseUrl": ".",
     "outDir": "./dist/assets/scripts",
@@ -26,24 +24,12 @@
     "target": "es5",
     /* aliases */
     "paths": {
-      "@root/*": [
-        "./*"
-      ],
-      "@app/*": [
-        "./src/*"
-      ],
-      "@styles/*": [
-        "./src/styles/*"
-      ],
-      "@scripts/*": [
-        "./src/scripts/*"
-      ],
-      "@templates/*": [
-        "./src/templates/*"
-      ]
+      "@root/*": ["./*"],
+      "@app/*": ["./src/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@scripts/*": ["./src/scripts/*"],
+      "@templates/*": ["./src/templates/*"]
     }
   },
-  "include": [
-    "./",
-  ]
+  "include": ["./"]
 }

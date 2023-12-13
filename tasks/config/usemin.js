@@ -4,7 +4,7 @@ module.exports = (grunt) => {
     css: '<%= config.dist %>/assets/**/*.css',
     js: '<%= config.dist %>/assets/**/*.js',
     options: {
-      assetsDirs: ['<%= config.dist %>', '<%= config.dist%>/assets/images']
+      assetsDirs: ['<%= config.dist %>', '<%= config.dist%>/assets/images'],
     },
   });
 };

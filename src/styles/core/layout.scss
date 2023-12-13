@@ -146,7 +146,11 @@ a {
   text-decoration: none;
   color: $accent;
   outline: 0;
-  transition: color $transition-time, background-image $transition-time, transform $transition-time, filter $transition-time;
+  transition:
+    color $transition-time,
+    background-image $transition-time,
+    transform $transition-time,
+    filter $transition-time;
   cursor: pointer;
 
   &:hover {

@@ -14,9 +14,15 @@ export default scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
     }
 
     let language = 'enUs';
-    if (window.location.pathname.indexOf('/') > -1) { language = 'enEs'; }
-    if (window.location.pathname.indexOf('/br') > -1) { language = 'ptBr'; }
-    if (window.location.pathname.indexOf('/es') > -1) { language = 'esEs'; }
+    if (window.location.pathname.indexOf('/') > -1) {
+      language = 'enEs';
+    }
+    if (window.location.pathname.indexOf('/br') > -1) {
+      language = 'ptBr';
+    }
+    if (window.location.pathname.indexOf('/es') > -1) {
+      language = 'esEs';
+    }
 
     let successMessage;
     let errorMessage;

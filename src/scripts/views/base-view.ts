@@ -30,7 +30,11 @@ export default scope.views.BaseView = Marionette.View.extend({
       object.cdn_url = './';
     }
 
-    return $.extend(object, Marionette.View.prototype.serializeData.call(this), this.options.data);
+    return $.extend(
+      object,
+      Marionette.View.prototype.serializeData.call(this),
+      this.options.data,
+    );
   },
   load: function () {
     const self = this;
@@ -78,7 +82,9 @@ export default scope.views.BaseView = Marionette.View.extend({
 
       view.populate();
       self.getRegion(key).show(view);
-      if (!scope.config.localhost) { helper.replaceImagesForWebp(); }
+      if (!scope.config.localhost) {
+        helper.replaceImagesForWebp();
+      }
     });
   },
   reload: function () {
@@ -87,7 +93,9 @@ export default scope.views.BaseView = Marionette.View.extend({
     return self.load().done(() => self.render());
   },
   getLayout: function () {
-    if (this._parent) { return this._parent.getLayout(); }
+    if (this._parent) {
+      return this._parent.getLayout();
+    }
 
     return this;
   },

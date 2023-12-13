@@ -13,7 +13,9 @@ export default {
     listener: function (form) {
       ($(this.ui.document, form) as any)
         .on('paste', (event) => {
-          const pastedData = event.originalEvent.clipboardData.getData('text').replace(/\D/g, '');
+          const pastedData = event.originalEvent.clipboardData
+            .getData('text')
+            .replace(/\D/g, '');
 
           $(this)
             .mask(pastedData.length <= 11 ? masks.cpf : masks.cnpj)
