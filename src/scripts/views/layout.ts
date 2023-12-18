@@ -17,32 +17,25 @@ export default scope.views.Layout = Base.extend({
     const self = this;
     let last: string;
 
-    self.getRegion('content').on('show', (layout, view) => {
-      !firstLoop && $('body').addClass('page-changed');
+    self.getRegion('content').on('show', (_layout, view) => {
+      if (!firstLoop) {
+        $('body').addClass('page-changed');
+      }
       $('body')
         .removeClass(last)
         .addClass((last = view.name));
 
       setTimeout(() => {
         firstLoop = false;
-        $('body')
-          .removeClass('page-changed')
-          .removeClass('on-loading')
-          .addClass('on-loaded');
+        $('body').removeClass('page-changed').removeClass('on-loading').addClass('on-loaded');
         $('.loading').addClass('loaded');
 
         $('#preloader').delay(350).fadeOut('slow');
-        const isChrome =
-          /Chrome/.test(navigator.userAgent) &&
-          /Google Inc/.test(navigator.vendor);
+        const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
         if (!isChrome) {
-          (
-            document.getElementsByClassName('infinityChrome')[0] as HTMLElement
-          ).style.display = 'none';
-          (
-            document.getElementsByClassName('infinity')[0] as HTMLElement
-          ).style.display = 'block';
+          (document.getElementsByClassName('infinityChrome')[0] as HTMLElement).style.display = 'none';
+          (document.getElementsByClassName('infinity')[0] as HTMLElement).style.display = 'block';
         }
       }, 500);
     });
@@ -56,14 +49,21 @@ export default scope.views.Layout = Base.extend({
     self
       .load()
       .done((response) => {
-        if (response.error)
+        if (response.error) {
           return Backbone.history.navigate('error', { trigger: true });
+        }
 
         self.populate();
         scope.app.started = true;
 
-        callback && callback();
+        if (typeof callback === 'function') {
+          callback();
+        }
       })
-      .catch(() => callback && callback());
+      .catch(() => {
+        if (typeof callback === 'function') {
+          callback();
+        }
+      });
   },
 });

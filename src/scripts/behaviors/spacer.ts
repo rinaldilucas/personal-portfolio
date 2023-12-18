@@ -10,7 +10,7 @@ export default scope.behaviors.Spacer = Marionette.Behavior.extend({
     this.build(view.$el);
   },
   build: function () {
-    $.each(this.ui.spacers, (index, object) => {
+    $.each(this.ui.spacers, (_index, object) => {
       const size = $(object).data('height');
 
       $(object).css('height', size * 0.01 + 'rem');

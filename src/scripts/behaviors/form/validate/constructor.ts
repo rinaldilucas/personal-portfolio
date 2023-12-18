@@ -22,9 +22,7 @@ export default Marionette.Behavior.extend({
 
       if (rules) {
         for (let rule = 0; rule < rules.length; rule++) {
-          const validate = rules[rule].default
-            ? rules[rule].default.validate
-            : rules[rule].validate;
+          const validate = rules[rule].default ? rules[rule].default.validate : rules[rule].validate;
 
           if (validate && validate.methods) {
             validate.methods(jQuery.validator);
@@ -40,9 +38,7 @@ export default Marionette.Behavior.extend({
 
     if (rules) {
       for (let rule = 0; rule < rules.length; rule++) {
-        const validate = rules[rule].default
-          ? rules[rule].default.validate
-          : rules[rule].validate;
+        const validate = rules[rule].default ? rules[rule].default.validate : rules[rule].validate;
 
         if (validate && validate.listener) {
           validate.listener(form);
@@ -85,33 +81,22 @@ export default Marionette.Behavior.extend({
       errorPlacement: (error, element) => error.insertAfter(element),
       highlight: (element, errorClass, validClass) => {
         if (element && $(element)[0].hasAttribute('data-file-upload-button')) {
-          $(element)
-            .parent()
-            .find('[data-error-holder]')
-            .removeClass(validClass)
-            .addClass(errorClass);
+          $(element).parent().find('[data-error-holder]').removeClass(validClass).addClass(errorClass);
         } else {
           $(element).removeClass(validClass).addClass(errorClass);
         }
       },
       unhighlight: (element, errorClass, validClass) => {
         if (element && $(element)[0].hasAttribute('data-file-upload-button')) {
-          $(element)
-            .parent()
-            .find('[data-error-holder]')
-            .removeClass(errorClass)
-            .addClass(validClass);
+          $(element).parent().find('[data-error-holder]').removeClass(errorClass).addClass(validClass);
         } else {
           $(element).removeClass(errorClass).addClass(validClass);
         }
       },
       submitHandler: () => {
-        const executeOnSubmitHandler = () => {
+        const executeOnSubmitHandler = (): void => {
           form.data('prevent-submit', true);
-          $('[type=submit], [data-prevent-double-click]').prop(
-            'disabled',
-            true,
-          );
+          $('[type=submit], [data-prevent-double-click]').prop('disabled', true);
           $('[data-prevent-double-click] i').removeClass('icon--hide');
 
           $('#g-recaptcha-response').prop('disabled', true);
@@ -124,23 +109,18 @@ export default Marionette.Behavior.extend({
           let successMessage;
           let errorMessage;
           if (language === 'ptBr') {
-            successMessage =
-              'Formulário enviado com sucesso. Caso necessário, entraremos em contato.';
-            errorMessage =
-              'Erro ao enviar mensagem. Se o erro persistir, entre em contato conosco através dos contatos do website.';
+            successMessage = 'Formulário enviado com sucesso. Caso necessário, entraremos em contato.';
+            errorMessage = 'Erro ao enviar mensagem. Se o erro persistir, entre em contato conosco através dos contatos do website.';
           } else if (language === 'esEs') {
-            successMessage =
-              'Formulario enviado con éxito. Si es necesario, nos pondremos en contacto.';
+            successMessage = 'Formulario enviado con éxito. Si es necesario, nos pondremos en contacto.';
             errorMessage =
               'Error al enviar mensaje. Si el error persiste, póngase en contacto con nosotros a través de los contactos del sitio web.';
           } else {
-            successMessage =
-              'Form sent successfully. If necessary, we will contact you.';
-            errorMessage =
-              'Error sending message. If the error persists, contact us through the contacts on the website.';
+            successMessage = 'Form sent successfully. If necessary, we will contact you.';
+            errorMessage = 'Error sending message. If the error persists, contact us through the contacts on the website.';
           }
 
-          const successProcess = () => {
+          const successProcess = (): void => {
             Toastify({
               text: successMessage,
               duration: 3000,
@@ -151,15 +131,12 @@ export default Marionette.Behavior.extend({
             }).showToast();
 
             self.clearInputs(form);
-            $('[type=submit], [data-prevent-double-click]').prop(
-              'disabled',
-              false,
-            );
+            $('[type=submit], [data-prevent-double-click]').prop('disabled', false);
             $('[data-prevent-double-click] i').addClass('icon--hide');
             form.data('prevent-submit', false);
           };
 
-          const errorProcess = () => {
+          const errorProcess = (): void => {
             Toastify({
               text: errorMessage,
               duration: 8000,
@@ -169,19 +146,13 @@ export default Marionette.Behavior.extend({
               className: 'toast toast--error',
             }).showToast();
 
-            $('[type=submit], [data-prevent-double-click]').prop(
-              'disabled',
-              false,
-            );
+            $('[type=submit], [data-prevent-double-click]').prop('disabled', false);
             $('[data-prevent-double-click] i').addClass('icon--hide');
             form.data('prevent-submit', false);
           };
 
           const options = {
-            contentType:
-              method === 'POST'
-                ? false
-                : 'application/x-www-form-urlencoded; charset=UTF-8',
+            contentType: method === 'POST' ? false : 'application/x-www-form-urlencoded; charset=UTF-8',
             processData: method !== 'POST',
             url: form.attr('action'),
             method: form.attr('method'),
@@ -196,11 +167,7 @@ export default Marionette.Behavior.extend({
           if (action) {
             $.ajax(options);
           } else {
-            form.trigger('processRequest', [
-              serializedFormData,
-              successProcess,
-              errorProcess,
-            ]);
+            form.trigger('processRequest', [serializedFormData, successProcess, errorProcess]);
           }
         };
 
@@ -230,15 +197,9 @@ export default Marionette.Behavior.extend({
         'extension': 'O arquivo deve possuir a extensão {0}.',
         'zero-currency': 'Valores precisam ser maiores que zero.',
         'document': 'Informe um CPF ou CNPJ válido.',
-        'max-length': $.validator.format(
-          'O campo deve conter no máximo {0} caracteres.',
-        ),
-        'min-length': $.validator.format(
-          'O campo deve conter no mínimo {0} caracteres.',
-        ),
-        'range-length': $.validator.format(
-          'O campo deve conter de {0} até {1} caracteres.',
-        ),
+        'max-length': $.validator.format('O campo deve conter no máximo {0} caracteres.'),
+        'min-length': $.validator.format('O campo deve conter no mínimo {0} caracteres.'),
+        'range-length': $.validator.format('O campo deve conter de {0} até {1} caracteres.'),
         'range': $.validator.format('Apenas números de {0} até {1}.'),
         'max': $.validator.format('Apenas números até {0}.'),
         'min': $.validator.format('Apenas números a partir de {0}.'),
@@ -252,8 +213,7 @@ export default Marionette.Behavior.extend({
         'number': 'Este campo solo acepta números.',
         'remote': 'Campo es inválido.',
         'required': 'El campo es obligatorio.',
-        'url':
-          'La dirección del sitio web debe comenzar con http:// o https://.',
+        'url': 'La dirección del sitio web debe comenzar con http:// o https://.',
         'complete-name': 'El campo debe contener nombre y apellido.',
         'cnpj': 'Proporcione un CNPJ válido.',
         'cpf': 'Proporcione un CPF válido.',
@@ -264,15 +224,9 @@ export default Marionette.Behavior.extend({
         'extension': 'El archivo debe tener la extensión {0}.',
         'zero-currency': 'Los valores deben ser mayores que cero.',
         'document': 'Introduzca un CPF o CNPJ válido.',
-        'max-length': $.validator.format(
-          'El campo debe contener un máximo de {0} caracteres.',
-        ),
-        'min-length': $.validator.format(
-          'El campo debe contener al menos {0} caracteres.',
-        ),
-        'range-length': $.validator.format(
-          'El campo debe contener de {0} a {1} caracteres.',
-        ),
+        'max-length': $.validator.format('El campo debe contener un máximo de {0} caracteres.'),
+        'min-length': $.validator.format('El campo debe contener al menos {0} caracteres.'),
+        'range-length': $.validator.format('El campo debe contener de {0} a {1} caracteres.'),
         'range': $.validator.format('Solo números del {0} al {1}.'),
         'max': $.validator.format('Solo números hasta {0}.'),
         'min': $.validator.format('Solo números a partir de {0}.'),
@@ -297,18 +251,10 @@ export default Marionette.Behavior.extend({
         'extension': 'The file must have the extension {0}.',
         'zero-currency': 'Values must be greater than zero.',
         'document': 'Enter a valid CPF or CNPJ.',
-        'max-length': $.validator.format(
-          'The field must contain a maximum of {0} characters.',
-        ),
-        'min-length': $.validator.format(
-          'The field must contain at least {0} characters.',
-        ),
-        'range-length': $.validator.format(
-          'The field must contain from {0} to {1} characters.',
-        ),
-        'range': $.validator.format(
-          'The field must contain from {0} to {1} characters.',
-        ),
+        'max-length': $.validator.format('The field must contain a maximum of {0} characters.'),
+        'min-length': $.validator.format('The field must contain at least {0} characters.'),
+        'range-length': $.validator.format('The field must contain from {0} to {1} characters.'),
+        'range': $.validator.format('The field must contain from {0} to {1} characters.'),
         'max': $.validator.format('Only numbers from {0} to {1}.'),
         'min': $.validator.format('Only numbers starting from {0}.'),
       });
@@ -317,7 +263,7 @@ export default Marionette.Behavior.extend({
   clearInputs: (form) => {
     const fields = form.find(['input'].join(','));
 
-    fields.each((index, element) => {
+    fields.each((_index, element) => {
       const input = $(element);
 
       input.val('');
@@ -325,7 +271,7 @@ export default Marionette.Behavior.extend({
   },
 });
 
-(jQuery.validator as any).methodGroup = (name, rules, message) => {
+(jQuery.validator as any).methodGroup = (name, rules, message): void => {
   message = message || 'Field with error';
   if (language === 'ptBr') {
     message = message || 'Campo com erro';
@@ -334,7 +280,7 @@ export default Marionette.Behavior.extend({
     message = message || 'Campo con error';
   }
 
-  const getMessage = () => message;
+  const getMessage = (): string => message;
 
   jQuery.validator.addMethod(
     name,
@@ -345,9 +291,7 @@ export default Marionette.Behavior.extend({
 
         if (check && !check.apply(this, [value, element, rule.param])) {
           message = jQuery.validator.messages[rule.rule];
-          message = $.isFunction(message)
-            ? message.apply(this, rule.param)
-            : message;
+          message = $.isFunction(message) ? message.apply(this, rule.param) : message;
 
           return false;
         }

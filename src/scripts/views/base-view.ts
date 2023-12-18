@@ -30,11 +30,7 @@ export default scope.views.BaseView = Marionette.View.extend({
       object.cdn_url = './';
     }
 
-    return $.extend(
-      object,
-      Marionette.View.prototype.serializeData.call(this),
-      this.options.data,
-    );
+    return $.extend(object, Marionette.View.prototype.serializeData.call(this), this.options.data);
   },
   load: function () {
     const self = this;

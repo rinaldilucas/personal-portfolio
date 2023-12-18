@@ -33,12 +33,5 @@ module.exports = (grunt) => {
         atBegin: true,
       },
     },
-    eslint: {
-      files: ['<%= config.source %>/scripts/**/*.js'],
-      tasks: ['eslint:watch'],
-      options: {
-        spawn: false,
-      },
-    },
   });
 };

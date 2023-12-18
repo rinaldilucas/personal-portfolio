@@ -2,16 +2,16 @@
   "general": {
     "tags": [
       {
-        "name": "html"
+        "name": "angular/material"
       },
       {
-        "name": "css"
+        "name": "laravel/php"
       },
       {
-        "name": "less"
+        "name": "asp/c#"
       },
       {
-        "name": "sass"
+        "name": "node/nestJS"
       },
       {
         "name": "javascript es5+"
@@ -20,22 +20,7 @@
         "name": "typescript"
       },
       {
-        "name": "angular"
-      },
-      {
-        "name": "php"
-      },
-      {
-        "name": "laravel"
-      },
-      {
-        "name": "c#"
-      },
-      {
-        "name": "node"
-      },
-      {
-        "name": "nestJS"
+        "name": "less/sass"
       },
       {
         "name": "protractor"
@@ -68,7 +53,7 @@
         "name": "webpack5"
       },
       {
-        "name": "webhosting"
+        "name": "web hosting"
       },
       {
         "name": "git"

@@ -1,6 +1,6 @@
 export default {
   validate: {
-    methods: (validator) => {
+    methods: (validator): void => {
       validator.addMethod('complete-name', function (value, element) {
         return this.optional(element) || /^.+\s.+$/i.test(value);
       });
@@ -39,10 +39,7 @@ export default {
         remainder = sum % 11;
         const secondVerificationDigit = remainder < 2 ? 0 : 11 - remainder;
 
-        return (
-          parseInt(value.charAt(12)) === firstVerificationDigit &&
-          parseInt(value.charAt(13)) === secondVerificationDigit
-        );
+        return parseInt(value.charAt(12)) === firstVerificationDigit && parseInt(value.charAt(13)) === secondVerificationDigit;
       });
 
       validator.addMethod('cpf', (value) => {
@@ -70,10 +67,7 @@ export default {
         remainder = sum % 11;
         const secondVerificationDigit = remainder < 2 ? 0 : 11 - remainder;
 
-        return (
-          parseInt(value.charAt(12)) === firstVerificationDigit &&
-          parseInt(value.charAt(13)) === secondVerificationDigit
-        );
+        return parseInt(value.charAt(12)) === firstVerificationDigit && parseInt(value.charAt(13)) === secondVerificationDigit;
       });
 
       validator.addMethod('cep', function (value, element) {
@@ -81,23 +75,15 @@ export default {
       });
 
       validator.addMethod('phone', function (value, element) {
-        return (
-          this.optional(element) ||
-          /^\([0-9]{2}\)\s[0-9]{4,5}-[0-9]{4}$/.test(value)
-        );
+        return this.optional(element) || /^\([0-9]{2}\)\s[0-9]{4,5}-[0-9]{4}$/.test(value);
       });
 
       validator.addMethod('letter-sonly', function (value, element) {
-        return (
-          this.optional(element) ||
-          /^[a-z áãâäàéêëèíîïìóõôöòúûüùçñ]+$/i.test(value)
-        );
+        return this.optional(element) || /^[a-z áãâäàéêëèíîïìóõôöòúûüùçñ]+$/i.test(value);
       });
 
-      validator.addMethod('file-size', function (value, element, param) {
-        return (
-          this.optional(element) || element.files[0].size <= param * 1000000
-        );
+      validator.addMethod('file-size', function (_value, element, param) {
+        return this.optional(element) || element.files[0].size <= param * 1000000;
       });
 
       validator.addMethod('extension', function (value, element, param) {

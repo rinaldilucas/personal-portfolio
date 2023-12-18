@@ -5,6 +5,4 @@ module.exports = (grunt) => {
     },
     src: ['**/*'],
   });
-
-  grunt.loadNpmTasks('grunt-eslint');
 };

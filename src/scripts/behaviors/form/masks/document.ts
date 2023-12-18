@@ -10,12 +10,10 @@ export default {
     ui: {
       document: '[data-rule-document]',
     },
-    listener: function (form) {
+    listener: function (form): void {
       ($(this.ui.document, form) as any)
         .on('paste', (event) => {
-          const pastedData = event.originalEvent.clipboardData
-            .getData('text')
-            .replace(/\D/g, '');
+          const pastedData = event.originalEvent.clipboardData.getData('text').replace(/\D/g, '');
 
           $(this)
             .mask(pastedData.length <= 11 ? masks.cpf : masks.cnpj)

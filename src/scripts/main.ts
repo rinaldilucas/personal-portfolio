@@ -1,19 +1,15 @@
+import Init from '@root/src/scripts/routes/init';
 import App from '@scripts/app';
-import Init from '@scripts/routes/init';
 import scope from '@scripts/scope';
 import Main from '@scripts/views/init';
 
-((scope) => {
+((context): void => {
   ('use strict');
 
-  const base: any = (
-    document.getElementById('base-id') as HTMLAnchorElement
-  ).href
-    .split(location.host)
-    .pop();
+  const base: any = (document.getElementById('base-id') as HTMLAnchorElement).href.split(location.host).pop();
 
-  scope.app = App;
-  scope.config = {
+  context.app = App;
+  context.config = {
     urls: {
       base,
       origin: location.protocol + '//' + location.hostname,
@@ -21,7 +17,7 @@ import Main from '@scripts/views/init';
     },
     localhost: window.location.host.indexOf('localhost') > -1,
   };
-  scope.app.on('start', Main);
-  scope.app.on('start', Init);
-  scope.app.start();
+  context.app.on('start', Main);
+  context.app.on('start', Init);
+  context.app.start();
 })(scope);

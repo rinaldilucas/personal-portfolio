@@ -10,10 +10,8 @@ module.exports = (grunt) => {
       },
       files: [
         {
-          '<%= config.dist %>/assets/styles/main.css':
-            '<%= config.dist %>/assets/styles/main.css',
-          '<%= config.dist %>/assets/styles/fonts.css':
-            '<%= config.dist %>/assets/styles/fonts.css',
+          '<%= config.dist %>/assets/styles/main.css': '<%= config.dist %>/assets/styles/main.css',
+          '<%= config.dist %>/assets/styles/fonts.css': '<%= config.dist %>/assets/styles/fonts.css',
         },
       ],
     },

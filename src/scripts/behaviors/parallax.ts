@@ -15,10 +15,7 @@ export default scope.behaviors.Parallax = Marionette.Behavior.extend({
     if (this.ui.parallaxes.length) {
       const parallaxList = this.ui.parallaxes;
 
-      $.each(
-        parallaxList,
-        (index, object) => new Parallax(object, { relativeInput: true }),
-      );
+      $.each(parallaxList, (_index, object) => new Parallax(object, { relativeInput: true }));
     }
   },
 });

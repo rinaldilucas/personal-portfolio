@@ -22,9 +22,7 @@ export default scope.behaviors.Header = Marionette.Behavior.extend({
   build: function () {
     const self = this;
 
-    this.ui.menuCopyright.html(
-      `50.762.113/0001-00 <br>© ${new Date().getFullYear()} Rinaldi, Lucas F.`,
-    );
+    this.ui.menuCopyright.html(`50.762.113/0001-00 <br>© ${new Date().getFullYear()} Rinaldi, Lucas F.`);
 
     $(document).on('mouseup', (event: any) => {
       if (
@@ -39,7 +37,9 @@ export default scope.behaviors.Header = Marionette.Behavior.extend({
       }
     });
 
-    localStorage.getItem('dark-mode') === 'true' && $('html').addClass('dark');
+    if (localStorage.getItem('dark-mode') === 'true') {
+      $('html').addClass('dark');
+    }
   },
   toggleMenu: () => {
     $('html').toggleClass('active-menu');

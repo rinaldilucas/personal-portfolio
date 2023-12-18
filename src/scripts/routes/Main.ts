@@ -6,9 +6,9 @@ import HomeEn from '@scripts/views/home-en';
 import HomeEs from '@scripts/views/home-es';
 
 const AppController = {
-  index: () => scope.app.go(new HomeEn()),
-  br: () => scope.app.go(new HomeBr()),
-  es: () => scope.app.go(new HomeEs()),
+  index: (): void => scope.app.go(new HomeEn()),
+  br: (): void => scope.app.go(new HomeBr()),
+  es: (): void => scope.app.go(new HomeEs()),
 };
 
 export default scope.routes.main = AppRouter.extend({

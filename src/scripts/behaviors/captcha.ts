@@ -13,6 +13,6 @@ export default scope.behaviors.Captcha = Marionette.Behavior.extend({
     const self = this;
 
     $.getScript('https://www.google.com/recaptcha/api.js');
-    (window as any).recaptchaCallback = () => self.ui.recaptcha.valid();
+    (window as any).recaptchaCallback = (): void => self.ui.recaptcha.valid();
   },
 });

@@ -1,28 +1,23 @@
 {
   "compilerOptions": {
-    /* base */
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "module": "es6",
+    "moduleDetection": "force",
+    "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitAny": false,
-    "removeComments": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "moduleResolution": "node",
-    "moduleDetection": "force",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    /* strictness */
-    // "strict": true,
-    "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
-    /* types */
-    "typeRoots": ["./node_modules/@types"],
-    /* config */
-    "baseUrl": ".",
+    "noUnusedLocals": true,
     "outDir": "./dist/assets/scripts",
-    "module": "es6",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
     "target": "es5",
-    /* aliases */
+    "typeRoots": ["./node_modules/@types"],
     "paths": {
       "@root/*": ["./*"],
       "@app/*": ["./src/*"],
@@ -30,6 +25,5 @@
       "@scripts/*": ["./src/scripts/*"],
       "@templates/*": ["./src/templates/*"]
     }
-  },
-  "include": ["./"]
+  }
 }

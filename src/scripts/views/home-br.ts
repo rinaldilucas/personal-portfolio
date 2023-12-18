@@ -1,8 +1,5 @@
 import data from '@root/assets/data/database.json';
 import resources from '@root/assets/i18n/pt-br.json';
-import scope from '@scripts/scope';
-import Base from '@scripts/views/base-view';
-
 import BackgroundColor from '@scripts/behaviors/background-color';
 import Captcha from '@scripts/behaviors/captcha';
 import Carousel from '@scripts/behaviors/carousel';
@@ -14,6 +11,8 @@ import Parallax from '@scripts/behaviors/parallax';
 import PortfolioViewer from '@scripts/behaviors/portfolio-viewer';
 import Spacer from '@scripts/behaviors/spacer';
 import Waypoint from '@scripts/behaviors/waypoint';
+import scope from '@scripts/scope';
+import Base from '@scripts/views/base-view';
 
 export default scope.views.Home = Base.extend({
   template: require('@templates/pages/br/home.hbs'),

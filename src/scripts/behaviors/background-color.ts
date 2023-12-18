@@ -10,7 +10,7 @@ export default scope.behaviors.BackgroundColor = Marionette.Behavior.extend({
     this.build(view.$el);
   },
   build: function () {
-    $.each(this.ui.backgrounds, (index, object) => {
+    $.each(this.ui.backgrounds, (_index, object) => {
       const color = $(object).data('color');
       $(object).css('backgroundColor', color);
     });

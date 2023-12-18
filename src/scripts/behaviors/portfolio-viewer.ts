@@ -39,8 +39,7 @@ export default scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
   },
   openViewerOverlay: function (e: Event) {
     const disclaimer =
-      $(e.currentTarget as HTMLAnchorElement).data('disclaimer') ??
-      $(e.currentTarget as HTMLAnchorElement).data('disclaimer');
+      $(e.currentTarget as HTMLAnchorElement).data('disclaimer') ?? $(e.currentTarget as HTMLAnchorElement).data('disclaimer');
     const imagePath = $(e.currentTarget as HTMLAnchorElement).data('image');
 
     this.ui.disclaimerText.html(disclaimer);
@@ -51,9 +50,7 @@ export default scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
     this.ui.pickerOverlay.removeClass('overlay--opened');
   },
   openVersionPicker: function (e: Event) {
-    const version = $(e.currentTarget as HTMLAnchorElement).data(
-      'portfolioPicker',
-    );
+    const version = $(e.currentTarget as HTMLAnchorElement).data('portfolioPicker');
     const filename = this.ui.disclaimerText.data('imagePath');
     let fullPath = `./assets/images/portfolio/${filename}-${version}.jpg`;
 
@@ -62,14 +59,10 @@ export default scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
     }
 
     if (version === 'desktop') {
-      this.ui.viewerWrapper
-        .addClass('overlay__viewer--desktop')
-        .removeClass('overlay__viewer--mobile');
+      this.ui.viewerWrapper.addClass('overlay__viewer--desktop').removeClass('overlay__viewer--mobile');
       this.ui.overlayFrame.addClass('overlay__frame--desktop');
     } else {
-      this.ui.viewerWrapper
-        .addClass('overlay__viewer--mobile')
-        .removeClass('overlay__viewer--desktop');
+      this.ui.viewerWrapper.addClass('overlay__viewer--mobile').removeClass('overlay__viewer--desktop');
       this.ui.overlayFrame.addClass('overlay__frame--mobile');
     }
 
@@ -83,18 +76,11 @@ export default scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
     }, 350);
   },
   backViewer: function () {
-    this.ui.pickerOverlay
-      .removeClass('overlay--opened')
-      .addClass('overlay--opened');
+    this.ui.pickerOverlay.removeClass('overlay--opened').addClass('overlay--opened');
     this.ui.viewerOverlay.removeClass('overlay--opened');
     setTimeout(() => {
-      this.ui.overlayImage
-        .attr('src', '')
-        .removeClass('overlay--opened')
-        .hide();
-      this.ui.overlayFrame
-        .removeClass('overlay__frame--desktop')
-        .removeClass('overlay__frame--mobile');
+      this.ui.overlayImage.attr('src', '').removeClass('overlay--opened').hide();
+      this.ui.overlayFrame.removeClass('overlay__frame--desktop').removeClass('overlay__frame--mobile');
     }, 300);
   },
 });

@@ -41,7 +41,7 @@ export default scope.behaviors.CopyToClipboard = Marionette.Behavior.extend({
       'clipboard',
       new ClipboardJS('[data-copy]', {
         container: element[0],
-        text: (trigger) => trigger.getAttribute('data-copy') as string,
+        text: (trigger): string => trigger.getAttribute('data-copy') as string,
       }),
     );
 

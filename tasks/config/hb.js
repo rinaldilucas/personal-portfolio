@@ -7,49 +7,45 @@ module.exports = (grunt) => {
   const defaults = require('../../assets/data/database.json');
 
   const compileHandlebarsLayout = () => {
-    grunt.registerMultiTask(
-      'hb',
-      'Renders Handlebars templates to static HTML.',
-      function () {
-        let done;
-        const options = this.options();
-        const files = this.files;
-        let count = files.length;
+    grunt.registerMultiTask('hb', 'Renders Handlebars templates to static HTML.', function () {
+      let done;
+      const options = this.options();
+      const files = this.files;
+      let count = files.length;
 
-        const fail = (error) => {
-          grunt.log.error(error);
-          done(false);
-        };
+      const fail = (error) => {
+        grunt.log.error(error);
+        done(false);
+      };
 
-        const success = () => {
-          if (--count === 0) done(true);
-        };
+      const success = () => {
+        if (--count === 0) done(true);
+      };
 
-        const process = (file) => {
-          const dest = file.dest;
-          const dirname = path.dirname(dest);
-          const basename = path.basename(dest);
+      const process = (file) => {
+        const dest = file.dest;
+        const dirname = path.dirname(dest);
+        const basename = path.basename(dest);
 
-          vinylFs
-            .src(file.src)
-            .pipe(
-              hb(options)
-                .helpers(require('handlebars-layouts'))
-                .data(options.more || {})
-                .data(defaults),
-            )
-            .pipe(rename(basename))
-            .pipe(vinylFs.dest(dirname))
-            .on('error', fail)
-            .on('finish', success);
-        };
+        vinylFs
+          .src(file.src)
+          .pipe(
+            hb(options)
+              .helpers(require('handlebars-layouts'))
+              .data(options.more || {})
+              .data(defaults),
+          )
+          .pipe(rename(basename))
+          .pipe(vinylFs.dest(dirname))
+          .on('error', fail)
+          .on('finish', success);
+      };
 
-        if (count) {
-          done = this.async();
-          files.forEach(process);
-        }
-      },
-    );
+      if (count) {
+        done = this.async();
+        files.forEach(process);
+      }
+    });
   };
 
   compileHandlebarsLayout(grunt, grunt.option('lang'));
@@ -86,11 +82,7 @@ module.exports = (grunt) => {
           version: '1.0.0',
           cdn_url: './',
           date: ((date) => {
-            return [
-              date.getFullYear(),
-              (date.getMonth() + 1 + '').padStart(2, '0'),
-              date.getDate(),
-            ].join('-');
+            return [date.getFullYear(), (date.getMonth() + 1 + '').padStart(2, '0'), date.getDate()].join('-');
           })(new Date()),
         },
       },

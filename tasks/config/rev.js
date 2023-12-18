@@ -5,9 +5,6 @@ module.exports = (grunt) => {
       algorithm: 'md5',
       length: 8,
     },
-    files: [
-      '<%= config.dist %>/assets/scripts/*.js',
-      '<%= config.dist %>/assets/styles/*.css',
-    ],
+    files: ['<%= config.dist %>/assets/scripts/*.js', '<%= config.dist %>/assets/styles/*.css'],
   });
 };

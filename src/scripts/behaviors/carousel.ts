@@ -18,7 +18,7 @@ export default scope.behaviors.Carousel = Marionette.Behavior.extend({
     }
   },
   build: function () {
-    $.each(this.ui.carousel, (index, object) => {
+    $.each(this.ui.carousel, (_index, object) => {
       const isMobile = !!window.matchMedia('(max-width: 1024px)').matches;
       const interval = +$(object).data('carousel-interval') * 1000;
       const autoplay = $(object).data('carousel-autoplay');

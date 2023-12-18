@@ -1,6 +1,5 @@
 module.exports = function (grunt) {
   grunt.registerTask('build', [
-    'eslint:all',
     'clean:dist',
     'webpack:build',
     'uglify',
