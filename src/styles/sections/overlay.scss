@@ -4,7 +4,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: $ice;
   transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transform: translateY(-100%);
   z-index: 5;
@@ -19,13 +18,17 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: $ice;
+    background-color: $background-primary;
     transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transform: translateY(-100%);
     z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .dark & {
+      background-color: $background-primary-dark;
+    }
 
     &-wrapper {
       height: 100%;
@@ -40,6 +43,10 @@
 
         i {
           font-size: vw(100);
+
+          &.fa-desktop {
+            font-size: vw(80);
+          }
         }
       }
     }
@@ -51,13 +58,17 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: $ice;
+    background-color: $background-primary;
     transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transform: translateY(-100%);
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .dark & {
+      background-color: $background-primary-dark;
+    }
 
     &-wrapper {
       height: 100%;

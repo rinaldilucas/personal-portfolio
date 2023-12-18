@@ -1,6 +1,7 @@
 <header class="header">
   <div class="header__wrapper">
-    <a title="{{resources.header.visit-source-code}}" target="_blank" class="header__code only-desktop" href="https://github.com/rinaldilucas/personal-portfolio">
+    <a title="{{resources.header.visit-source-code}}" target="_blank" class="header__code only-desktop"
+      href="https://github.com/rinaldilucas/personal-portfolio">
       <i class="fa fa-cogs"></i>{{resources.header.source-code}}
     </a>
     <a title="{{resources.header.toggle-dark-mode}}" data-toggle-dark-mode class="header__dark-mode only-desktop" href="javascript:;">
@@ -19,16 +20,34 @@
     <nav class="header__nav" data-header-nav>
       <ul class="header__menu">
         {{#each resources.header.menu}}
-          <li><a title="{{title}}" href="{{link}}" class="header__link {{#if active}}active{{/if}}" data-header-link="#{{scroll}}"><i class="{{icon}}"></i>{{title}}</a></li>
+          <li>
+            <a title="{{title}}" href="{{link}}" class="header__link {{#if active}}active{{/if}}" data-header-link="#{{scroll}}">
+              <i class="{{icon}}"></i>
+              {{title}}
+            </a>
+          </li>
         {{/each}}
-        <li><a title="{{resources.header.visit-source-code}}" target="_blank" class="header__code only-mobile" href="https://github.com/rinaldilucas/personal-portfolio"><i class="fa fa-cogs"></i>{{resources.header.source-code}}</a></li>
-        <li><a title="{{resources.header.toggle-dark-mode}}" data-toggle-dark-mode class="header__dark-mode only-mobile" href="javascript:;"><i class="fa fa-moon-o"></i></a></li>
+        <li>
+          <a title="{{resources.header.visit-source-code}}" target="_blank" class="header__code only-mobile"
+            href="https://github.com/rinaldilucas/personal-portfolio">
+            <i class="fa fa-cogs"></i>
+            {{resources.header.source-code}}
+          </a>
+        </li>
+        <li>
+          <a title="{{resources.header.toggle-dark-mode}}" data-toggle-dark-mode class="header__dark-mode only-mobile"
+            href="javascript:;">
+            <i class="fa fa-moon-o"></i>
+          </a>
+        </li>
       </ul>
     </nav>
 
     <div class="header__footer">
-      <a target="_blank" title="{{resources.header.links.decrypto.title}}" href="{{resources.header.links.decrypto.link}}" class="header__websites" data-header-link>decryptomusic.com</a>
-      <a target="_blank" title="{{resources.header.links.hubcomercial.title}}" href="{{resources.header.links.hubcomercial.link}}" class="header__websites" data-header-link>hubcomercial.com</a>
+      <a target="_blank" title="{{resources.header.links.decrypto.title}}" href="{{resources.header.links.decrypto.link}}"
+        class="header__websites" data-header-link>decryptomusic.com</a>
+      <a target="_blank" title="{{resources.header.links.hubcomercial.title}}" href="{{resources.header.links.hubcomercial.link}}"
+        class="header__websites" data-header-link>hubcomercial.com</a>
       <p data-header-copyright class="header__text"></p>
     </div>
   </div>

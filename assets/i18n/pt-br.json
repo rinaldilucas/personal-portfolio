@@ -78,7 +78,7 @@
   },
   "intro": {
     "i-am": "Sou",
-    "description": "apaixonado por tecnologia, desenvolvedor front-end (e full stack), analista de sistemas pela UTFPR, amante de código, produtor musical",
+    "description": "desenvolvedor full stack senior, apaixonado por tecnologia, analista de sistemas pela UTFPR, amante de código, produtor musical",
     "curriculum": {
       "title": "Ver Curriculum Vitae",
       "link": "./assets/files/curriculum-br.pdf"
@@ -146,19 +146,31 @@
       {
         "date": "2023 — presente",
         "name": "ForLogic",
-        "title": "Desenvolvedor Full Stack",
+        "title": "Desenvolvedor Full Stack Senior",
         "items": [
           {
             "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa utilizando Kanban"
           },
           {
-            "text": "Desenvolvimento e manutenção de relatórios utilizando Stimulsoft"
+            "text": "Desenvolvimento e manutenção de APIs consumidas internamente para web apps e mobiles"
           },
           {
-            "text": "Desenvolvimento de novas funcionalidades seguindo a metodologia Scrum utilizando a stack Angular, C# e MSQL"
+            "text": "Desenvolvimento de novas features utilizando Scrum"
           },
           {
-            "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa utilizando Kanban"
+            "text": "Responsável por uma melhoria de mais de 500% no tempo de build, adicionando hot reload em uma biblioteca interna da companhia utilizando npm"
+          },
+          {
+            "text": "Responsável pela definição e implementação de regras de lint (ESlint) e formatação (prettier) utilizando como base o style guide do Airbnb e do Angular, automatizando um processo contínuo de qualidade de código"
+          },
+          {
+            "text": "Implementação de tasks e workspaces para desenvolvimento em C# utilizando VSCode"
+          },
+          {
+            "text": "Contribuição ao squad com configurações do VSCode voltadas a produtividade"
+          },
+          {
+            "text": "Responsável por code review de pares"
           }
         ]
       },

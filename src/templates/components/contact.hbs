@@ -8,14 +8,17 @@
         <h1>{{{resources.contact.text}}}</h1>
         <p class="wow fadeInUp">{{{resources.contact.sub-text}}}</p>
       </div>
-      <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form action="https://getform.io/f/{{getformApiKey}}" method="POST">
+      <form class="contact__form wow animated fadeIn" data-wow-delay="0.5s" id="hub-form" data-form
+        action="https://getform.io/f/{{getformApiKey}}" method="POST">
         <div class="messages"></div>
         <div class="contact__form-row">
           <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
-            <input type="text" name="name" placeholder="*{{resources.contact.fields.your-name}}" data-rule-required data-rule-full-name />
+            <input type="text" name="name" placeholder="*{{resources.contact.fields.your-name}}" data-rule-required
+              data-rule-full-name />
           </div>
           <div class="contact__input-group contact__input-group--half wow animated fadeIn" data-wow-delay="0.1s">
-            <input type="email" name="email" placeholder="*{{resources.contact.fields.email}}" data-rule-required data-rule-minlength="3" />
+            <input type="email" name="email" placeholder="*{{resources.contact.fields.email}}" data-rule-required
+              data-rule-minlength="3" />
           </div>
         </div>
         <div class="contact__form-row">
@@ -29,11 +32,13 @@
           </div>
         </div>
         <small class="contact__disclaimer wow animated fadeIn" data-wow-delay="0.3s">* {{resources.contact.fields.required}}</small>
-        <button title="{{resources.contact.fields.send-message}}" type="submit" class="contact__button wow animated fadeIn" data-wow-delay="0.4s" data-prevent-double-click>
+        <button title="{{resources.contact.fields.send-message}}" type="submit" class="contact__button wow animated fadeIn"
+          data-wow-delay="0.4s" data-prevent-double-click>
           <i class="icon icon--smaller icon--spinner icon--hide"></i>
           {{resources.contact.fields.send-message}}
         </button>
-        <div class="contact__recaptcha g-recaptcha requestHidden" data-sitekey="{{captchaSecret}}" data-callback="recaptchaCallback"></div>
+        <div class="contact__recaptcha g-recaptcha requestHidden" data-sitekey="{{captchaSecret}}" data-callback="recaptchaCallback">
+        </div>
         <input type="hidden" data-recaptcha data-rule-required name="hiddenRecaptcha">
       </form>
     </div>

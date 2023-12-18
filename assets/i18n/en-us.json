@@ -78,7 +78,7 @@
   },
   "intro": {
     "i-am": "I am",
-    "description": "passionate about technology, front-end (and full-stack) developer, systems analyst from UTFPR, code enthusiast, music producer",
+    "description": "senior full stack developer, passionate about technology, systems analyst from UTFPR, code enthusiast, music producer",
     "curriculum": {
       "title": "See Curriculum Vitae",
       "link": "./assets/files/curriculum-en.pdf"
@@ -146,19 +146,31 @@
       {
         "date": "2023 — present",
         "name": "ForLogic",
-        "title": "Full Stack Developer",
+        "title": "Senior Full Stack Developer",
         "items": [
           {
-            "text": "Inspection and correction of the queue for software improvements and bugs developed by the company using Kanban"
+            "text": "Inspection and correction of the software development company's improvement and bug queue using Kanban."
           },
           {
-            "text": "Development and maintenance of reports using Stimulsoft"
+            "text": "Development and maintenance of internally consumed APIs for web apps and mobile devices."
           },
           {
-            "text": "Development of new features following the Scrum methodology using the Angular, C#, and MSQL stack"
+            "text": "Development of new features using Scrum."
           },
           {
-            "text": "Inspection and correction of the queue for software improvements and bugs developed by the company using Kanban"
+            "text": "Responsible for a more than 500% improvement in build time by adding hot reload to an internal company library."
+          },
+          {
+            "text": "Responsible for defining and implementing linting rules (ESlint) and formatting (Prettier) based on the style guides of Airbnb and Angular, automating a continuous code quality process."
+          },
+          {
+            "text": "Implementation of tasks and workspaces for C# development using VSCode."
+          },
+          {
+            "text": "Contributing to the squad with VSCode configurations focused on productivity."
+          },
+          {
+            "text": "Responsible for peer code reviews."
           }
         ]
       },

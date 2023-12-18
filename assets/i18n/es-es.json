@@ -78,7 +78,7 @@
   },
   "intro": {
     "i-am": "Soy",
-    "description": "apasionado por la tecnología, desarrollador front-end (y full-stack), analista de sistemas de la UTFPR, entusiasta del código, productor musical",
+    "description": "desarrollador full stack senior, apasionado por la tecnología, analista de sistemas de la UTFPR, entusiasta del código, productor musical",
     "curriculum": {
       "title": "Ver Curriculum Vitae",
       "link": "./assets/files/curriculum-es.pdf"
@@ -146,19 +146,31 @@
       {
         "date": "2023 — presente",
         "name": "ForLogic",
-        "title": "Desarrollador Full Stack",
+        "title": "Desarrollador Full Stack Senior",
         "items": [
           {
-            "text": "Inspección y corrección de la cola de mejoras y errores del software desarrollado por la empresa utilizando Kanban"
+            "text": "Inspección y corrección de la cola de mejoras y errores del software desarrollado por la empresa utilizando Kanban."
           },
           {
-            "text": "Desarrollo y mantenimiento de informes utilizando Stimulsoft"
+            "text": "Desarrollo y mantenimiento de APIs consumidas internamente para aplicaciones web y dispositivos móviles."
           },
           {
-            "text": "Desarrollo de nuevas funcionalidades siguiendo la metodología Scrum utilizando la pila Angular, C# y MSQL"
+            "text": "Desarrollo de nuevas funciones utilizando Scrum."
           },
           {
-            "text": "Inspección y corrección de la cola de mejoras y errores del software desarrollado por la empresa utilizando Kanban"
+            "text": "Responsable de una mejora de más del 500% en el tiempo de construcción al agregar recarga en caliente a una biblioteca interna de la compañía."
+          },
+          {
+            "text": "Responsable de la definición e implementación de reglas de lint (ESlint) y formateo (Prettier) utilizando como base la guía de estilo de Airbnb y Angular, automatizando un proceso continuo de calidad de código."
+          },
+          {
+            "text": "Implementación de tareas y espacios de trabajo para el desarrollo en C# utilizando VSCode."
+          },
+          {
+            "text": "Contribución al equipo con configuraciones de VSCode centradas en la productividad."
+          },
+          {
+            "text": "Responsable de la revisión de código entre compañeros."
           }
         ]
       },

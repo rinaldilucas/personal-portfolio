@@ -2,7 +2,7 @@ module.exports = {
   arrowParens: 'always',
   embeddedLanguageFormatting: 'auto',
   endOfLine: 'auto',
-  htmlWhitespaceSensitivity: 'css',
+  htmlWhitespaceSensitivity: 'ignore',
   importOrderParserPlugins: ['typescript', 'decorators-legacy'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,

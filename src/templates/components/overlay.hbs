@@ -1,20 +1,20 @@
 <div class="overlay__picker" data-picker-overlay>
-  <a class="overlay__button" data-close><i class="fas fa-times"></i></a>
+  <a class="overlay__button" data-close><i class="fa fa-times"></i></a>
   <div class="overlay__picker-wrapper">
     <h2 class="overlay__text">{{{resources.overlay.text}}}</h2>
     <div class="overlay__content">
       <a title="{{resources.overlay.open-mobile-version}}" data-portfolio-picker="mobile">
-        <i class="fas fa-mobile"></i>
+        <i class="fa fa-mobile"></i>
       </a>
       <a title="{{resources.overlay.open-desktop-version}}" data-portfolio-picker="desktop">
-        <i class="fas fa-desktop"></i>
+        <i class="fa fa-desktop"></i>
       </a>
     </div>
     <p class="overlay__disclaimer" data-disclaimer-replace></p>
   </div>
 </div>
 <div class="overlay__viewer" data-viewer-overlay>
-  <a class="overlay__button" data-back><i class="fas fa-chevron-left"></i></a>
+  <a class="overlay__button" data-back><i class="fa fa-chevron-left"></i></a>
   <div class="overlay__viewer-wrapper" data-viewer-wrapper>
     <img loading="lazy" alt="Portfolio" class="overlay__image" data-overlay-image />
   </div>
@@ -22,5 +22,5 @@
   <p class="overlay__hint">{{{resources.overlay.hint}}}</p>
 </div>
 
-<img class="display-none" src="./assets/images/general/frame__desktop.png"></img>
-<img class="display-none" src="./assets/images/general/frame__mobile.png"></img>
+<img title="{{resources.overlay.open-desktop-version}}" class="display-none" src="./assets/images/general/frame__desktop.png"></img>
+<img title="{{resources.overlay.open-mobile-version}}" class="display-none" src="./assets/images/general/frame__mobile.png"></img>

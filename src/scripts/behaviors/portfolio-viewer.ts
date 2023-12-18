@@ -38,8 +38,7 @@ export default scope.behaviors.PortfolioViewer = Marionette.Behavior.extend({
     });
   },
   openViewerOverlay: function (e: Event) {
-    const disclaimer =
-      $(e.currentTarget as HTMLAnchorElement).data('disclaimer') ?? $(e.currentTarget as HTMLAnchorElement).data('disclaimer');
+    const disclaimer = $(e.currentTarget as HTMLAnchorElement).data('disclaimer');
     const imagePath = $(e.currentTarget as HTMLAnchorElement).data('image');
 
     this.ui.disclaimerText.html(disclaimer);
