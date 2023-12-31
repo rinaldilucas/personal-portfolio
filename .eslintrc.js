@@ -59,8 +59,6 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': OFF,
         '@typescript-eslint/no-var-requires': OFF,
         'dot-notation': OFF,
-        'import/extensions': OFF,
-        'import/no-extraneous-dependencies': OFF,
         'new-cap': OFF,
         'newline-after-var': OFF,
         'no-debugger': WARN,
