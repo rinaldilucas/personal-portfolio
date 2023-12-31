@@ -43,6 +43,14 @@ module.exports = {
             trailingComma: 'all',
           },
         ],
+        '@typescript-eslint/naming-convention': [
+          ERROR,
+          {
+            selector: 'variable',
+            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+            leadingUnderscore: 'allow',
+          },
+        ],
         '@typescript-eslint/explicit-function-return-type': ERROR,
         '@typescript-eslint/lines-between-class-members': OFF,
         '@typescript-eslint/no-explicit-any': OFF,
