@@ -13,19 +13,13 @@ module.exports = {
   trailingComma: 'all',
   overrides: [
     {
-      files: '*.ts',
+      files: ['*.ts', '*.js'],
       options: {
         singleQuote: true,
         importOrder: [
           '^(?!(@app/.+|@root/.+|@styles/.+|@scripts/.+|@templates/.+|[./].*)$).*',
           '^(@app/.+|@root/.+|@styles/.+|@scripts/.+|@templates/.+|[./].*)$',
         ],
-      },
-    },
-    {
-      files: '*.js',
-      options: {
-        singleQuote: true,
       },
     },
   ],
