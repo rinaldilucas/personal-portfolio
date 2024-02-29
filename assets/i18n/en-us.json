@@ -72,13 +72,13 @@
       },
       "hubcomercial": {
         "title": "Go to Commercial Hub website",
-        "link": "https://hubcomercial.com.br"
+        "link": "https://hubcomercial.com"
       }
     }
   },
   "intro": {
     "i-am": "I am",
-    "description": "senior full stack developer, passionate about technology, systems analyst from UTFPR, code enthusiast, music producer",
+    "description": "senior full stack developer, tech passionate, UX lover, code enthusiast, music producer",
     "curriculum": {
       "title": "See Curriculum Vitae",
       "link": "./assets/files/curriculum-en.pdf"
@@ -125,7 +125,7 @@
         "src": "./assets/images/services/custom.svg"
       }
     ],
-    "disclaimer": "Have an idea?<br>Send me an<a target=\"_blank\" title=\"Email Contact\" href=\"mailto:lucasreinaldi@gmail.com\"> email </a>or contact me on<a target=\"_blank\" title=\"WhatsApp Contact\" href=\"https://api.whatsapp.com/send?1=pt_BR&amp;phone=5543996168589\"> WhatsApp</a>! 👋"
+    "disclaimer": "Have an idea?<br>Send me an<a target=\"_blank\" title=\"Email Contact\" href=\"mailto:lucasreinaldi@gmail.com\"> email </a>! 👋"
   },
   "hub": {
     "id": "hub",
@@ -136,7 +136,7 @@
     "cta": {
       "text": "Learn more",
       "title": "Go to the Commercial Hub website",
-      "link": "https://hubcomercial.com.br"
+      "link": "https://hubcomercial.com"
     }
   },
   "experience": {
@@ -460,8 +460,9 @@
   },
   "chat": {
     "cta": {
-      "title": "Send message via WhatsApp",
-      "link": "https://api.whatsapp.com/send?1=en&phone=5543996168589&text=Hi! I came through your personal website"
+      "alt": "Send an email",
+      "text": "Wanna talk?",
+      "link": "mailto:lucasreinaldi@gmail.com"
     }
   }
 }

@@ -1,32 +1,22 @@
 .chat {
-  height: vw(55);
-  width: vw(55);
   position: fixed;
   bottom: vw(20);
   right: vw(20);
   z-index: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: vw(99);
-  background-color: $green;
-
-  .dark & {
-    background-color: $accent;
-  }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     background-color: $ice;
     border: 2px solid $blue;
   }
 
-  a {
-    font-size: vw(38);
+  &__button {
+    font-size: vw(18);
+    font-weight: 500;
     color: $white;
+    @extend .button;
+  }
 
-    &:hover {
-      filter: brightness(0) invert(1);
-      transform: scale(1.1);
-    }
+  i {
+    margin-right: vw(8);
   }
 }

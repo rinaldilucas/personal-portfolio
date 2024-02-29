@@ -20,7 +20,7 @@ module.exports = (grunt) => {
       },
     },
     static: {
-      files: ['<%= config.source %>/scripts/data/**'],
+      files: ['<%= config.source %>/scripts/**'],
       tasks: ['copy:dev'],
       options: {
         atBegin: true,

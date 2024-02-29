@@ -73,12 +73,12 @@
     },
     "hubcomercial": {
       "title": "Ir al sitio web de Hub Comercial",
-      "link": "https://hubcomercial.com.br"
+      "link": "https://hubcomercial.com"
     }
   },
   "intro": {
     "i-am": "Soy",
-    "description": "desarrollador full stack senior, apasionado por la tecnología, analista de sistemas de la UTFPR, entusiasta del código, productor musical",
+    "description": "desarrollador full stack senior, apasionado por la tecnología, amante de ux, entusiasta del código, productor musical",
     "curriculum": {
       "title": "Ver Curriculum Vitae",
       "link": "./assets/files/curriculum-es.pdf"
@@ -125,7 +125,7 @@
         "src": "./assets/images/services/custom.svg"
       }
     ],
-    "disclaimer": "¿Tienes una idea?<br>Envíame un<a target=\"_blank\" title=\"Contacto por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> correo electrónico </a>o contácteme por<a target=\"_blank\" title=\"Contacto por WhatsApp\" href=\"https://api.whatsapp.com/send?1=pt_BR&amp;phone=5543996168589\"> WhatsApp</a>! 👋"
+    "disclaimer": "¿Tienes una idea?<br>Envíame un<a target=\"_blank\" title=\"Contacto por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> correo electrónico </a>! 👋"
   },
   "hub": {
     "id": "hub",
@@ -136,7 +136,7 @@
     "cta": {
       "text": "Más información",
       "title": "Ir al sitio web del Hub Comercial",
-      "link": "https://hubcomercial.com.br"
+      "link": "https://hubcomercial.com"
     }
   },
   "experience": {
@@ -461,8 +461,9 @@
   },
   "chat": {
     "cta": {
-      "title": "Enviar mensaje por WhatsApp",
-      "link": "https://api.whatsapp.com/send?1=es&phone=5543996168589&text=¡Hola! Vine a través de tu sitio web personal"
+      "alt": "Enviar un correo electrónico",
+      "text": "¿Quieres hablar?",
+      "link": "mailto:lucasreinaldi@gmail.com"
     }
   }
 }
