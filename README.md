@@ -15,7 +15,7 @@
   <h3 align="center">Personal Portfolio Source Code</h3>
 
   <p align="center">
-    SPA project using Marionette.js and Handlebars, <br>as long with Webpack 5, grunt, ESlint and Typescript.
+    SPA project using Marionette.js and Handlebars, <br>as long with Webpack 5, grunt, ESlint, and Typescript.
     <br />
     <a href="https://github.com/rinaldilucas/personal-portfolio"><strong>Explore the docs »</strong></a>
     <br />
@@ -64,20 +64,20 @@ Much of what you do today is the result of knowledge spread across the internet,
 
 Here are some of the features:
 
-- Single page application behavior using marionette.js and handlebars.js
+- Single-page application behavior using marionette.js and handlebars.js
 - Typescript support
 - Componentization and focus on code reuse
 - Input and mask reactive validations
-- Overwrite of native html tags like input file and scrollbar
+- Overwrite of native HTML tags like input file and scrollbar
 - Aspect ratio SCSS logic which almost mitigates the needs of media queries
 - SCSS written using BEM methodology
 - Captcha integration
 - Grunt and webpack5 bundling
-- Npm tasks to watch/build/deploy/test
+- NPM tasks to watch/build/deploy/test
 - ESlint and prettier with custom rules
 - Favicon cli generator
-- Generation and replacement of webp images through client-side
-- TinyPNG api conversion via cli
+- Generation and replacement of .webp images through client-side
+- TinyPNG API conversion via cli
 - IE 11 support
 - Lazy loading
 - And more
@@ -158,7 +158,7 @@ _Below is an example of how you can run the project._
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -199,7 +199,7 @@ Project Link: [https://github.com/rinaldilucas/personal-portfolio](https://githu
 ## Donations
 
 If you feel that this project has helped you in any way, whether it's attracting clients or teaching you about the technologies used, feel free to make a donation.
-It helps me a lot to continue developing open source codes.
+It helps me a lot to continue developing open-source codes.
 
 - Metamask (USDT):
   ```sh
