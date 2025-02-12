@@ -29,12 +29,6 @@
         "icon": "icon-briefcase"
       },
       {
-        "title": "Hub Comercial",
-        "link": "./br/#!hub",
-        "scroll": "hub",
-        "icon": "icon-link"
-      },
-      {
         "title": "Experiência",
         "link": "./br/#!experiencia",
         "scroll": "experiencia",
@@ -64,21 +58,11 @@
         "scroll": "contato",
         "icon": "icon-bubbles"
       }
-    ],
-    "links": {
-      "decrypto": {
-        "title": "Ir para o site do Decrypto Music",
-        "link": "https://decryptomusic.com"
-      },
-      "hubcomercial": {
-        "title": "Ir para o site do Hub Comercial",
-        "link": "https://hubcomercial.com"
-      }
-    }
+    ]
   },
   "intro": {
     "i-am": "Sou",
-    "description": "desenvolvedor full stack senior, apaixonado por tecnologia, amante de ux, amante de código, produtor musical",
+    "description": "desenvolvedor full stack senior, apaixonado por tecnologia, amante de UX/UI, entusiasta por código, produtor musical",
     "curriculum": {
       "title": "Ver Curriculum Vitae",
       "link": "./assets/files/curriculum-br.pdf"
@@ -144,38 +128,63 @@
     "title": "Experiências",
     "works": [
       {
-        "date": "2023 — presente",
+        "date": "jan 2025 — fev 2025",
+        "name": "ForLogic",
+        "title": "Tech Lead",
+        "items": [
+          { "text": "Responsável por Key Results (KR), garantindo o alcance de objetivos estratégicos da empresa." },
+          {
+            "text": "Responsável pela definição e implementação da arquitetura no front-end, além do desenvolvimento da nova biblioteca de componentes."
+          },
+          { "text": "Condução de code review e publicação de versões utilizando Azure DevOps." },
+          { "text": "Monitoramento de performance e análise de APM (Application Performance Management) utilizando Elastic Search." },
+          {
+            "text": "Bastião da disseminação do conceito de componentização, promovendo a reutilização e escalabilidade no desenvolvimento."
+          },
+          { "text": "Apoio técnico para outras squads, oferecendo orientação sobre Angular e padrões de desenvolvimento front-end." },
+          {
+            "text": "Feedback contínuo e acompanhamento do desempenho dos liderados, visando aprimoramento e crescimento profissional."
+          },
+          { "text": "Execução de ritos adicionais relacionados ao Scrum, garantindo a aderência às metodologias ágeis no time." }
+        ]
+      },
+      {
+        "date": "mai 2023 — jan 2025",
         "name": "ForLogic",
         "title": "Desenvolvedor Full Stack Senior",
         "items": [
           {
-            "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa utilizando Kanban"
+            "text": "Responsável pelas primeiras implementações de serviços de Inteligência Artificial na companhia, promovendo inovação e automação nos processos."
           },
           {
-            "text": "Desenvolvimento e manutenção de APIs consumidas internamente para web apps e mobiles"
+            "text": "Autor de melhoria de 500% no tempo de build, adicionando hot reload em uma biblioteca interna da companhia utilizando npmjs."
           },
           {
-            "text": "Desenvolvimento de novas features utilizando Scrum"
+            "text": "Responsável pela arquitetura e desenvolvimento de uma biblioteca de componentes em Angular, utilizando o styleguide do Angular, aplicados através da metodologia BEM para organização e escalabilidade de estilos SCSS."
           },
           {
-            "text": "Responsável por uma melhoria de mais de 500% no tempo de build, adicionando hot reload em uma biblioteca interna da companhia utilizando npm"
+            "text": "Responsável pela componentização de diversas rotinas e interfaces amplamente utilizadas em todos os módulos da empresa, garantindo padronização e reutilização."
           },
           {
-            "text": "Responsável pela definição e implementação de regras de lint (ESlint) e formatação (prettier) utilizando como base o style guide do Airbnb e do Angular, automatizando um processo contínuo de qualidade de código"
+            "text": "Responsável por conduzir pesquisas e realizar integrações com fornecedores externos, como Google Cloud e Microsoft, alcançando avanços estratégicos, como a edição de documentos online integrada a uma infraestrutura de armazenamento já consolidada no Azure."
           },
           {
-            "text": "Implementação de tasks e workspaces para desenvolvimento em C# utilizando VSCode"
+            "text": "Responsável pela definição e aplicação de regras de padrões de código utilizando ferramentas como ESLint e Prettier, seguindo as melhores práticas e documentações de referência do Airbnb e Trivago."
           },
-          {
-            "text": "Contribuição ao squad com configurações do VSCode voltadas a produtividade"
-          },
-          {
-            "text": "Responsável por code review de pares"
-          }
+          { "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa utilizando Kanban." },
+          { "text": "Desenvolvimento e manutenção de APIs consumidas internamente para web apps e mobiles." },
+          { "text": "Implementação de novas features utilizando Scrum." },
+          { "text": "Code review do squad." },
+          { "text": "Contribuição ao squad com configurações do VSCode voltadas à produtividade." },
+          { "text": "Deploy em ambiente de homologação e produção." },
+          { "text": "Migração e importação de registros dos módulos legados para os novos módulos." },
+          { "text": "Manutenção e manufatura das ferramentas de migração e importação." },
+          { "text": "Responsável pela coordenação e acompanhamento de colaboradores em treinamento." },
+          { "text": "Autor de múltiplas tasks e workspaces para desenvolvimento em C# utilizando VSCode." }
         ]
       },
       {
-        "date": "2020 — 2022",
+        "date": "set 2020 — mai 2022",
         "name": "Slingshot Digital",
         "title": "Desenvolvedor Front-end",
         "items": [
@@ -203,7 +212,7 @@
         ]
       },
       {
-        "date": "2019 — 2020",
+        "date": "ago 2019 — set 2020",
         "name": "ForLogic",
         "title": "Desenvolvedor Full Stack",
         "items": [
@@ -222,23 +231,7 @@
         ]
       },
       {
-        "date": "2019",
-        "name": "Robert Walters",
-        "title": "Recrutador em Tecnologia da Informação",
-        "items": [
-          {
-            "text": "Recrutamento e seleção especialista profissionais da área de tecnologia da informação"
-          },
-          {
-            "text": "Análise e avaliação curricular de profissionais na divisão de infraestrutura, desenvolvimento, segurança da informação e DevOps"
-          },
-          {
-            "text": "Suporte e acompanhamento dos profissionais até o momento da contratação de fato"
-          }
-        ]
-      },
-      {
-        "date": "2018 — 2019",
+        "date": "set 2018 — jan 2019",
         "name": "Infinite Cloud",
         "title": "Desenvolvedor Front-end",
         "items": [
@@ -257,7 +250,7 @@
         ]
       },
       {
-        "date": "2016 — 2017",
+        "date": "set 2016 — fev 2017",
         "name": "S4W",
         "title": "Desenvolvedor Full Stack",
         "items": [
@@ -279,7 +272,7 @@
         ]
       },
       {
-        "date": "2014 — 2015",
+        "date": "dez 2013 — jan 2015",
         "name": "Prefeitura de Cornélio Procópio",
         "title": "Estagiário em infraestrutura de Cornélio Procópio",
         "items": [
