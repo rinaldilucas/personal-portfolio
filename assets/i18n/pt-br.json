@@ -109,7 +109,7 @@
         "src": "./assets/images/services/custom.svg"
       }
     ],
-    "disclaimer": "Tem alguma ideia?<br>Me envie um<a target=\"_blank\" title=\"Contato por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> email </a>! 👋"
+    "disclaimer": "Tem alguma ideia?<br>Me envie um<a target=\"_blank\" title=\"Contato por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> email</a>! 👋"
   },
   "hub": {
     "id": "hub",

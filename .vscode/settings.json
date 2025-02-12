@@ -1,11 +1,14 @@
 {
+  "[handlebars]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[handlebars]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
-  }
+  "editor.formatOnSave": true
 }

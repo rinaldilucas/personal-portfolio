@@ -109,7 +109,7 @@
         "src": "./assets/images/services/custom.svg"
       }
     ],
-    "disclaimer": "¿Tienes una idea?<br>Envíame un<a target=\"_blank\" title=\"Contacto por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> correo electrónico </a>! 👋"
+    "disclaimer": "¿Tienes una idea?<br>Envíame un<a target=\"_blank\" title=\"Contacto por Email\" href=\"mailto:lucasreinaldi@gmail.com\"> correo electrónico</a>! 👋"
   },
   "hub": {
     "id": "hub",
@@ -130,7 +130,7 @@
       {
         "date": "ene 2025 - feb 2025",
         "name": "ForLogic",
-        "title": "Desarrollador Full Stack Senior",
+        "title": "Tech Lead",
         "items": [
           { "text": "Responsable de los Key Results (KR), asegurando el alcance de los objetivos estratégicos de la empresa." },
           {

@@ -109,7 +109,7 @@
         "src": "./assets/images/services/custom.svg"
       }
     ],
-    "disclaimer": "Have an idea?<br>Send me an<a target=\"_blank\" title=\"Email Contact\" href=\"mailto:lucasreinaldi@gmail.com\"> email </a>! 👋"
+    "disclaimer": "Have an idea?<br>Send me an<a target=\"_blank\" title=\"Email Contact\" href=\"mailto:lucasreinaldi@gmail.com\"> email</a>! 👋"
   },
   "hub": {
     "id": "hub",
@@ -130,7 +130,7 @@
       {
         "date": "jan 2025 — feb 2025",
         "name": "ForLogic",
-        "title": "Desarrollador Full Stack Senior",
+        "title": "Tech Lead",
         "items": [
           { "text": "Responsible for Key Results (KR), ensuring the achievement of the company's strategic objectives." },
           {
@@ -147,7 +147,7 @@
       {
         "date": "may 2023 — jan 2025",
         "name": "ForLogic",
-        "title": "Desarrollador Full Stack Senior",
+        "title": "Senior Full Stack Developer",
         "items": [
           {
             "text": "Responsible for the first implementations of Artificial Intelligence services in the company, promoting innovation and automation in processes."
