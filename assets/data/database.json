@@ -4,9 +4,15 @@
       {
         "name": "angular/material"
       },
-      {
+	  {
+        "name": "react"
+      },
+	  {
         "name": "laravel/php"
       },
+	  {
+		"name": "spring/java"
+	  },
       {
         "name": "asp/c#"
       },
@@ -28,6 +34,12 @@
       {
         "name": "jest"
       },
+	  {
+		"name": "mocha"
+	  },
+	  {
+		"name": "chai"
+	  },
       {
         "name": "handlebars.js"
       },
@@ -51,6 +63,9 @@
       },
       {
         "name": "webpack5"
+      },
+	  {
+        "name": "react-flow"
       },
       {
         "name": "deployment/hosting"

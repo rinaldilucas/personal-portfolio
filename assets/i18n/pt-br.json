@@ -127,6 +127,55 @@
     "id": "experiencia",
     "title": "Experiências",
     "works": [
+	{
+        "date": "mai 2025 - presente",
+        "name": "SoftExpert",
+        "title": "Tech Lead",
+        "items": [
+          {
+            "text": "Liderança da squad responsável por desenvolver e refatorar aplicações que possuam o contexto de modelagem (fluxogramas, etc)."
+          },
+          { "text": "Apoio técnico e suporte para outros times em relação à integração ao nosso código-fonte e vice-versa." },
+          { "text": "Responsável pela definição estrutural e reescrita de aplicações legado para as novas stacks." },
+          {
+            "text": "Apoio técnico para a equipe, oferecendo orientação técnica na stack da empresa e também nas regras de negócios do produto."
+          },
+          {
+            "text": "Responsável por iniciativas no contexto de qualificação, boas práticas, produtividade, uso performático de IA e clean code."
+          },
+          { "text": "Analista e questionador de decisões envolvendo performance." },
+          {
+            "text": "Feedback contínuo e acompanhamento do desempenho dos liderados, visando aprimoramento e crescimento profissional."
+          },
+          { "text": "Execução de ritos customizados relacionados ao Scrum, garantindo a aderência às metodologias ágeis no time." },
+          { "text": "Olhar crítico e sugestões para refinar o processo de esteira da equipe." }
+        ]
+      },
+      {
+        "date": "mar 2025 - mai 2025",
+        "name": "SoftExpert",
+        "title": "Desenvolvedor Full Stack Senior",
+        "items": [
+          {
+            "text": "Responsável por refatorar aplicações legado, reescrevendo-as para React, utilizando bibliotecas de modelagem, como react-flow e dagre."
+          },
+          {
+            "text": "Estabelecimento de padrões de código (lint, prettier, styleguides), com base nas melhores práticas do mercado (Airbnb, Trivago)."
+          },
+          { "text": "Responsável por atuar na esteira de bugs e melhorias." },
+          { "text": "Code review e testes do squad." },
+          {
+            "text": "Responsável pelo desenvovimento de testes unitários para todas features desenvolvidas em conjunto com a estruturação de um modelo base para a escrita de testes unitários."
+          },
+          {
+            "text": "Estruturação e manutenção de um design system escalável, utilizando boas práticas de organização de estilos (BEM, SCSS)."
+          },
+          {
+            "text": "Inspeção e correção da fila de melhorias e bugs do software desenvolvido pela empresa em períodos de mudança de major version."
+          },
+          { "text": "Implementação de novas features utilizando Scrum." }
+        ]
+      },
       {
         "date": "jan 2025 — fev 2025",
         "name": "ForLogic",

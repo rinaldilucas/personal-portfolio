@@ -127,6 +127,41 @@
     "id": "experience",
     "title": "Experiences",
     "works": [
+	  {
+		"date": "may 2025 - present",
+        "name": "SoftExpert",
+        "title": "Tech Lead",
+        "items": [
+          {
+            "text": "Leadership of the squad responsible for developing and refactoring applications involving modeling context (flowcharts, etc)."
+          },
+          { "text": "Technical support and guidance for other teams regarding integration with our source code and vice versa." },
+          { "text": "Responsible for the structural definition and rewriting of legacy applications to new stacks." },
+          { "text": "Technical support for the team, offering guidance on the company's tech stack and product business rules." },
+          {
+            "text": "Responsible for initiatives in the context of quality, best practices, productivity, efficient use of AI, and clean code."
+          },
+          { "text": "Analyst and challenger of performance-related decisions." },
+          { "text": "Continuous feedback and performance monitoring of team members, aiming at improvement and professional growth." },
+          { "text": "Execution of customized Scrum rituals, ensuring adherence to agile methodologies within the team." },
+          { "text": "Critical insight and suggestions to refine the team's pipeline process." }
+        ]
+      },
+	  {
+		"date": "mar 2025 - may 2025",
+        "name": "SoftExpert",
+        "title": "Senior Full Stack Developer",
+        "items": [
+			{ "text": "Responsible for refactoring legacy applications, rewriting them in React using modeling libraries like react-flow and dagre."},
+			{ "text": "Establishing code standards (lint, prettier, styleguides) based on best market practices (Airbnb, Trivago)."},
+			{ "text": "Responsible for handling the bug and improvement pipeline."},
+			{ "text": "Code review and testing within the squad."},
+			{ "text": "Responsible for developing unit tests for all features, along with structuring a base model for writing unit tests."},
+			{ "text": "Structuring and maintaining a scalable design system using best style organization practices (BEM, SCSS)."},
+			{ "text": "Inspection and correction of the software's improvement and bug queue during major version changes."},
+			{ "text": "Implementing new features using Scrum."}
+        ]
+      },
       {
         "date": "jan 2025 — feb 2025",
         "name": "ForLogic",

@@ -128,6 +128,37 @@
     "title": "Experiencias",
     "works": [
       {
+        "date": "may 2025 - presente",
+        "name": "SoftExpert",
+        "title": "Tech Lead",
+        "items": [
+			{ "text": "Liderazgo del squad responsable del desarrollo y refactorización de aplicaciones con contexto de modelado (diagramas de flujo, etc)." },
+			{ "text": "Soporte técnico y asistencia para otros equipos en relación con la integración a nuestro código fuente y viceversa." },
+			{ "text": "Responsable por la definición estructural y reescritura de aplicaciones legacy hacia nuevas tecnologías." },
+			{ "text": "Soporte técnico al equipo, brindando orientación sobre el stack de la empresa y las reglas de negocio del producto." },
+			{ "text": "Responsable de iniciativas en el contexto de calificación, buenas prácticas, productividad, uso eficiente de IA y código limpio." },
+			{ "text": "Analista y cuestionador de decisiones relacionadas con el rendimiento." },
+			{ "text": "Feedback continuo y seguimiento del desempeño de los liderados, con foco en la mejora y crecimiento profesional." },
+			{ "text": "Ejecución de rituales personalizados relacionados con Scrum, garantizando el cumplimiento de metodologías ágiles en el equipo." },
+			{ "text": "Mirada crítica y sugerencias para refinar el proceso de pipeline del equipo." }
+        ]
+      },
+      {
+        "date": "mar 2025 - may 2025",
+        "name": "SoftExpert",
+        "title": "Desarrollador Full Stack Senior",
+        "items": [
+			{ "text": "Responsable por refactorizar aplicaciones legacy, reescribiéndolas en React utilizando bibliotecas de modelado como react-flow y dagre." },
+			{ "text": "Establecimiento de estándares de código (lint, prettier, guías de estilo) basados en las mejores prácticas del mercado (Airbnb, Trivago)." },
+			{ "text": "Responsable del manejo del pipeline de bugs y mejoras." },
+			{ "text": "Revisión de código y pruebas dentro del squad." },
+			{ "text": "Responsable por el desarrollo de pruebas unitarias para todas las funcionalidades, junto con la estructuración de un modelo base para escribir pruebas unitarias." },
+			{ "text": "Estructuración y mantenimiento de un design system escalable, utilizando buenas prácticas de organización de estilos (BEM, SCSS)." },
+			{ "text": "Inspección y corrección de la cola de mejoras y bugs del software desarrollado por la empresa durante períodos de cambio de versión mayor." },
+			{ "text": "Implementación de nuevas funcionalidades utilizando Scrum." }
+        ]
+      },
+      {
         "date": "ene 2025 - feb 2025",
         "name": "ForLogic",
         "title": "Tech Lead",
