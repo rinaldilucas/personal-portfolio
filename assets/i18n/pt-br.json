@@ -72,7 +72,7 @@
     "go-to-portuguese": "Ir para versão em português",
     "see-more": {
       "title": "Ver mais",
-      "link": "./br/!#sobre"
+      "link": "./br/#!sobre"
     }
   },
   "about": {
@@ -165,7 +165,7 @@
           { "text": "Responsável por atuar na esteira de bugs e melhorias." },
           { "text": "Code review e testes do squad." },
           {
-            "text": "Responsável pelo desenvovimento de testes unitários para todas features desenvolvidas em conjunto com a estruturação de um modelo base para a escrita de testes unitários."
+            "text": "Responsável pelo desenvolvimento de testes unitários para todas features desenvolvidas em conjunto com a estruturação de um modelo base para a escrita de testes unitários."
           },
           {
             "text": "Estruturação e manutenção de um design system escalável, utilizando boas práticas de organização de estilos (BEM, SCSS)."
@@ -373,9 +373,6 @@
             "text": "Fotografia"
           },
           {
-            "text": "Fotografia"
-          },
-          {
             "text": "Git e Github"
           },
           {
@@ -427,7 +424,7 @@
             "text": "UML"
           },
           {
-            "text": "UX and UX Strategy"
+            "text": "UX e Estratégia de UX"
           },
           {
             "text": "Web Design Responsivo"

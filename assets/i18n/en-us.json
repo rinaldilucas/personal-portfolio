@@ -72,7 +72,7 @@
     "go-to-portuguese": "Go to Portuguese version",
     "see-more": {
       "title": "See more",
-      "link": "./en/!#about"
+      "link": "./en/#!about"
     }
   },
   "about": {
@@ -301,7 +301,7 @@
         ]
       },
       {
-        "date": "dec 2014 — jan 2015",
+        "date": "dec 2013 — jan 2015",
         "name": "Cornélio Procópio City Hall",
         "title": "Intern in Cornélio Procópio's Infrastructure",
         "items": [
@@ -348,9 +348,6 @@
           },
           {
             "text": "FlexBox"
-          },
-          {
-            "text": "Photography"
           },
           {
             "text": "Photography"

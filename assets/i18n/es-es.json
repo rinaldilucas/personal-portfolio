@@ -5,7 +5,7 @@
   },
   "header": {
     "visit-source-code": "Visitar código fuente",
-    "toggle-dark-mode": "Alternar modo escuro",
+    "toggle-dark-mode": "Alternar modo oscuro",
     "source-code-link": "https://github.com/rinaldilucas/personal-portfolio",
     "source-code": "código fuente",
     "menu": [
@@ -72,7 +72,7 @@
     "go-to-portuguese": "Ir a la versión en portugués",
     "see-more": {
       "title": "Ver más",
-      "link": "./es/!#acerca"
+      "link": "./es/#!acerca"
     }
   },
   "about": {
@@ -115,7 +115,7 @@
     "id": "hub",
     "title": "Hub Comercial",
     "text": "¿Conoces el Hub Comercial?",
-    "sub-text": "¡Ten un tarjeta de visita profesional <br>listo para compartir en tus redes sociales <br>de manera práctica!",
+    "sub-text": "¡Ten una tarjeta de visita profesional <br>listo para compartir en tus redes sociales <br>de manera práctica!",
     "alt": "Ejemplo de Hub Comercial",
     "cta": {
       "text": "Más información",
@@ -356,9 +356,6 @@
           },
           {
             "text": "FlexBox"
-          },
-          {
-            "text": "Fotografía"
           },
           {
             "text": "Fotografía"

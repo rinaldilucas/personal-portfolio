@@ -77,9 +77,6 @@
         "name": "git"
       },
       {
-        "name": "docker"
-      },
-      {
         "name": "aws"
       },
       {
@@ -213,7 +210,7 @@
       },
       {
         "id": "comgas",
-        "name": "Manutenção Preventina Comgás",
+        "name": "Manutenção Preventiva Comgás",
         "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
         "src": "./assets/images/portfolio/thumb/comgas.jpg"
       },
@@ -266,7 +263,7 @@
       },
       {
         "id": "rendem",
-        "name": "Rendem Institucinal",
+        "name": "Rendem Institucional",
         "disclaimer": "Todos os direitos reservados à Slingshot Digital. <br>Desenvolvido no período de trabalho da mesma.",
         "src": "./assets/images/portfolio/thumb/rendem.jpg"
       },
@@ -437,7 +434,7 @@
       {
         "name": "Jean Gonçalves",
         "title": "Desenvolvedor full stack",
-        "text": "Un profesional excepcional, que siempre apunta a cumplir sus objetivos de la mejor manera posible. Es muy satisfactorio resolver problemas con alguien que nunca ha perdido las ganas de enseñar y ayudar. 👌",
+        "text": "Um profissional excepcional, que sempre busca cumprir seus objetivos da melhor maneira possível. É muito satisfatório resolver problemas com alguém que nunca perdeu a vontade de ensinar e ajudar. 👌",
         "src": "./assets/images/testimonials/jeangoncalves.svg"
       },
       {
@@ -659,7 +656,7 @@
       },
       {
         "id": "rendem",
-        "name": "Rendem Institucinal",
+        "name": "Rendem Institucional",
         "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
         "src": "./assets/images/portfolio/thumb/rendem.jpg"
       },
@@ -699,7 +696,7 @@
       },
       {
         "id": "hpsemprejuntos",
-        "name": "HP - Always Togheter",
+        "name": "HP - Always Together",
         "disclaimerEnUs": "All rights reserved to Slingshot Digital. <br>Developed during working time.",
         "src": "./assets/images/portfolio/thumb/hp.jpg"
       },
@@ -836,7 +833,7 @@
       {
         "name": "Pedro Perna",
         "title": "Osphere Clothing's Owner",
-        "text": "Lucas has added significantly to our business throughout Brazil and we are very satisfied with his delivery quality and results in this partnership of almost three years. 👍",
+        "text": "Extremely attentive and professional. I recommend him to everyone who needs someone trustworthy and someone they can count on! 🔥",
         "src": "./assets/images/testimonials/pedroperna.svg"
       }
     ],
@@ -918,19 +915,19 @@
       {
         "id": "magaluconecta",
         "name": "Magalu Conecta",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/magaluconecta.jpg"
       },
       {
         "id": "happymeal-mario",
         "name": "Happy Meal - Mario",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "churrascata",
         "name": "Friboi - Churrascata",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/friboi.jpg"
       },
       {
@@ -941,7 +938,7 @@
       {
         "id": "happymeal-stitch",
         "name": "Happy Meal - Stitch",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
@@ -952,79 +949,79 @@
       {
         "id": "happymeal-sing",
         "name": "Happy Meal - Sing2",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "carrefour-automotivo",
         "name": "Carrefour - Centro Automotriz",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/carrefour.jpg"
       },
       {
         "id": "happymeal-encanto",
         "name": "Happy Meal - Encanto",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "fundacaolemann",
         "name": "Fundación Lemann",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/fundacaolemann.jpg"
       },
       {
         "id": "happymeal-disney50",
         "name": "Happy Meal - Disney 50th",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "happymeal-spacejam",
         "name": "Happy Meal - Space Jam",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "casasbahia",
         "name": "Soporte Técnico Casas Bahía",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/casasbahia.jpg"
       },
       {
         "id": "51",
         "name": "51 Institucional",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/51.jpg"
       },
       {
         "id": "comgas",
         "name": "Mantenimiento Preventivo Comgás",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/comgas.jpg"
       },
       {
         "id": "extra",
         "name": "Servicios Extra",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/extra.jpg"
       },
       {
         "id": "pontofrio",
         "name": "Soporte Técnico de Ponto Frio",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/pontofrio.jpg"
       },
       {
         "id": "ultragaz",
         "name": "Servicios Ultragaz",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/ultragaz.jpg"
       },
       {
         "id": "happymeal-luca",
         "name": "Happy Meal - Luca",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
@@ -1035,43 +1032,43 @@
       {
         "id": "mcdonalds-bbbox",
         "name": "Mc Donald's BBBox",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/bbb.jpg"
       },
       {
         "id": "cdi",
         "name": "CDI Cursos",
-        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/cdi.jpg"
       },
       {
         "id": "happymeal-ty",
         "name": "Happy Meal - TY",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "rendem",
-        "name": "Rendem Institucinal",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "name": "Rendem Institucional",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/rendem.jpg"
       },
       {
         "id": "happymeal-pokemon",
         "name": "Happy Meal - Pokemón",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
         "id": "unifilcatete",
         "name": "Unifil Catete",
-        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/unifil.jpg"
       },
       {
         "id": "friboi",
         "name": "Friboi",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/friboi.jpg"
       },
       {
@@ -1082,7 +1079,7 @@
       {
         "id": "especializa",
         "name": "Samsung Especializa",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/samsung.jpg"
       },
       {
@@ -1093,7 +1090,7 @@
       {
         "id": "hpsemprejuntos",
         "name": "HP - Siempre Juntos",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/hp.jpg"
       },
       {
@@ -1104,7 +1101,7 @@
       {
         "id": "51ice",
         "name": "51 Ice",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/51ice.jpg"
       },
       {
@@ -1115,7 +1112,7 @@
       {
         "id": "happymeal-raya",
         "name": "Happy Meal - Raya",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
@@ -1126,7 +1123,7 @@
       {
         "id": "asppas",
         "name": "Asppas",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/asppas.jpg"
       },
       {
@@ -1137,7 +1134,7 @@
       {
         "id": "carrefour",
         "name": "Carrefour",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/carrefour.jpg"
       },
       {
@@ -1148,25 +1145,25 @@
       {
         "id": "castrol",
         "name": "Castrol",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/castrol.jpg"
       },
       {
         "id": "cluborion",
         "name": "Club Orion",
-        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/cluborion.jpg"
       },
       {
         "id": "lovecolors",
         "name": "Samsung Love Colors",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/samsung.jpg"
       },
       {
         "id": "unifilitajai",
         "name": "Unifil Itajaí",
-        "diclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Infinite Cloud. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/unifil.jpg"
       },
       {
@@ -1177,7 +1174,7 @@
       {
         "id": "happymeal-starwars",
         "name": "Happy Meal - Star Wars",
-        "diclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
+        "disclaimer": "Todos los derechos reservados a Slingshot Digital. <br>Desarrollado durante el mismo período de trabajo.",
         "src": "./assets/images/portfolio/thumb/happymeal.jpg"
       },
       {
@@ -1205,7 +1202,7 @@
       {
         "name": "Marcos Walnei",
         "title": "Director Administrativo PEC",
-        "text": "Lucas tuvo toda la tranquilidad y seguridad que necesitábamos al abrir nuestra tienda online, ¡desarrollando todo sin que yo me tuviera que preocupar por nada! Estoy muy contento y confiado de saber que puedo contar con él cuando lo necesito. 👍",
+        "text": "Lucas ha contribuido significativamente a nuestros negocios en todo Brasil y estamos muy satisfechos con la calidad de sus entregas y los resultados en esta asociación de casi tres años. 👍",
         "src": "./assets/images/testimonials/marcoswalnei.svg"
       },
       {
@@ -1275,7 +1272,7 @@
         "link": "https://github.com/rinaldilucas/node-api-example"
       },
       {
-        "name": "Material de Draduación",
+        "name": "Material de Graduación",
         "src": "./assets/images/repositories/graduation-material.jpg",
         "link": "https://github.com/rinaldilucas/graduation-material"
       }
