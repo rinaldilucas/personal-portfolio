@@ -60,6 +60,14 @@
       @extend .drop-shadow;
       height: 100%;
       width: 100%;
+      transition:
+        transform $transition-time,
+        box-shadow $transition-time;
+
+      &:hover {
+        transform: translateY(vw(-4));
+        box-shadow: vw(0) vw(10) vw(30) vw(0) rgba(69, 67, 96, 0.2);
+      }
     }
 
     &-details {
@@ -99,14 +107,18 @@
     }
 
     &-mask {
-      background: $blue;
+      background: linear-gradient(135deg, rgba($blue, 0.7) 0%, rgba(darken($blue, 15%), 0.7) 100%);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
       left: 0;
       top: 0;
       height: 100%;
       width: 100%;
       position: absolute;
       opacity: 0;
-      transition: $transition-time;
+      transition:
+        opacity 0.4s ease,
+        backdrop-filter 0.4s ease;
     }
   }
 }

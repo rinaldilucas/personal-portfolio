@@ -4,7 +4,9 @@
   top: 0;
   left: 0;
   z-index: 5;
-  background-color: $background-primary;
+  background-color: rgba($background-primary, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
@@ -17,7 +19,8 @@
   }
 
   .dark & {
-    background-color: darken($background-primary-dark, 5%);
+    background-color: rgba(darken($background-primary-dark, 5%), 0.8);
+    border-right: 1px solid rgba($accent, 0.1);
   }
 
   &__wrapper {
@@ -157,6 +160,11 @@
     margin: vw(8);
     font-size: vw(20);
     display: block;
+    position: relative;
+    padding-left: vw(0);
+    transition:
+      color $transition-time,
+      padding-left $transition-time;
 
     .dark & {
       color: $font-color-dark;
@@ -169,14 +177,33 @@
 
     &:hover {
       color: $accent;
+      padding-left: vw(6);
     }
 
     &.active {
       color: $blue;
+      padding-left: vw(6);
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: vw(-4);
+        top: 50%;
+        transform: translateY(-50%);
+        width: vw(3);
+        height: 70%;
+        background: $gradient-accent;
+        border-radius: vw(3);
+      }
     }
 
     i {
       margin-right: vw(16);
+      transition: transform $transition-time;
+    }
+
+    &:hover i {
+      transform: scale(1.15);
     }
   }
 

@@ -45,13 +45,19 @@
   }
 
   &__name {
-    color: darken($accent, 50%);
     font-weight: 700;
     font-size: vw(38);
     line-height: vw(38);
+    background: linear-gradient(135deg, darken($accent, 30%) 0%, $accent 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
     .dark & {
-      color: $accent-dark;
+      background: linear-gradient(135deg, $white 0%, lighten($accent, 25%) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
   }
 
@@ -65,6 +71,24 @@
 
     a {
       margin: 0 vw(10);
+      width: vw(44);
+      height: vw(44);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition:
+        background-color $transition-time,
+        transform $transition-time;
+
+      &:hover {
+        background-color: rgba($accent, 0.08);
+        transform: translateY(vw(-3));
+
+        .dark & {
+          background-color: rgba($accent, 0.15);
+        }
+      }
     }
 
     i {

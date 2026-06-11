@@ -9,60 +9,72 @@
 
   .layer {
     position: absolute !important;
+    animation: float-shape 6s ease-in-out infinite;
   }
 
   .p1 {
     left: 10% !important;
     top: 10% !important;
+    animation-delay: 0s;
   }
 
   .p2 {
     left: 25% !important;
     top: 30% !important;
+    animation-delay: 0.8s;
   }
 
   .p3 {
     left: 15% !important;
     top: 80% !important;
+    animation-delay: 1.2s;
   }
 
   .p4 {
     left: 10% !important;
     top: 90% !important;
+    animation-delay: 2s;
   }
 
   .p5 {
     left: 45% !important;
     top: 10% !important;
+    animation-delay: 0.5s;
   }
 
   .p6 {
     left: 40% !important;
     top: 90% !important;
+    animation-delay: 1.8s;
   }
 
   .p7 {
     left: 80% !important;
     top: 20% !important;
+    animation-delay: 0.3s;
   }
 
   .p8 {
     left: 80% !important;
     top: 80% !important;
+    animation-delay: 1.5s;
   }
 
   .p9 {
     left: 90% !important;
     top: 10% !important;
+    animation-delay: 2.2s;
   }
 
   .p10 {
     left: 80% !important;
     top: 45% !important;
+    animation-delay: 1s;
   }
 
   .p11 {
     left: 90% !important;
     bottom: 10% !important;
+    animation-delay: 1.7s;
   }
 }

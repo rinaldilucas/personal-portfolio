@@ -9,6 +9,7 @@ import Header from '@scripts/behaviors/header';
 import Morphext from '@scripts/behaviors/morphext';
 import Parallax from '@scripts/behaviors/parallax';
 import PortfolioViewer from '@scripts/behaviors/portfolio-viewer';
+import ScrollProgress from '@scripts/behaviors/scroll-progress';
 import Spacer from '@scripts/behaviors/spacer';
 import Waypoint from '@scripts/behaviors/waypoint';
 import scope from '@scripts/scope';
@@ -37,6 +38,7 @@ export default scope.views.Home = Base.extend({
     Waypoint,
     PortfolioViewer,
     Captcha,
+    ScrollProgress,
     ...Form({
       rules: [require('@scripts/behaviors/Form/Commons')],
     }),

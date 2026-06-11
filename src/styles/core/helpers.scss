@@ -7,10 +7,11 @@
   line-height: vw(40);
   margin: 0 0 vw(14) 0;
   position: relative;
+  letter-spacing: -0.02em;
 
   @include media(">desktop") {
-    font-size: vw(42);
-    line-height: vw(46);
+    font-size: vw(48);
+    line-height: vw(52);
   }
 
   &:before {
@@ -22,6 +23,7 @@
     top: vw(-14);
     position: absolute;
     width: vw(37);
+    animation: float-shape 4s ease-in-out infinite;
 
     .dark & {
       background-image: url(../images/general/dots-bg--white.svg);

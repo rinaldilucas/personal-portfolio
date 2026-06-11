@@ -44,6 +44,14 @@ $transition-time: 0.3s;
 $transition-time-function: ease-in-out;
 
 /* ============================================== */
+/* ================ gradients  ================== */
+/* ============================================== */
+
+$gradient-accent: linear-gradient(135deg, $blue 0%, darken($blue, 12%) 100%);
+$gradient-accent-hover: linear-gradient(135deg, lighten($blue, 5%) 0%, darken($blue, 5%) 100%);
+$gradient-ring: conic-gradient(from 0deg, $blue, darken($blue, 15%), $blue);
+
+/* ============================================== */
 /* ================ dimensions  ================= */
 /* ============================================== */
 

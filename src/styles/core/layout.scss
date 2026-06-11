@@ -45,9 +45,10 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $accent;
-    border: vw(3) solid $accent;
+    background: $gradient-accent;
+    border: vw(2) solid transparent;
     border-radius: vw(6);
+    background-clip: padding-box;
   }
 }
 
@@ -55,6 +56,18 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--scroll-progress, 0%);
+    height: vw(3);
+    background: $gradient-accent;
+    z-index: 999;
+    transition: width 0.1s linear;
+  }
 
   * {
     -webkit-font-smoothing: antialiased;

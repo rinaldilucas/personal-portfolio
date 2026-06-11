@@ -6,11 +6,11 @@
   padding: vw(12) vw(32);
   position: relative;
   color: $white;
-  background: $blue;
+  background: $gradient-accent;
   border: none;
   display: inline-block;
   @extend .hover-zoom;
-  box-shadow: 0 0 vw(1) rgba(0, 0, 0, 0);
+  box-shadow: 0 vw(4) vw(15) rgba($blue, 0.3);
 
   &:focus {
     box-shadow: none;
@@ -19,5 +19,7 @@
 
   &:hover {
     color: $white;
+    background: $gradient-accent-hover;
+    box-shadow: 0 vw(6) vw(20) rgba($blue, 0.4);
   }
 }

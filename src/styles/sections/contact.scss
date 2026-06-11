@@ -119,19 +119,28 @@
       font-weight: 400;
       color: $font-color;
       background-image: none;
-      border: 0;
+      border: 2px solid transparent;
       background-color: $background-primary;
       @extend .drop-shadow;
+      transition:
+        border-color $transition-time,
+        box-shadow $transition-time;
 
       .dark & {
         background-color: $background-primary-dark;
-        border: 1px solid $accent;
+        border: 1px solid rgba($accent, 0.3);
         color: $font-color-dark;
       }
 
       &:focus {
-        @extend .drop-shadow;
+        border-color: $accent;
+        box-shadow: 0 0 0 vw(3) rgba($accent, 0.12);
         outline: 0;
+
+        .dark & {
+          border-color: $accent;
+          box-shadow: 0 0 vw(15) rgba($accent, 0.15);
+        }
       }
 
       &::placeholder {
